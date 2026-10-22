@@ -11,10 +11,12 @@ actualiza ese archivo cada ~15 minutos.
 | Fuente | Cuándo | Qué da | Ojo |
 |---|---|---|---|
 | **API de Riot** | si existe el secreto `RIOT_API_KEY` | elo, LP, W/L, línea principal, si está en partida | hace falta una key |
-| **op.gg** | si no hay key | elo, LP, W/L | solo es tan fresco como la última vez que alguien pulsó **Actualizar** en el perfil de op.gg del jugador |
+| **op.gg** | si no hay key | elo, LP, W/L | usa la renovación interna de op.gg (no oficial) |
 
-Con op.gg, después de jugar cada uno entra a su op.gg (el link de su cuenta en la tabla) y
-pulsa **Actualizar**; a los ≤15 min aparece en la tabla.
+Con op.gg, el updater primero renueva cada perfil con las mismas Server Actions que usa el botón
+"Update" de op.gg, y después lo lee. No es una API pública: si op.gg cambia su web puede dejar de
+funcionar; en ese caso los datos siguen saliendo, solo que sin renovar
+(`node scripts/update.mjs --opgg --sin-renovar` lee sin renovar).
 
 ## Publicarla en GitHub Pages
 
@@ -25,6 +27,24 @@ pulsa **Actualizar**; a los ≤15 min aparece en la tabla.
    **Run workflow** para comprobar que funciona.
 
 GitHub no garantiza los 15 minutos exactos: en horas de mucha carga el cron puede retrasarse.
+
+## Botón "Actualizar" (Cloudflare Worker)
+
+La página es pública y no puede llevar un token de GitHub, así que el botón llama a un
+Worker (`worker/`) que guarda el token y lanza el Action. El Worker no deja lanzarlo si ya hay
+una ejecución en curso o si la última empezó hace menos de 2 minutos.
+
+1. Crea una cuenta gratis en <https://dash.cloudflare.com/sign-up>.
+2. En la carpeta `worker/`: `npx wrangler login` (autoriza en el navegador) y luego
+   `npx wrangler deploy`. Al terminar imprime la URL, p. ej.
+   `https://soloboom-actualizar.<tu-subdominio>.workers.dev`.
+3. Crea un token *fine-grained* en <https://github.com/settings/personal-access-tokens/new>:
+   - Repository access: **Only select repositories → soloboom**
+   - Permissions → Repository → **Actions: Read and write**
+4. En `worker/`: `npx wrangler secret put GITHUB_TOKEN` y pega el token cuando lo pida.
+5. Pon la URL del paso 2 en `index.html`:
+   `<meta name="actualizar-url" content="https://soloboom-actualizar....workers.dev">`.
+   Mientras esté vacía, el botón no aparece.
 
 ## Usar la API de Riot (opcional, más datos)
 

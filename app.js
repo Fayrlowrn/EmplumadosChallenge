@@ -114,7 +114,7 @@
     renderUpdated();
     const fuentes = {
       riot: 'Datos de la API oficial de Riot Games.',
-      opgg: 'Datos leídos de op.gg: se actualizan cuando alguien pulsa "Actualizar" en el perfil de op.gg del jugador.',
+      opgg: 'Datos de op.gg, renovados automáticamente cada ~15 minutos.',
       mock: 'Datos de prueba (no son reales).',
     };
     $('source').textContent = fuentes[data.fuente] ?? '';
@@ -167,6 +167,71 @@
       th.setAttribute('aria-sort', sort.dir === 'asc' ? 'ascending' : 'descending');
       render();
     });
+  }
+
+  // ---------- botón "Actualizar" ----------
+  // Pide al Worker que lance el Action (renueva op.gg y regenera ranking.json), espera a que
+  // termine y luego a que GitHub Pages sirva el JSON nuevo.
+
+  const workerUrl = document.querySelector('meta[name="actualizar-url"]')?.content.replace(/\/$/, '');
+  const refreshBtn = $('refresh');
+  const refreshStatus = $('refresh-status');
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  async function worker(path, method = 'GET') {
+    const res = await fetch(workerUrl + path, { method });
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok && res.status !== 202) throw new Error(body.error || res.status);
+    return body;
+  }
+
+  async function waitForRun(since) {
+    // La ejecución tarda unos segundos en aparecer; luego ~1 min en terminar.
+    for (let i = 0; i < 40; i++) {
+      await wait(8000);
+      const { ejecucion: run } = await worker('/estado');
+      if (run && Date.parse(run.creada) >= since - 10000 && run.status === 'completed') return run;
+    }
+    throw new Error('tardó demasiado');
+  }
+
+  async function waitForData(previous) {
+    // Tras el commit, GitHub Pages tarda ~30-60 s en publicar.
+    for (let i = 0; i < 12; i++) {
+      await load();
+      if (data && data.actualizado !== previous) return true;
+      await wait(10000);
+    }
+    return false;
+  }
+
+  async function refresh() {
+    refreshBtn.disabled = true;
+    const before = data?.actualizado;
+    const since = Date.now();
+    try {
+      refreshStatus.textContent = 'Pidiendo la actualización…';
+      const res = await worker('/actualizar', 'POST');
+      if (!res.lanzado && res.motivo === 'reciente') {
+        refreshStatus.textContent = 'Se actualizó hace menos de 2 min. Prueba en un momento.';
+        return;
+      }
+      refreshStatus.textContent = 'Consultando op.gg… (1-2 min)';
+      const run = await waitForRun(res.lanzado ? since : Date.parse(res.ejecucion.creada));
+      if (run.conclusion !== 'success') throw new Error('falló la actualización');
+      refreshStatus.textContent = 'Publicando…';
+      const changed = await waitForData(before);
+      refreshStatus.textContent = changed ? '¡Tabla actualizada!' : 'Sin cambios: nadie ha jugado desde la última vez.';
+    } catch (err) {
+      refreshStatus.textContent = `No se pudo actualizar (${err.message}).`;
+    } finally {
+      refreshBtn.disabled = false;
+    }
+  }
+
+  if (workerUrl) {
+    $('refresh-box').hidden = false;
+    refreshBtn.addEventListener('click', refresh);
   }
 
   search.addEventListener('input', applySearch);
