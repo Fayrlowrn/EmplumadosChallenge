@@ -85,7 +85,7 @@
   function ago(iso) {
     const min = minutesSince(iso);
     if (min < 60) return `hace ${Math.max(1, min)} min`;
-    if (min < 48 * 60) return `hace ${Math.floor(min / 60)} h`;
+    if (min < 24 * 60) return `hace ${Math.floor(min / 60)} h`;
     return `hace ${Math.floor(min / 1440)} d`;
   }
 
