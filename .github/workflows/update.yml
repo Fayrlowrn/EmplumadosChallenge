@@ -2,7 +2,8 @@ name: Actualizar tabla
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    # Cada 15 min, fuera de los minutos "redondos" que GitHub tiene más saturados.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
 permissions:
