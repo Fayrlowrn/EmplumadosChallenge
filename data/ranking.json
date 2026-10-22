@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T04:28:59.468Z",
+  "actualizado": "2026-10-22T05:29:52.817Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -103,25 +103,25 @@
       "riotId": "LANivia#FYRWN",
       "tier": "GOLD",
       "division": "I",
-      "lp": 12,
-      "wins": 13,
+      "lp": 42,
+      "wins": 14,
       "losses": 5,
-      "winrate": 72.22,
+      "winrate": 73.68,
       "linea": "MIDDLE",
-      "progreso": 220,
-      "retoWins": 9,
+      "progreso": 250,
+      "retoWins": 10,
       "retoLosses": 4,
       "racha": {
         "tipo": "W",
-        "n": 2
+        "n": 3
       },
       "campeon": {
         "nombre": "Anivia",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
-        "partidas": 11
+        "partidas": 12
       },
-      "ultimaPartida": "2026-10-22T04:14:50.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-10-22T05:27:21.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -208,19 +208,19 @@
       "winrate": null,
       "linea": "TOP",
       "progreso": null,
-      "retoWins": 1,
+      "retoWins": 2,
       "retoLosses": 2,
       "racha": {
-        "tipo": "L",
-        "n": 2
+        "tipo": "W",
+        "n": 1
       },
       "campeon": {
-        "nombre": "Sett",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sett.png",
+        "nombre": "Sylas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sylas.png",
         "partidas": 1
       },
-      "ultimaPartida": "2026-10-22T03:34:12.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-10-22T05:18:47.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
