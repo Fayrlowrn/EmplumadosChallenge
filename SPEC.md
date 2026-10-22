@@ -24,6 +24,10 @@ README.md             cómo sacar la API key, configurar el secreto y activar Pa
 
 ## Updater (`scripts/update.mjs`)
 
+Fuente de datos: API de Riot si hay `RIOT_API_KEY`; si no (o con `--opgg`), lee la meta
+description del perfil público de op.gg (elo, LP, W/L; sin línea ni estado de partida, que
+quedan `null`). `ranking.json` lleva `"fuente": "riot" | "opgg" | "mock"`.
+
 - Lee `RIOT_API_KEY` del entorno (o de `.env` en local, parseado a mano, sin dotenv).
   **Nunca** escribe la key en ningún archivo ni la imprime en logs.
 - `--mock`: no llama a Riot; genera un `ranking.json` verosímil para los jugadores de

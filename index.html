@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoloBoom LAN</title>
+  <meta name="description" content="Tabla del reto de SoloQ entre amigos en LAN, al estilo del SoloBoom Challenge.">
+  <link rel="icon" href="assets/emblems/challenger.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=Grenze+Gotisch:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="hero-kicker">Reto de SoloQ · LAN</p>
+    <h1 class="hero-title">SoloBoom</h1>
+    <p class="hero-meta">
+      <span id="count">—</span>
+      <span aria-hidden="true">·</span>
+      <span id="updated">Cargando…</span>
+    </p>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <label class="search">
+        <span class="visually-hidden">Buscar jugador</span>
+        <input id="search" type="search" placeholder="Buscar jugador o cuenta…" autocomplete="off">
+      </label>
+    </div>
+
+    <div class="board">
+      <table id="board">
+        <thead>
+          <tr>
+            <th scope="col" class="c-pos sortable" data-sort="pos" aria-sort="ascending"><button type="button">#</button></th>
+            <th scope="col" class="c-change"><span class="visually-hidden">Cambio de posición hoy</span></th>
+            <th scope="col" class="c-name">Participante</th>
+            <th scope="col" class="c-account">Cuenta</th>
+            <th scope="col" class="c-server">Servidor</th>
+            <th scope="col" class="c-status">Estado</th>
+            <th scope="col" class="c-role">Línea</th>
+            <th scope="col" class="c-record sortable" data-sort="games"><button type="button">W / L</button></th>
+            <th scope="col" class="c-wr sortable" data-sort="winrate"><button type="button">Winrate</button></th>
+            <th scope="col" class="c-tier">Elo</th>
+            <th scope="col" class="c-lp sortable" data-sort="lp"><button type="button">LP</button></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <p id="empty" class="empty" hidden>Ningún jugador coincide con la búsqueda.</p>
+      <p id="error" class="empty" hidden></p>
+    </div>
+
+    <p id="source" class="footnote"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "jugadores": {
+    "Farid": {},
+    "Brandon": {},
+    "Porfirio": {},
+    "Edwin": {},
+    "Luis": {},
+    "Oscar": {},
+    "Diego": {}
+  },
+  "baseline": {
+    "dia": "2026-10-21",
+    "posiciones": {
+      "Brandon": 1,
+      "Porfirio": 2,
+      "Farid": 3,
+      "Oscar": 4,
+      "Diego": 5,
+      "Edwin": 6,
+      "Luis": 7,
+      "Racecore": 8
+    }
+  }
+}

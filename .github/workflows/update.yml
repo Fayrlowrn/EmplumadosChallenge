@@ -1,0 +1,42 @@
+name: Actualizar tabla
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-tabla
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # Con el secreto RIOT_API_KEY usa la API de Riot; sin él, lee op.gg.
+      - name: Consultar rangos
+        run: node scripts/update.mjs
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+
+      - name: Guardar cambios
+        run: |
+          if git diff --quiet -- data/; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Actualizar tabla"
+          git pull --rebase
+          git push
