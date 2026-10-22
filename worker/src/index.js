@@ -23,7 +23,8 @@ export default {
     const { pathname } = new URL(request.url);
     try {
       if (request.method === 'GET' && pathname === '/estado') {
-        return json({ ejecucion: await latestRun(env) });
+        const [ejecucion, datos] = await Promise.all([latestRun(env), lastDataCommit(env)]);
+        return json({ ejecucion, datosCambiados: datos });
       }
 
       if (request.method === 'POST' && pathname === '/actualizar') {
@@ -52,6 +53,12 @@ async function latestRun(env) {
   const data = await github(env, `/actions/workflows/${env.WORKFLOW}/runs?per_page=1`);
   const run = data.workflow_runs?.[0];
   return run ? { id: run.id, status: run.status, conclusion: run.conclusion, creada: run.created_at } : null;
+}
+
+// Fecha del último commit que cambió la tabla (el Action solo hace commit si hubo cambios).
+async function lastDataCommit(env) {
+  const commits = await github(env, `/commits?path=data/ranking.json&per_page=1&sha=${env.BRANCH}`);
+  return commits?.[0]?.commit?.committer?.date ?? null;
 }
 
 async function github(env, path, init = {}) {

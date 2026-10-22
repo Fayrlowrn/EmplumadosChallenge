@@ -189,8 +189,9 @@
     // La ejecución tarda unos segundos en aparecer; luego ~1 min en terminar.
     for (let i = 0; i < 40; i++) {
       await wait(8000);
-      const { ejecucion: run } = await worker('/estado');
-      if (run && Date.parse(run.creada) >= since - 10000 && run.status === 'completed') return run;
+      const estado = await worker('/estado');
+      const run = estado.ejecucion;
+      if (run && Date.parse(run.creada) >= since - 10000 && run.status === 'completed') return estado;
     }
     throw new Error('tardó demasiado');
   }
@@ -217,8 +218,13 @@
         return;
       }
       refreshStatus.textContent = 'Consultando op.gg… (1-2 min)';
-      const run = await waitForRun(res.lanzado ? since : Date.parse(res.ejecucion.creada));
+      const { ejecucion: run, datosCambiados } = await waitForRun(res.lanzado ? since : Date.parse(res.ejecucion.creada));
       if (run.conclusion !== 'success') throw new Error('falló la actualización');
+      // El Action solo hace commit si algo cambió; sin commit nuevo no habrá nada que publicar.
+      if (!datosCambiados || Date.parse(datosCambiados) < Date.parse(run.creada)) {
+        refreshStatus.textContent = 'Sin cambios: nadie ha jugado desde la última vez.';
+        return;
+      }
       refreshStatus.textContent = 'Publicando…';
       const changed = await waitForData(before);
       refreshStatus.textContent = changed ? '¡Tabla actualizada!' : 'Sin cambios: nadie ha jugado desde la última vez.';
