@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T02:50:30.425Z",
+  "actualizado": "2026-10-22T03:00:24.791Z",
   "region": "LAN",
   "fuente": "opgg",
   "jugadores": [
@@ -140,7 +140,7 @@
       "pos": 8,
       "cambio": 0,
       "nombre": "Racecore",
-      "riotId": null,
+      "riotId": "5tyleWars#LAN",
       "tier": "UNRANKED",
       "division": null,
       "lp": 0,
@@ -151,8 +151,8 @@
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
-      "opgg": null,
-      "pendiente": true,
+      "opgg": "https://op.gg/lol/summoners/lan/5tyleWars-LAN",
+      "pendiente": false,
       "stale": false
     }
   ]
