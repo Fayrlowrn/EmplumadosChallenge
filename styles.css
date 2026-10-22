@@ -144,7 +144,7 @@ td { padding: 18px 8px; height: 102px; }
 td.c-pos { font-weight: 700; }
 td.c-change { font-weight: 700; font-size: 1.05rem; }
 td.c-name { font-weight: 700; }
-td.c-account, td.c-server, td.c-record { font-size: 1.1rem; font-weight: 400; }
+td.c-account, td.c-record { font-size: 1.05rem; font-weight: 400; }
 td.c-record { white-space: nowrap; }
 td.c-wr { font-size: 1.1rem; font-weight: 700; }
 td.c-lp { font-size: 0.85rem; white-space: nowrap; }
@@ -183,6 +183,28 @@ td.c-lp { font-size: 0.85rem; white-space: nowrap; }
 .tier span { font: 700 0.85rem/1 var(--font); letter-spacing: 0.02em; white-space: nowrap; }
 
 .stale { color: var(--gold); margin-left: 4px; cursor: help; }
+
+.streak {
+  display: inline-flex; align-items: center; gap: 2px;
+  margin-left: 8px; padding: 2px 7px;
+  border-radius: 999px;
+  font: 700 0.75rem/1.2 var(--font);
+  vertical-align: middle;
+  cursor: help;
+}
+.streak-w { color: var(--green); background: rgba(163, 230, 53, 0.12); }
+.streak-l { color: var(--red); background: rgba(248, 113, 113, 0.12); }
+
+.champ { display: inline-flex; align-items: center; gap: 6px; cursor: help; }
+.champ img { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--gold-soft); }
+.champ small { color: var(--muted); font-size: 0.8rem; }
+
+.stack { display: flex; flex-direction: column; align-items: center; gap: 4px; white-space: nowrap; }
+.stack small { color: var(--muted); font-size: 0.78rem; font-weight: 500; }
+td.c-progress { font-weight: 700; }
+td.c-last { font-size: 0.9rem; }
+
+.tier-progress { display: none; font-size: 0.7rem; font-weight: 600; }
 .pending { font-style: italic; }
 
 .empty { padding: 32px 16px; color: var(--muted); }
@@ -195,6 +217,16 @@ td.c-lp { font-size: 0.85rem; white-space: nowrap; }
 .no-status .c-status { display: none; }
 .name-dot, .name-account, .tier-lp { display: none; }
 
+/* ---------- pantallas medianas: la cuenta pasa debajo del nombre ---------- */
+
+@media (max-width: 1150px) {
+  .c-account { display: none; }
+  .name-account {
+    display: block; margin-top: 2px;
+    font-size: 0.75rem; font-weight: 400; color: var(--muted);
+  }
+}
+
 /* ---------- móvil ---------- */
 
 @media (max-width: 720px) {
@@ -202,8 +234,10 @@ td.c-lp { font-size: 0.85rem; white-space: nowrap; }
   .hero-logo { width: 112px; height: 112px; }
   .search, .search input { width: 100%; }
   .refresh { width: 100%; }
-  .c-account, .c-server, .c-role, .c-record, .c-status, .no-status .c-status, .c-lp { display: none; }
+  .c-account, .c-role, .c-champ, .c-record, .c-status, .no-status .c-status, .c-lp, .c-progress, .c-last { display: none; }
   .tier-lp { display: inline; }
+  .tier-progress { display: block; }
+  .streak { margin-left: 4px; padding: 1px 5px; }
   td { padding: 12px 4px; height: 84px; }
   .c-pos { width: 28px; }
   .c-change { width: 36px; }

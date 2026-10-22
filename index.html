@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=Grenze+Gotisch:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="hero">
@@ -48,13 +48,15 @@
             <th scope="col" class="c-change"><span class="visually-hidden">Cambio de posición hoy</span></th>
             <th scope="col" class="c-name">Participante</th>
             <th scope="col" class="c-account">Cuenta</th>
-            <th scope="col" class="c-server">Servidor</th>
             <th scope="col" class="c-status">Estado</th>
             <th scope="col" class="c-role">Línea</th>
+            <th scope="col" class="c-champ">Main</th>
             <th scope="col" class="c-record sortable" data-sort="games"><button type="button">W / L</button></th>
             <th scope="col" class="c-wr sortable" data-sort="winrate"><button type="button">Winrate</button></th>
             <th scope="col" class="c-tier">Elo</th>
             <th scope="col" class="c-lp sortable" data-sort="lp"><button type="button">LP</button></th>
+            <th scope="col" class="c-progress sortable" data-sort="progreso"><button type="button" title="LP ganados desde que empezó el reto">Reto</button></th>
+            <th scope="col" class="c-last sortable" data-sort="ultima"><button type="button">Última</button></th>
           </tr>
         </thead>
         <tbody id="rows"></tbody>
@@ -66,6 +68,6 @@
     <p id="source" class="footnote"></p>
   </main>
 
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

@@ -53,11 +53,53 @@
     return `<span class="status status-live"><span class="dot" aria-hidden="true"></span>En partida${min}</span>`;
   }
 
+  function progressText(j) {
+    if (j.progreso == null) return null;
+    const cls = j.progreso > 0 ? 'up' : j.progreso < 0 ? 'down' : 'same';
+    return `<span class="${cls}">${j.progreso > 0 ? '+' : ''}${j.progreso} LP</span>`;
+  }
+
   function tierCell(j) {
     if (j.pendiente) return '<span class="muted">—</span>';
     if (j.tier === 'UNRANKED') return '<div class="tier"><span class="muted">SIN CLASIFICAR</span></div>';
     const label = APEX.has(j.tier) ? j.tier : `${j.tier} ${j.division}`;
-    return `<div class="tier"><img src="assets/emblems/${j.tier.toLowerCase()}.png" alt="" loading="lazy"><span>${esc(label)}<span class="tier-lp"> · ${j.lp} LP</span></span></div>`;
+    const progress = progressText(j);
+    return `<div class="tier"><img src="assets/emblems/${j.tier.toLowerCase()}.png" alt="" loading="lazy"><span>${esc(label)}<span class="tier-lp"> · ${j.lp} LP</span></span>${progress ? `<span class="tier-progress">${progress} en el reto</span>` : ''}</div>`;
+  }
+
+  function streakBadge(r) {
+    if (!r) return '';
+    const win = r.tipo === 'W';
+    const icon = r.n >= 3 ? (win ? '🔥' : '🧊') : win ? '▲' : '▼';
+    const text = `${r.n} ${win ? (r.n === 1 ? 'victoria' : 'victorias') : r.n === 1 ? 'derrota' : 'derrotas'} seguidas`;
+    return `<span class="streak ${win ? 'streak-w' : 'streak-l'}" title="${text}"><span aria-hidden="true">${icon}</span>${r.n}<span class="visually-hidden"> ${text}</span></span>`;
+  }
+
+  function champCell(c) {
+    if (!c) return '<span class="muted">—</span>';
+    const title = `${c.nombre} · ${c.partidas} ${c.partidas === 1 ? 'partida' : 'partidas'}`;
+    const img = c.icono ? `<img src="${esc(c.icono)}" alt="${esc(c.nombre)}" loading="lazy">` : `<span>${esc(c.nombre)}</span>`;
+    return `<div class="champ" title="${esc(title)}">${img}<small>×${c.partidas}</small></div>`;
+  }
+
+  function ago(iso) {
+    const min = minutesSince(iso);
+    if (min < 60) return `hace ${Math.max(1, min)} min`;
+    if (min < 48 * 60) return `hace ${Math.floor(min / 60)} h`;
+    return `hace ${Math.floor(min / 1440)} d`;
+  }
+
+  function progressCell(j) {
+    const text = progressText(j);
+    if (!text) return '<span class="muted" title="Empieza a contar cuando el jugador esté clasificado">—</span>';
+    const record = j.retoWins != null ? `<small>${j.retoWins}V ${j.retoLosses}D</small>` : '';
+    return `<div class="stack">${text}${record}</div>`;
+  }
+
+  function lastCell(j) {
+    if (!j.ultimaPartida) return '<span class="muted">—</span>';
+    const today = j.partidasHoy ? `<small>hoy: ${j.partidasHoy}</small>` : '';
+    return `<div class="stack" title="${esc(new Date(j.ultimaPartida).toLocaleString('es-MX'))}"><span>${ago(j.ultimaPartida)}</span>${today}</div>`;
   }
 
   function row(j) {
@@ -81,15 +123,17 @@
     return `<tr data-search="${esc(search)}">
       <td class="c-pos">${j.pos}</td>
       <td class="c-change">${changeCell(j.cambio)}</td>
-      <td class="c-name">${dot}${name}${stale}<span class="name-account">${esc(j.riotId ?? 'pendiente')}</span></td>
+      <td class="c-name">${dot}${name}${streakBadge(j.racha)}${stale}<span class="name-account">${esc(j.riotId ?? 'pendiente')}</span></td>
       <td class="c-account">${account}</td>
-      <td class="c-server">${esc(data.region)}</td>
       <td class="c-status">${statusCell(j)}</td>
       <td class="c-role">${role}</td>
+      <td class="c-champ">${champCell(j.campeon)}</td>
       <td class="c-record">${record}</td>
       <td class="c-wr">${wr}</td>
       <td class="c-tier">${tierCell(j)}</td>
       <td class="c-lp">${lp}</td>
+      <td class="c-progress">${progressCell(j)}</td>
+      <td class="c-last">${lastCell(j)}</td>
     </tr>`;
   }
 
@@ -99,9 +143,18 @@
       games: (j) => j.wins + j.losses,
       winrate: (j) => j.winrate ?? -1,
       lp: (j) => score(j),
+      progreso: (j) => j.progreso ?? -Infinity,
+      ultima: (j) => (j.ultimaPartida ? Date.parse(j.ultimaPartida) : 0),
     }[sort.key];
     const dir = sort.dir === 'asc' ? 1 : -1;
-    return [...list].sort((a, b) => (val(a) - val(b)) * dir || a.pos - b.pos);
+    // -Infinity (sin dato) va siempre al final, ordene como ordene.
+    return [...list].sort((a, b) => {
+      const va = val(a), vb = val(b);
+      if (va === vb) return a.pos - b.pos;
+      if (va === -Infinity) return 1;
+      if (vb === -Infinity) return -1;
+      return (va - vb) * dir;
+    });
   }
 
   function render() {
@@ -117,7 +170,10 @@
       opgg: 'Datos de op.gg, renovados automáticamente cada ~15 minutos.',
       mock: 'Datos de prueba (no son reales).',
     };
-    $('source').textContent = fuentes[data.fuente] ?? '';
+    const desde = data.inicio
+      ? ` "Reto" son los LP ganados desde el ${new Date(`${data.inicio}T12:00:00`).toLocaleDateString('es-MX', { day: 'numeric', month: 'long' })}.`
+      : '';
+    $('source').textContent = (fuentes[data.fuente] ?? '') + desde;
   }
 
   function renderUpdated() {

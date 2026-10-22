@@ -21,7 +21,8 @@ const TIERS = ['IRON', 'BRONZE', 'SILVER', 'GOLD', 'PLATINUM', 'EMERALD', 'DIAMO
 const DIVISIONS = ['IV', 'III', 'II', 'I'];
 const APEX = new Set(['MASTER', 'GRANDMASTER', 'CHALLENGER']);
 const POSITIONS = ['TOP', 'JUNGLE', 'MIDDLE', 'BOTTOM', 'UTILITY'];
-const MATCH_CACHE_SIZE = 20;
+const RECENT_MATCHES = 10;
+const STORED_MATCHES = 100; // partidas guardadas por jugador en state.json
 const REQUEST_GAP_MS = 1250; // 100 peticiones / 2 min de la key de desarrollo
 
 // ---------- utilidades ----------
@@ -46,6 +47,7 @@ function opggUrl(riotId) {
 }
 
 // Puntaje para ordenar: más alto = mejor. -1 para sin clasificar.
+// También mide el progreso: la diferencia de puntaje son los LP ganados, contando divisiones.
 function score(tier, division, lp) {
   const t = TIERS.indexOf(tier);
   if (t < 0) return -1;
@@ -63,6 +65,14 @@ function localDay(date, timeZone) {
   return new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
 }
 
+function mostCommon(values) {
+  const counts = new Map();
+  for (const v of values) counts.set(v, (counts.get(v) || 0) + 1);
+  let best = null;
+  for (const [v, n] of counts) if (!best || n > counts.get(best)) best = v;
+  return best;
+}
+
 function loadApiKey() {
   if (process.env.RIOT_API_KEY) return process.env.RIOT_API_KEY.trim();
   const envFile = path.join(ROOT, '.env');
@@ -74,6 +84,29 @@ function loadApiKey() {
     }
   }
   return null;
+}
+
+// ---------- íconos de campeones (Data Dragon, CDN oficial de Riot) ----------
+// op.gg da el nombre visible ("Kai'Sa", "Wukong") y Riot el id ("Kaisa", "MonkeyKing");
+// se indexan ambos, normalizados, para encontrar la imagen.
+
+const normalizeName = (s) => s.toLowerCase().normalize('NFD').replace(/[^a-z]/g, '');
+
+async function loadChampions() {
+  try {
+    const [version] = await (await fetch('https://ddragon.leagueoflegends.com/api/versions.json')).json();
+    const { data } = await (await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/champion.json`)).json();
+    const byName = new Map();
+    for (const c of Object.values(data)) {
+      const champ = { nombre: c.name, icono: `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${c.image.full}` };
+      byName.set(normalizeName(c.name), champ);
+      byName.set(normalizeName(c.id), champ);
+    }
+    return byName;
+  } catch (err) {
+    console.warn(`  no se pudieron cargar los campeones de Data Dragon: ${err.message}`);
+    return new Map();
+  }
 }
 
 // ---------- cliente de Riot ----------
@@ -117,9 +150,7 @@ async function fetchPlayer(riot, cfg, player, saved) {
     );
     if (!acc) throw new Error(`no existe la cuenta ${player.riotId}`);
     puuid = acc.puuid;
-    saved.matches = {};
   }
-  saved.riotId = player.riotId;
   saved.puuid = puuid;
 
   const entries = await riot.get(`https://${region}.api.riotgames.com/lol/league/v4/entries/by-puuid/${puuid}`);
@@ -127,20 +158,24 @@ async function fetchPlayer(riot, cfg, player, saved) {
 
   const game = await riot.get(`https://${region}.api.riotgames.com/lol/spectator/v5/active-games/by-summoner/${puuid}`);
 
-  let linea = player.linea;
-  if (!linea) {
-    const ids = (await riot.get(
-      `https://${routing}.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?queue=420&count=${MATCH_CACHE_SIZE}`
-    )) || [];
-    const cache = saved.matches || {};
-    for (const id of ids) {
-      if (id in cache) continue;
-      const match = await riot.get(`https://${routing}.api.riotgames.com/lol/match/v5/matches/${id}`);
-      const me = match?.info?.participants?.find((p) => p.puuid === puuid);
-      cache[id] = me?.teamPosition || null;
-    }
-    saved.matches = Object.fromEntries(ids.map((id) => [id, cache[id]]));
-    linea = mostCommon(Object.values(saved.matches).filter((p) => POSITIONS.includes(p)));
+  // Últimas rankeds; solo se piden los detalles de las que no están guardadas.
+  const ids = (await riot.get(
+    `https://${routing}.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?queue=420&count=${RECENT_MATCHES}`
+  )) || [];
+  const partidas = [];
+  for (const id of ids) {
+    if (saved.partidas?.[id]) { partidas.push({ id, ...saved.partidas[id] }); continue; }
+    const match = await riot.get(`https://${routing}.api.riotgames.com/lol/match/v5/matches/${id}`);
+    const me = match?.info?.participants?.find((p) => p.puuid === puuid);
+    if (!me) continue;
+    partidas.push({
+      id,
+      t: new Date(match.info.gameStartTimestamp).toISOString(),
+      campeon: me.championName,
+      resultado: me.gameEndedInEarlySurrender ? 'REMAKE' : me.win ? 'WIN' : 'LOSE',
+      k: me.kills, d: me.deaths, a: me.assists,
+      pos: me.teamPosition || null,
+    });
   }
 
   return {
@@ -149,9 +184,10 @@ async function fetchPlayer(riot, cfg, player, saved) {
     lp: solo?.leaguePoints ?? 0,
     wins: solo?.wins ?? 0,
     losses: solo?.losses ?? 0,
-    linea: linea || null,
+    linea: player.linea || mostCommon(partidas.map((p) => p.pos).filter((p) => POSITIONS.includes(p))),
     enPartida: Boolean(game),
     partidaDesde: game?.gameStartTime ? new Date(game.gameStartTime).toISOString() : null,
+    partidas,
   };
 }
 
@@ -160,7 +196,9 @@ async function fetchPlayer(riot, cfg, player, saved) {
 //   "LANivia#FYRWN / Gold 2 52 LP / 10Win 2Lose Win rate 83% / ..."
 //   "Ñemalodon#negan / Master 65 LP / 227Win 232Lose ..."
 //   "akriiuwu#MOSCA / Lv. 33"  (sin clasificar)
-// Ese resumen solo cambia cuando se renueva el perfil (el botón "Update" de op.gg), así que
+// y las últimas ~10 partidas (de cualquier cola) como datos estructurados JSON-LD
+// (PlayGameAction con campeón, resultado y K/D/A; no trae la línea).
+// Todo eso solo cambia cuando se renueva el perfil (el botón "Update" de op.gg), así que
 // antes de leerlo pedimos la renovación con las mismas Server Actions de Next.js que usa ese
 // botón: "renewal" la inicia y "renewalStatus" dice cuándo terminó. No es una API oficial:
 // sus identificadores cambian con cada versión de op.gg, por eso se buscan en sus scripts y se
@@ -230,6 +268,31 @@ async function renewOpgg(player, html, state) {
   return result?.status ?? 'SIN_RESPUESTA';
 }
 
+// Partidas de SoloQ del JSON-LD del perfil.
+function opggMatches(html) {
+  const partidas = [];
+  const walk = (node) => {
+    if (!node || typeof node !== 'object') return;
+    if (node['@type'] === 'PlayGameAction') {
+      const p = Object.fromEntries((node.additionalProperty || []).map((x) => [x.name, x.value]));
+      if (p.queueType === 'SOLORANKED' && p.matchId) {
+        partidas.push({
+          id: p.matchId,
+          t: new Date(node.startTime).toISOString(),
+          campeon: p.champion,
+          resultado: p.result, // WIN, LOSE o REMAKE
+          k: p.kills, d: p.deaths, a: p.assists,
+        });
+      }
+    }
+    for (const v of Object.values(node)) walk(v);
+  };
+  for (const m of html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) {
+    try { walk(JSON.parse(m[1])); } catch { /* bloque que no es JSON válido */ }
+  }
+  return partidas;
+}
+
 async function fetchFromOpgg(player, state) {
   let html = await opggPage(player);
   if (RENEW) {
@@ -253,15 +316,8 @@ async function fetchFromOpgg(player, state) {
     linea: player.linea || null,
     enPartida: null, // op.gg no lo da en el perfil
     partidaDesde: null,
+    partidas: opggMatches(html),
   };
-}
-
-function mostCommon(values) {
-  const counts = new Map();
-  for (const v of values) counts.set(v, (counts.get(v) || 0) + 1);
-  let best = null;
-  for (const [v, n] of counts) if (!best || n > counts.get(best)) best = v;
-  return best;
 }
 
 // ---------- datos de prueba ----------
@@ -275,21 +331,89 @@ function mockPlayer(player, i) {
     t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
-  const tier = TIERS[Math.floor(rand() * TIERS.length)];
+  const pick = (list) => list[Math.floor(rand() * list.length)];
+  const tier = pick(TIERS);
   const wins = 20 + Math.floor(rand() * 180);
   const losses = Math.floor(wins * (0.5 + rand() * 0.6));
   const enPartida = rand() < 0.3;
+  const pool = [pick(['Anivia', 'Jhin', 'Leona', 'Sett', 'Kai\'Sa']), pick(['Wukong', 'Nasus', 'Zoe', 'Caitlyn'])];
+  const partidas = Array.from({ length: 1 + Math.floor(rand() * 9) }, (_, n) => ({
+    id: `mock-${i}-${n}`,
+    t: new Date(Date.now() - (n + 1) * (1 + rand() * 5) * 3600000).toISOString(),
+    campeon: rand() < 0.7 ? pool[0] : pool[1],
+    resultado: rand() < 0.55 ? 'WIN' : 'LOSE',
+    k: Math.floor(rand() * 15), d: Math.floor(rand() * 10), a: Math.floor(rand() * 15),
+  }));
   return {
     tier,
-    division: APEX.has(tier) ? null : DIVISIONS[Math.floor(rand() * 4)],
+    division: APEX.has(tier) ? null : pick(DIVISIONS),
     lp: APEX.has(tier) ? Math.floor(rand() * 1800) : Math.floor(rand() * 100),
     wins,
     losses,
-    linea: player.linea || POSITIONS[Math.floor(rand() * POSITIONS.length)],
+    linea: player.linea || pick(POSITIONS),
     enPartida,
     partidaDesde: enPartida ? new Date(Date.now() - Math.floor(rand() * 30 * 60000)).toISOString() : null,
+    partidas,
+    // En mock no hay historia real: se inventa una línea base para ver la columna del reto.
+    mockBase: { wins: wins - Math.floor(rand() * 15), losses: losses - Math.floor(rand() * 12), delta: Math.floor(rand() * 300) - 120 },
   };
 }
+
+// ---------- stats del reto ----------
+
+// Guarda las partidas nuevas y devuelve todas las guardadas, de la más reciente a la más vieja.
+function storeMatches(saved, partidas) {
+  const all = { ...(saved.partidas || {}) };
+  for (const { id, ...p } of partidas) all[id] = p;
+  const sorted = Object.entries(all).sort((a, b) => b[1].t.localeCompare(a[1].t)).slice(0, STORED_MATCHES);
+  saved.partidas = Object.fromEntries(sorted);
+  return sorted.map(([id, p]) => ({ id, ...p }));
+}
+
+// La línea base es la primera foto del jugador ya clasificado desde el inicio del reto;
+// los LP ganados y el W/L del reto se miden contra ella.
+function updateBase(saved, data, cfg, now) {
+  if (saved.base?.inicio !== cfg.inicio) saved.base = null;
+  if (saved.base || data.tier === 'UNRANKED' || localDay(now, cfg.timezone) < cfg.inicio) return;
+  saved.base = {
+    inicio: cfg.inicio, fecha: now.toISOString(),
+    tier: data.tier, division: data.division, lp: data.lp, wins: data.wins, losses: data.losses,
+  };
+}
+
+function challengeStats(saved, data, cfg, champions, now) {
+  const played = storeMatches(saved, data.partidas || []).filter((p) => p.resultado !== 'REMAKE');
+  const inChallenge = played.filter((p) => localDay(new Date(p.t), cfg.timezone) >= cfg.inicio);
+
+  let racha = null;
+  if (played.length) {
+    const tipo = played[0].resultado;
+    let n = 0;
+    while (n < played.length && played[n].resultado === tipo) n++;
+    racha = { tipo: tipo === 'WIN' ? 'W' : 'L', n };
+  }
+
+  const pool = inChallenge.length ? inChallenge : played;
+  const top = mostCommon(pool.map((p) => p.campeon));
+  const champ = top ? champions.get(normalizeName(top)) : null;
+  const campeon = top ? { nombre: champ?.nombre ?? top, icono: champ?.icono ?? null, partidas: pool.filter((p) => p.campeon === top).length } : null;
+
+  const today = localDay(now, cfg.timezone);
+  const base = saved.base;
+  const ranked = data.tier !== 'UNRANKED';
+  const mock = data.mockBase;
+  return {
+    progreso: mock ? mock.delta : base && ranked ? score(data.tier, data.division, data.lp) - score(base.tier, base.division, base.lp) : null,
+    retoWins: mock ? data.wins - mock.wins : base && ranked ? data.wins - base.wins : null,
+    retoLosses: mock ? data.losses - mock.losses : base && ranked ? data.losses - base.losses : null,
+    racha,
+    campeon,
+    ultimaPartida: played[0]?.t ?? null,
+    partidasHoy: played.filter((p) => localDay(new Date(p.t), cfg.timezone) === today).length,
+  };
+}
+
+const EMPTY_STATS = { progreso: null, retoWins: null, retoLosses: null, racha: null, campeon: null, ultimaPartida: null, partidasHoy: 0 };
 
 // ---------- principal ----------
 
@@ -298,11 +422,13 @@ async function main() {
   const state = await readJson(STATE_FILE, { jugadores: {}, baseline: null });
   const previous = await readJson(RANKING_FILE, null);
   const prevByName = new Map((previous?.jugadores || []).map((j) => [j.nombre, j]));
+  const now = new Date();
 
   const key = MOCK || FORCE_OPGG ? null : loadApiKey();
   const fuente = MOCK ? 'mock' : key ? 'riot' : 'opgg';
   const riot = key ? new RiotClient(key) : null;
   console.log(`Fuente de datos: ${fuente}`);
+  const champions = await loadChampions();
 
   const rows = [];
   let failures = 0;
@@ -316,22 +442,30 @@ async function main() {
       stale: false,
     };
     if (!player.riotId) {
-      rows.push({ ...base, tier: 'UNRANKED', division: null, lp: 0, wins: 0, losses: 0, linea: player.linea || null, enPartida: null, partidaDesde: null });
+      rows.push({ ...base, tier: 'UNRANKED', division: null, lp: 0, wins: 0, losses: 0, linea: player.linea || null, enPartida: null, partidaDesde: null, ...EMPTY_STATS });
       continue;
     }
     try {
       const saved = (state.jugadores[player.nombre] ||= {});
+      if (saved.riotId !== player.riotId) {
+        // Cuenta nueva o cambiada: lo guardado era de otra cuenta.
+        for (const k of Object.keys(saved)) delete saved[k];
+        saved.riotId = player.riotId;
+      }
       const data =
         fuente === 'mock' ? mockPlayer(player, i) :
         fuente === 'riot' ? await fetchPlayer(riot, cfg, player, saved) :
         await fetchFromOpgg(player, state);
-      rows.push({ ...base, ...data });
-      console.log(`✓ ${player.nombre} (${player.riotId}): ${data.tier} ${data.division ?? ''} ${data.lp} LP`);
+      updateBase(saved, data, cfg, now);
+      const { partidas, mockBase, ...rest } = data;
+      rows.push({ ...base, ...rest, ...challengeStats(saved, data, cfg, champions, now) });
+      if (fuente === 'mock') delete state.jugadores[player.nombre]; // no ensuciar el estado real
+      console.log(`✓ ${player.nombre} (${player.riotId}): ${data.tier} ${data.division ?? ''} ${data.lp} LP, ${partidas.length} rankeds recientes`);
     } catch (err) {
       failures++;
       console.error(`✗ ${player.nombre} (${player.riotId}): ${err.message}`);
       const old = prevByName.get(player.nombre);
-      rows.push(old ? { ...old, ...base, stale: true } : { ...base, tier: 'UNRANKED', division: null, lp: 0, wins: 0, losses: 0, linea: null, enPartida: null, partidaDesde: null, stale: true });
+      rows.push(old ? { ...EMPTY_STATS, ...old, ...base, stale: true } : { ...base, tier: 'UNRANKED', division: null, lp: 0, wins: 0, losses: 0, linea: null, enPartida: null, partidaDesde: null, ...EMPTY_STATS, stale: true });
       if (/API key/.test(err.message)) break; // con la key inválida no tiene sentido seguir
     }
   }
@@ -352,7 +486,6 @@ async function main() {
   );
 
   // Cambio de posición respecto al inicio del día local.
-  const now = new Date();
   const today = localDay(now, cfg.timezone);
   if (!state.baseline || state.baseline.dia !== today) {
     const prevPos = Object.fromEntries((previous?.jugadores || []).map((j) => [j.nombre, j.pos]));
@@ -375,6 +508,13 @@ async function main() {
       losses: r.losses,
       winrate: r.winrate,
       linea: r.linea,
+      progreso: r.progreso,
+      retoWins: r.retoWins,
+      retoLosses: r.retoLosses,
+      racha: r.racha,
+      campeon: r.campeon,
+      ultimaPartida: r.ultimaPartida,
+      partidasHoy: r.partidasHoy,
       enPartida: r.enPartida,
       partidaDesde: r.partidaDesde,
       twitch: r.twitch,
@@ -384,8 +524,9 @@ async function main() {
     };
   });
 
-  const ranking = { actualizado: now.toISOString(), region: cfg.regionLabel, fuente, jugadores };
-  const changed = FORCE || !previous || JSON.stringify(previous.jugadores) !== JSON.stringify(jugadores);
+  const ranking = { actualizado: now.toISOString(), region: cfg.regionLabel, fuente, inicio: cfg.inicio, jugadores };
+  const changed = FORCE || !previous || previous.inicio !== cfg.inicio ||
+    JSON.stringify(previous.jugadores) !== JSON.stringify(jugadores);
 
   await writeJson(STATE_FILE, state);
   if (changed) {

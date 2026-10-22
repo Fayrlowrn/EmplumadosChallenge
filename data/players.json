@@ -3,14 +3,15 @@
   "regionLabel": "LAN",
   "routing": "americas",
   "timezone": "America/Mexico_City",
+  "inicio": "2026-10-21",
   "players": [
-    { "nombre": "Farid",    "riotId": "LANivia#FYRWN",   "linea": null, "twitch": null },
-    { "nombre": "Brandon",  "riotId": "Bjango#Bj4",      "linea": null, "twitch": null },
-    { "nombre": "Porfirio", "riotId": "LuqueGPJ#2208",   "linea": null, "twitch": null },
-    { "nombre": "Edwin",    "riotId": "RoyceJr11#LAN",   "linea": null, "twitch": null },
-    { "nombre": "Luis",     "riotId": "Ñemalodón#0904",  "linea": null, "twitch": null },
-    { "nombre": "Oscar",    "riotId": "Oscar1334#LAN",   "linea": null, "twitch": null },
-    { "nombre": "Racecore", "riotId": "5tyleWars#LAN",   "linea": null, "twitch": null },
-    { "nombre": "Diego",    "riotId": "akriiuwu#MOSCA",  "linea": null, "twitch": null }
+    { "nombre": "Farid",    "riotId": "LANivia#FYRWN",   "linea": "MIDDLE",  "twitch": null },
+    { "nombre": "Brandon",  "riotId": "Bjango#Bj4",      "linea": "BOTTOM",  "twitch": null },
+    { "nombre": "Porfirio", "riotId": "LuqueGPJ#2208",   "linea": "TOP",     "twitch": null },
+    { "nombre": "Edwin",    "riotId": "RoyceJr11#LAN",   "linea": "MIDDLE",  "twitch": null },
+    { "nombre": "Luis",     "riotId": "Ñemalodón#0904",  "linea": "UTILITY", "twitch": null },
+    { "nombre": "Oscar",    "riotId": "Oscar1334#LAN",   "linea": "TOP",     "twitch": null },
+    { "nombre": "Racecore", "riotId": "5tyleWars#LAN",   "linea": "BOTTOM",  "twitch": null },
+    { "nombre": "Diego",    "riotId": "akriiuwu#MOSCA",  "linea": "TOP",     "twitch": null }
   ]
 }
