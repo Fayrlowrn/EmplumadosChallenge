@@ -322,6 +322,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4Rq2R7hJ2f8tuSRUkRbNsfiRPxswcDtrA=": {
+          "t": "2026-10-22T15:38:11.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "WIN",
+          "k": 15,
+          "d": 7,
+          "a": 19,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "II",
+            "lp": 35
+          }
+        },
         "YyfXz-4rKZ4TVKNl6YXoxsbvndqS_3TjTVhkppGhNNc=": {
           "t": "2026-10-22T02:57:40.000Z",
           "campeon": "Diana",
