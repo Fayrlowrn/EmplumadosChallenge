@@ -123,7 +123,8 @@
   function renderUpdated() {
     if (!data) return;
     const min = minutesSince(data.actualizado);
-    const text = min < 1 ? 'Actualizado hace un momento' : min < 60 ? `Actualizado hace ${min} min` : `Actualizado hace ${Math.floor(min / 60)} h`;
+    // ranking.json solo se reescribe cuando algo cambia, así que esto es el último cambio, no la última consulta.
+    const text = min < 1 ? 'Último cambio hace un momento' : min < 60 ? `Último cambio hace ${min} min` : `Último cambio hace ${Math.floor(min / 60)} h`;
     const el = $('updated');
     el.textContent = text;
     el.title = new Date(data.actualizado).toLocaleString('es-MX');
