@@ -1,9 +1,9 @@
-name = "soloboom-actualizar"
+name = "emplumados-actualizar"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
 
 [vars]
-REPO = "Fayrlowrn/soloboom"
+REPO = "Fayrlowrn/EmplumadosChallenge"
 WORKFLOW = "update.yml"
 BRANCH = "main"
 ALLOWED_ORIGINS = "https://fayrlowrn.github.io,http://localhost:8765"

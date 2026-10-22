@@ -1,4 +1,4 @@
-# SoloBoom LAN
+# Emplumados Challenge
 
 Tabla de un reto de SoloQ entre amigos, al estilo del [SoloBoom Challenge](https://soloboom.net).
 Es una página estática (GitHub Pages) que lee `data/ranking.json`. Un GitHub Action
@@ -37,13 +37,13 @@ una ejecución en curso o si la última empezó hace menos de 2 minutos.
 1. Crea una cuenta gratis en <https://dash.cloudflare.com/sign-up>.
 2. En la carpeta `worker/`: `npx wrangler login` (autoriza en el navegador) y luego
    `npx wrangler deploy`. Al terminar imprime la URL, p. ej.
-   `https://soloboom-actualizar.<tu-subdominio>.workers.dev`.
+   `https://emplumados-actualizar.<tu-subdominio>.workers.dev`.
 3. Crea un token *fine-grained* en <https://github.com/settings/personal-access-tokens/new>:
-   - Repository access: **Only select repositories → soloboom**
+   - Repository access: **Only select repositories → EmplumadosChallenge**
    - Permissions → Repository → **Actions: Read and write**
 4. En `worker/`: `npx wrangler secret put GITHUB_TOKEN` y pega el token cuando lo pida.
 5. Pon la URL del paso 2 en `index.html`:
-   `<meta name="actualizar-url" content="https://soloboom-actualizar....workers.dev">`.
+   `<meta name="actualizar-url" content="https://emplumados-actualizar....workers.dev">`.
    Mientras esté vacía, el botón no aparece.
 
 ## Usar la API de Riot (opcional, más datos)
