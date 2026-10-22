@@ -322,6 +322,34 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4vN4O20-tB1d_5NRcWdaEDPPKCvwEz1lc=": {
+          "t": "2026-10-22T21:17:38.000Z",
+          "campeon": "Vi",
+          "resultado": "LOSE",
+          "k": 7,
+          "d": 6,
+          "a": 14,
+          "pos": "JUNGLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 15
+          }
+        },
+        "YyfXz-4rKZ4lUOfcOCP5GokA51uMIGSUsjWNv5_rInU=": {
+          "t": "2026-10-22T20:37:37.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "REMAKE",
+          "k": 1,
+          "d": 0,
+          "a": 0,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 15
+          }
+        },
         "YyfXz-4rKZ7XlJ1NAUvkT2_Y3V8QPA7yJ9dgc98qZwg=": {
           "t": "2026-10-22T16:48:30.000Z",
           "campeon": "Soraka",
@@ -795,7 +823,7 @@
     }
   },
   "opgg": {
-    "release": "production-442-2-94610f23",
+    "release": "production-445-1-ed77c432",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
