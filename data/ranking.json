@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T05:29:52.817Z",
+  "actualizado": "2026-10-22T09:21:18.843Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -39,7 +39,7 @@
     },
     {
       "pos": 2,
-      "cambio": 4,
+      "cambio": 0,
       "nombre": "Edwin",
       "riotId": "RoyceJr11#LAN",
       "tier": "PLATINUM",
@@ -62,7 +62,7 @@
         "partidas": 4
       },
       "ultimaPartida": "2026-10-22T02:57:40.000Z",
-      "partidasHoy": 8,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -72,7 +72,7 @@
     },
     {
       "pos": 3,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Porfirio",
       "riotId": "LuqueGPJ#2208",
       "tier": "PLATINUM",
@@ -98,7 +98,7 @@
     },
     {
       "pos": 4,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Farid",
       "riotId": "LANivia#FYRWN",
       "tier": "GOLD",
@@ -121,7 +121,7 @@
         "partidas": 12
       },
       "ultimaPartida": "2026-10-22T05:27:21.000Z",
-      "partidasHoy": 4,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -131,7 +131,7 @@
     },
     {
       "pos": 5,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Oscar",
       "riotId": "Oscar1334#LAN",
       "tier": "SILVER",
@@ -164,7 +164,7 @@
     },
     {
       "pos": 6,
-      "cambio": 1,
+      "cambio": 0,
       "nombre": "Luis",
       "riotId": "Ñemalodón#0904",
       "tier": "BRONZE",
@@ -197,7 +197,7 @@
     },
     {
       "pos": 7,
-      "cambio": -2,
+      "cambio": 0,
       "nombre": "Diego",
       "riotId": "akriiuwu#MOSCA",
       "tier": "UNRANKED",
@@ -220,7 +220,7 @@
         "partidas": 1
       },
       "ultimaPartida": "2026-10-22T05:18:47.000Z",
-      "partidasHoy": 4,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,

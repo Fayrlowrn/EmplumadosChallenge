@@ -679,6 +679,16 @@
       "riotId": "akriiuwu#MOSCA",
       "base": null,
       "partidas": {
+        "YyfXz-4rKZ7Tb0RLnsKjAl0RPQcodXXvhIsK0GDv2RM=": {
+          "t": "2026-10-22T05:27:16.000Z",
+          "campeon": "Garen",
+          "resultado": "REMAKE",
+          "k": 0,
+          "d": 0,
+          "a": 0,
+          "pos": "TOP",
+          "rango": null
+        },
         "YyfXz-4rKZ6jFS_gFqljjHdnvqnnbb7DL8vJDgvqoiQ=": {
           "t": "2026-10-22T05:18:47.000Z",
           "campeon": "Sylas",
@@ -730,20 +740,20 @@
     }
   },
   "baseline": {
-    "dia": "2026-10-21",
+    "dia": "2026-10-22",
     "posiciones": {
       "Brandon": 1,
-      "Porfirio": 2,
-      "Farid": 3,
-      "Oscar": 4,
-      "Diego": 5,
-      "Edwin": 6,
-      "Luis": 7,
+      "Edwin": 2,
+      "Porfirio": 3,
+      "Farid": 4,
+      "Oscar": 5,
+      "Luis": 6,
+      "Diego": 7,
       "Racecore": 8
     }
   },
   "opgg": {
-    "release": "production-438-2-877c359e",
+    "release": "production-442-2-94610f23",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
