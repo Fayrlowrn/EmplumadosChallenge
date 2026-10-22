@@ -12,6 +12,14 @@
         "losses": 5
       },
       "partidas": {
+        "YyfXz-4rKZ5QpD3jGE5CEi1_RmFNULfDE3E8dMgHGC4=": {
+          "t": "2026-10-22T04:14:50.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 6,
+          "d": 3,
+          "a": 5
+        },
         "YyfXz-4rKZ6bdkGrDU7HKFGnDkobxgSImlwivExzSDA=": {
           "t": "2026-10-22T02:09:29.000Z",
           "campeon": "Anivia",
