@@ -322,6 +322,34 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ7XlJ1NAUvkT2_Y3V8QPA7yJ9dgc98qZwg=": {
+          "t": "2026-10-22T16:48:30.000Z",
+          "campeon": "Soraka",
+          "resultado": "WIN",
+          "k": 0,
+          "d": 5,
+          "a": 26,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "II",
+            "lp": 65
+          }
+        },
+        "YyfXz-4rKZ5v8eQsPgRbu3w5q2L3_KUIw62yslbLF34=": {
+          "t": "2026-10-22T16:06:52.000Z",
+          "campeon": "Xayah",
+          "resultado": "LOSE",
+          "k": 1,
+          "d": 6,
+          "a": 1,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "II",
+            "lp": 65
+          }
+        },
         "YyfXz-4rKZ4Rq2R7hJ2f8tuSRUkRbNsfiRPxswcDtrA=": {
           "t": "2026-10-22T15:38:11.000Z",
           "campeon": "Kai'Sa",
