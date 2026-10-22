@@ -90,9 +90,9 @@
   }
 
   function progressCell(j) {
-    const text = progressText(j);
-    if (!text) return '<span class="muted" title="Empieza a contar cuando el jugador esté clasificado">—</span>';
     const record = j.retoWins != null ? `<small>${j.retoWins}V ${j.retoLosses}D</small>` : '';
+    const text = progressText(j) ?? (record && '<span class="muted" title="Los LP cuentan cuando termine sus colocaciones">sin rango</span>');
+    if (!text) return '<span class="muted" title="Empieza a contar cuando el jugador esté clasificado">—</span>';
     return `<div class="stack">${text}${record}</div>`;
   }
 

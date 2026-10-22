@@ -22,6 +22,8 @@ const DIVISIONS = ['IV', 'III', 'II', 'I'];
 const APEX = new Set(['MASTER', 'GRANDMASTER', 'CHALLENGER']);
 const POSITIONS = ['TOP', 'JUNGLE', 'MIDDLE', 'BOTTOM', 'UTILITY'];
 const RECENT_MATCHES = 10;
+const OPGG_POSITIONS = { TOP: 'TOP', JUNGLE: 'JUNGLE', MID: 'MIDDLE', ADC: 'BOTTOM', SUPPORT: 'UTILITY' };
+const GAMES_PAGES = 10; // páginas de historial de op.gg por jugador (16 partidas cada una)
 const STORED_MATCHES = 100; // partidas guardadas por jugador en state.json
 const REQUEST_GAP_MS = 1250; // 100 peticiones / 2 min de la key de desarrollo
 
@@ -184,7 +186,7 @@ async function fetchPlayer(riot, cfg, player, saved) {
     lp: solo?.leaguePoints ?? 0,
     wins: solo?.wins ?? 0,
     losses: solo?.losses ?? 0,
-    linea: player.linea || mostCommon(partidas.map((p) => p.pos).filter((p) => POSITIONS.includes(p))),
+    linea: player.linea || null,
     enPartida: Boolean(game),
     partidaDesde: game?.gameStartTime ? new Date(game.gameStartTime).toISOString() : null,
     partidas,
@@ -198,6 +200,7 @@ async function fetchPlayer(riot, cfg, player, saved) {
 //   "akriiuwu#MOSCA / Lv. 33"  (sin clasificar)
 // y las últimas ~10 partidas (de cualquier cola) como datos estructurados JSON-LD
 // (PlayGameAction con campeón, resultado y K/D/A; no trae la línea).
+// El historial completo de SoloQ sale de otra Server Action, "getGames" (ver opggGames).
 // Todo eso solo cambia cuando se renueva el perfil (el botón "Update" de op.gg), así que
 // antes de leerlo pedimos la renovación con las mismas Server Actions de Next.js que usa ese
 // botón: "renewal" la inicia y "renewalStatus" dice cuándo terminó. No es una API oficial:
@@ -229,11 +232,25 @@ async function discoverOpggActions(html) {
   const found = { release };
   await Promise.all(scripts.map(async (url) => {
     const js = await (await fetch(url)).text();
-    for (const m of js.matchAll(/createServerReference\)\("([0-9a-f]{40,})"[^)]*?"(renewal|renewalStatus)"\)/g)) found[m[2]] = m[1];
+    for (const m of js.matchAll(/createServerReference\)\("([0-9a-f]{40,})"[^)]*?"(renewal|renewalStatus|getGames)"\)/g)) found[m[2]] = m[1];
   }));
   if (!found.renewal || !found.renewalStatus) throw new Error('no se encontró la renovación en los scripts de op.gg');
-  console.log(`  ids de renovación de op.gg encontrados (${release})`);
+  found.getGames ??= null; // opcional: sin él se usan las partidas del JSON-LD
+  console.log(`  ids de Server Actions de op.gg encontrados (${release})`);
   return found;
+}
+
+function opggPuuid(html) {
+  const puuid = html.match(/"name":"puuid","value":"([^"]+)"/)?.[1];
+  if (!puuid) throw new Error('no se encontró el puuid en op.gg');
+  return puuid;
+}
+
+// Ids guardados de las Server Actions; se vuelven a buscar si op.gg publicó otra versión.
+async function opggActions(html, state) {
+  const release = html.match(/releases\/(production-[\w-]+)/)?.[1] ?? null;
+  if (!state.opgg || state.opgg.release !== release || !('getGames' in state.opgg)) state.opgg = await discoverOpggActions(html);
+  return state.opgg;
 }
 
 // Llama a una Server Action y devuelve su resultado (línea "1:" del stream RSC), o null.
@@ -250,10 +267,8 @@ async function opggAction(player, id, args) {
 
 // Devuelve el estado final de la renovación (RENEWAL_FINISH, TOO_MANY_RENEWALS, ...).
 async function renewOpgg(player, html, state) {
-  const puuid = html.match(/"name":"puuid","value":"([^"]+)"/)?.[1];
-  if (!puuid) throw new Error('no se encontró el puuid en op.gg');
-  const release = html.match(/releases\/(production-[\w-]+)/)?.[1] ?? null;
-  if (!state.opgg || state.opgg.release !== release) state.opgg = await discoverOpggActions(html);
+  const puuid = opggPuuid(html);
+  await opggActions(html, state);
 
   let result = await opggAction(player, state.opgg.renewal, [{ region: 'lan', puuid, isPremiumPrimary: false }]);
   if (!result) {
@@ -293,7 +308,44 @@ function opggMatches(html) {
   return partidas;
 }
 
-async function fetchFromOpgg(player, state) {
+// Una partida de getGames. Además de lo del JSON-LD trae la línea y el rango que op.gg tenía
+// guardado del jugador al registrarla (su rango antes de jugarla; null si no estaba clasificado).
+function opggGame(g, puuid) {
+  const me = [...(g.team_red || []), ...(g.team_blue || [])].find((p) => p.summoner?.puuid === puuid);
+  const t = me?.tier_info;
+  const kda = g.stats?.kda ?? {};
+  return {
+    id: g.id,
+    t: new Date(g.created_at).toISOString(),
+    campeon: g.champion?.name ?? null,
+    resultado: g.game_result, // WIN, LOSE o REMAKE
+    k: kda.kill, d: kda.death, a: kda.assist,
+    pos: OPGG_POSITIONS[g.position] ?? null,
+    rango: TIERS.includes(t?.tier) ? { tier: t.tier, division: APEX.has(t.tier) ? null : DIVISIONS[4 - t.division], lp: t.lp } : null,
+  };
+}
+
+// Historial de SoloQ, de la más reciente hacia atrás, hasta antes del inicio del reto o hasta
+// llegar a partidas ya guardadas. "completo" dice si cubre todo el reto, para contar su W/L.
+// Devuelve null si op.gg no respondió (se usan entonces las partidas del JSON-LD).
+async function opggGames(player, puuid, cfg, saved, state) {
+  if (!state.opgg?.getGames) return null;
+  const partidas = [];
+  let endedAt = '';
+  for (let i = 0; i < GAMES_PAGES; i++) {
+    const page = (await opggAction(player, state.opgg.getGames, [{ locale: 'en_US', region: 'lan', puuid, gameType: 'SOLORANKED', endedAt, champion: '' }]))?.data;
+    if (!Array.isArray(page)) return i ? { partidas, completo: false } : null;
+    if (!page.length) return { partidas, completo: true }; // no hay más historial
+    partidas.push(...page.map((g) => opggGame(g, puuid)));
+    const oldest = partidas.at(-1);
+    if (localDay(new Date(oldest.t), cfg.timezone) < cfg.inicio) return { partidas, completo: true };
+    if (saved.partidas?.[oldest.id]?.pos !== undefined) return { partidas, completo: saved.historial === cfg.inicio };
+    endedAt = page.at(-1).created_at;
+  }
+  return { partidas, completo: false };
+}
+
+async function fetchFromOpgg(player, state, cfg, saved) {
   let html = await opggPage(player);
   if (RENEW) {
     const status = await renewOpgg(player, html, state);
@@ -307,6 +359,10 @@ async function fetchFromOpgg(player, state) {
   const rank = desc.match(/\/ (Iron|Bronze|Silver|Gold|Platinum|Emerald|Diamond|Master|Grandmaster|Challenger)(?: ([1-4]))? (\d+) LP/i);
   const record = desc.match(/(\d+)Win (\d+)Lose/);
   const tier = rank ? rank[1].toUpperCase() : 'UNRANKED';
+  await opggActions(html, state);
+  const games = await opggGames(player, opggPuuid(html), cfg, saved, state);
+  if (games?.completo) saved.historial = cfg.inicio;
+  else if (games) delete saved.historial;
   return {
     tier,
     division: rank && !APEX.has(tier) ? DIVISIONS[4 - Number(rank[2])] : null,
@@ -316,7 +372,8 @@ async function fetchFromOpgg(player, state) {
     linea: player.linea || null,
     enPartida: null, // op.gg no lo da en el perfil
     partidaDesde: null,
-    partidas: opggMatches(html),
+    partidas: games ? games.partidas : opggMatches(html),
+    historial: saved.historial === cfg.inicio,
   };
 }
 
@@ -371,9 +428,15 @@ function storeMatches(saved, partidas) {
 }
 
 // La línea base es la primera foto del jugador ya clasificado desde el inicio del reto;
-// los LP ganados y el W/L del reto se miden contra ella.
-function updateBase(saved, data, cfg, now) {
+// los LP ganados (y sin historial, el W/L del reto) se miden contra ella. Si op.gg dio el rango
+// previo a alguna partida del reto, la más vieja es su rango al empezar.
+function updateBase(saved, stored, data, cfg, now) {
   if (saved.base?.inicio !== cfg.inicio) saved.base = null;
+  const first = stored.filter((p) => p.rango && localDay(new Date(p.t), cfg.timezone) >= cfg.inicio).at(-1);
+  if (first && (!saved.base || first.t < saved.base.fecha)) {
+    saved.base = { inicio: cfg.inicio, fecha: first.t, ...first.rango };
+    return;
+  }
   if (saved.base || data.tier === 'UNRANKED' || localDay(now, cfg.timezone) < cfg.inicio) return;
   saved.base = {
     inicio: cfg.inicio, fecha: now.toISOString(),
@@ -381,8 +444,8 @@ function updateBase(saved, data, cfg, now) {
   };
 }
 
-function challengeStats(saved, data, cfg, champions, now) {
-  const played = storeMatches(saved, data.partidas || []).filter((p) => p.resultado !== 'REMAKE');
+function challengeStats(saved, stored, data, cfg, champions, now) {
+  const played = stored.filter((p) => p.resultado !== 'REMAKE');
   const inChallenge = played.filter((p) => localDay(new Date(p.t), cfg.timezone) >= cfg.inicio);
 
   let racha = null;
@@ -402,10 +465,14 @@ function challengeStats(saved, data, cfg, champions, now) {
   const base = saved.base;
   const ranked = data.tier !== 'UNRANKED';
   const mock = data.mockBase;
+  // Con el historial completo el W/L sale de las partidas; si no, de la diferencia de temporada.
+  const count = (r) => inChallenge.filter((p) => p.resultado === r).length;
+  const diff = base?.wins != null && ranked;
   return {
+    linea: mostCommon(pool.map((p) => p.pos).filter((p) => POSITIONS.includes(p))) || data.linea,
     progreso: mock ? mock.delta : base && ranked ? score(data.tier, data.division, data.lp) - score(base.tier, base.division, base.lp) : null,
-    retoWins: mock ? data.wins - mock.wins : base && ranked ? data.wins - base.wins : null,
-    retoLosses: mock ? data.losses - mock.losses : base && ranked ? data.losses - base.losses : null,
+    retoWins: mock ? data.wins - mock.wins : data.historial ? count('WIN') : diff ? data.wins - base.wins : null,
+    retoLosses: mock ? data.losses - mock.losses : data.historial ? count('LOSE') : diff ? data.losses - base.losses : null,
     racha,
     campeon,
     ultimaPartida: played[0]?.t ?? null,
@@ -455,10 +522,11 @@ async function main() {
       const data =
         fuente === 'mock' ? mockPlayer(player, i) :
         fuente === 'riot' ? await fetchPlayer(riot, cfg, player, saved) :
-        await fetchFromOpgg(player, state);
-      updateBase(saved, data, cfg, now);
-      const { partidas, mockBase, ...rest } = data;
-      rows.push({ ...base, ...rest, ...challengeStats(saved, data, cfg, champions, now) });
+        await fetchFromOpgg(player, state, cfg, saved);
+      const stored = storeMatches(saved, data.partidas || []);
+      updateBase(saved, stored, data, cfg, now);
+      const { partidas, mockBase, historial, ...rest } = data;
+      rows.push({ ...base, ...rest, ...challengeStats(saved, stored, data, cfg, champions, now) });
       if (fuente === 'mock') delete state.jugadores[player.nombre]; // no ensuciar el estado real
       console.log(`✓ ${player.nombre} (${player.riotId}): ${data.tier} ${data.division ?? ''} ${data.lp} LP, ${partidas.length} rankeds recientes`);
     } catch (err) {

@@ -3,7 +3,7 @@
   "regionLabel": "LAN",
   "routing": "americas",
   "timezone": "America/Mexico_City",
-  "inicio": "2026-10-21",
+  "inicio": "2026-10-19",
   "players": [
     { "nombre": "Farid",    "riotId": "LANivia#FYRWN",   "linea": "MIDDLE",  "twitch": null },
     { "nombre": "Brandon",  "riotId": "Bjango#Bj4",      "linea": "BOTTOM",  "twitch": null },

@@ -77,23 +77,27 @@ Para usar la API de Riot en local, crea un archivo `.env` (ya está en `.gitigno
 ```
 
 - `riotId`: nombre#tag exacto. `null` = pendiente (sale al final de la tabla).
-- `linea`: `TOP`, `JUNGLE`, `MIDDLE`, `BOTTOM` o `UTILITY`. op.gg no dice la línea de cada
-  partida, así que se fija a mano. Con la API de Riot, si es `null` se calcula con sus rankeds.
+- `linea`: `TOP`, `JUNGLE`, `MIDDLE`, `BOTTOM` o `UTILITY`. Solo se usa mientras no haya
+  partidas: en cuanto juega, la línea es la que más ha jugado en SoloQ desde `inicio`.
 - `twitch`: canal de Twitch; el nombre en la tabla pasa a ser un link.
 
 ## Stats del reto
 
 `inicio` en `players.json` (fecha `AAAA-MM-DD`, hora de `timezone`) marca el comienzo del reto:
 
-- **Reto**: LP ganados desde la primera foto de cada jugador ya clasificado tomada a partir de
-  `inicio` (cuenta divisiones: subir de Oro II 80 LP a Oro I 20 LP son +40). Debajo, V/D del reto.
-  Si se cambia `inicio`, la foto se vuelve a tomar en la siguiente actualización.
+- **Reto**: LP ganados desde el rango con el que empezó el reto (cuenta divisiones: subir de
+  Oro II 80 LP a Oro I 20 LP son +40). Debajo, V/D de SoloQ desde `inicio`.
+  op.gg guarda en cada partida el rango que tenía el jugador antes de jugarla; el de su primera
+  partida desde `inicio` es su punto de partida. Quien empezó sin rango (jugó las colocaciones
+  durante el reto) cuenta desde el primer rango que se le conoce. Si se cambia `inicio`, todo se
+  recalcula en la siguiente actualización.
 - **Racha**: victorias o derrotas seguidas en SoloQ (🔥/🧊 desde 3).
 - **Main**: campeón más jugado en SoloQ desde `inicio`.
 - **Última**: hace cuánto jugó su última SoloQ y cuántas lleva hoy.
 
-Las partidas se van guardando en `data/state.json` en cada actualización: op.gg solo muestra
-las ~10 más recientes, así que las stats cubren el reto desde que se empezaron a guardar.
+Las partidas salen del historial de SoloQ de op.gg (la Server Action `getGames`, la misma que
+usa su página para "ver más"), hacia atrás hasta `inicio`, y se guardan en `data/state.json`;
+en las siguientes actualizaciones solo se piden las nuevas.
 
 ## Cómo se ordena
 

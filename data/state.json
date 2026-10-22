@@ -3,13 +3,11 @@
     "Farid": {
       "riotId": "LANivia#FYRWN",
       "base": {
-        "inicio": "2026-10-21",
-        "fecha": "2026-10-22T03:59:20.289Z",
+        "inicio": "2026-10-19",
+        "fecha": "2026-10-20T02:23:21.000Z",
         "tier": "GOLD",
-        "division": "II",
-        "lp": 82,
-        "wins": 12,
-        "losses": 5
+        "division": "IV",
+        "lp": 92
       },
       "partidas": {
         "YyfXz-4rKZ5QpD3jGE5CEi1_RmFNULfDE3E8dMgHGC4=": {
@@ -18,7 +16,13 @@
           "resultado": "WIN",
           "k": 6,
           "d": 3,
-          "a": 5
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "II",
+            "lp": 82
+          }
         },
         "YyfXz-4rKZ6bdkGrDU7HKFGnDkobxgSImlwivExzSDA=": {
           "t": "2026-10-22T02:09:29.000Z",
@@ -26,7 +30,13 @@
           "resultado": "WIN",
           "k": 20,
           "d": 9,
-          "a": 10
+          "a": 10,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "II",
+            "lp": 52
+          }
         },
         "YyfXz-4rKZ6qHZklCfoOkbC9j_3jA3asgXTpiS2uoEQ=": {
           "t": "2026-10-21T12:20:44.000Z",
@@ -34,7 +44,13 @@
           "resultado": "LOSE",
           "k": 14,
           "d": 4,
-          "a": 4
+          "a": 4,
+          "pos": "TOP",
+          "rango": {
+            "tier": "GOLD",
+            "division": "II",
+            "lp": 52
+          }
         },
         "YyfXz-4rKZ534IUw_nwOtYCEVHe5pKyqlPP3i7UAA0Q=": {
           "t": "2026-10-21T03:34:03.000Z",
@@ -42,7 +58,13 @@
           "resultado": "LOSE",
           "k": 3,
           "d": 7,
-          "a": 3
+          "a": 3,
+          "pos": "TOP",
+          "rango": {
+            "tier": "GOLD",
+            "division": "II",
+            "lp": 52
+          }
         },
         "YyfXz-4rKZ4Z3j_ke4_Z-txVGRVkzEu0aawY9404euk=": {
           "t": "2026-10-21T01:32:56.000Z",
@@ -50,7 +72,13 @@
           "resultado": "WIN",
           "k": 11,
           "d": 5,
-          "a": 7
+          "a": 7,
+          "pos": "TOP",
+          "rango": {
+            "tier": "GOLD",
+            "division": "II",
+            "lp": 52
+          }
         },
         "YyfXz-4rKZ4jMvP64fqqhhZRzNnBudlpfihJI5u8mSM=": {
           "t": "2026-10-21T00:54:12.000Z",
@@ -58,7 +86,13 @@
           "resultado": "LOSE",
           "k": 6,
           "d": 6,
-          "a": 12
+          "a": 12,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "GOLD",
+            "division": "II",
+            "lp": 52
+          }
         },
         "YyfXz-4rKZ4qFwkMQxVJuTi4vy1H3KblSb89oWPFhk0=": {
           "t": "2026-10-21T00:01:33.000Z",
@@ -66,7 +100,13 @@
           "resultado": "WIN",
           "k": 18,
           "d": 8,
-          "a": 12
+          "a": 12,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "III",
+            "lp": 92
+          }
         },
         "YyfXz-4rKZ5DCgxacNwuDV6AjLG05dmDiQ_DJ2qmBbE=": {
           "t": "2026-10-20T23:13:31.000Z",
@@ -74,7 +114,13 @@
           "resultado": "WIN",
           "k": 14,
           "d": 3,
-          "a": 5
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "III",
+            "lp": 92
+          }
         },
         "YyfXz-4rKZ4UYI9kCy3wPipPGOmAk0n3_gZcWjlZwcA=": {
           "t": "2026-10-20T14:32:07.000Z",
@@ -82,7 +128,13 @@
           "resultado": "WIN",
           "k": 13,
           "d": 2,
-          "a": 10
+          "a": 10,
+          "pos": "TOP",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 92
+          }
         },
         "YyfXz-4rKZ6dY2dfOKVEEmGdTEeCyjAu2YDLpo2QlGM=": {
           "t": "2026-10-20T13:54:06.000Z",
@@ -90,7 +142,13 @@
           "resultado": "WIN",
           "k": 17,
           "d": 8,
-          "a": 7
+          "a": 7,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 92
+          }
         },
         "YyfXz-4rKZ7aDwq1Jb3HkyiD5chWGWcb1AqYvKF4A6k=": {
           "t": "2026-10-20T13:10:36.000Z",
@@ -98,20 +156,113 @@
           "resultado": "WIN",
           "k": 12,
           "d": 5,
-          "a": 6
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 92
+          }
+        },
+        "YyfXz-4rKZ7rvLrvuOqNgSYuVjv1iNryS-lOGaRS0f0=": {
+          "t": "2026-10-20T04:01:35.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 8,
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 92
+          }
+        },
+        "YyfXz-4rKZ6P16YDrC3n0VZhyGjLMmWkAwlp4NAMOlE=": {
+          "t": "2026-10-20T02:23:21.000Z",
+          "campeon": "Braum",
+          "resultado": "LOSE",
+          "k": 0,
+          "d": 4,
+          "a": 14,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 92
+          }
+        },
+        "YyfXz-4rKZ4N5l_asKGm6nAA1aRJaCL4jmoKPaG2pKo=": {
+          "t": "2026-09-16T15:44:43.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 5,
+          "a": 8,
+          "pos": "MIDDLE",
+          "rango": null
+        },
+        "YyfXz-4rKZ7jyUA5HNEnJxqx6wgFnSvb7PmxSgYf4DM=": {
+          "t": "2026-09-16T14:53:06.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 8,
+          "d": 6,
+          "a": 10,
+          "pos": "MIDDLE",
+          "rango": null
+        },
+        "YyfXz-4rKZ72I4HNT2e6KvAlk6Xatxx_K0gNlNCwrBs=": {
+          "t": "2026-09-16T14:19:06.000Z",
+          "campeon": "Anivia",
+          "resultado": "LOSE",
+          "k": 6,
+          "d": 6,
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": null
+        },
+        "YyfXz-4rKZ7uqSWymStWFmhV9WQWwvMgIq9HfUe4tuU=": {
+          "t": "2026-09-15T22:42:58.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 19,
+          "d": 5,
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": null
+        },
+        "YyfXz-4rKZ4tmbVzFC82bKuaOW7Xpv6CEomq-slhDDQ=": {
+          "t": "2026-09-15T16:21:13.000Z",
+          "campeon": "Irelia",
+          "resultado": "WIN",
+          "k": 15,
+          "d": 8,
+          "a": 11,
+          "pos": "MIDDLE",
+          "rango": null
+        },
+        "YyfXz-4rKZ45JKc8vDSkVml1M10Tw5xqJWpKKzR4A6c=": {
+          "t": "2026-09-15T15:43:55.000Z",
+          "campeon": "Anivia",
+          "resultado": "REMAKE",
+          "k": 0,
+          "d": 0,
+          "a": 0,
+          "pos": "MIDDLE",
+          "rango": null
         }
-      }
+      },
+      "historial": "2026-10-19"
     },
     "Brandon": {
       "riotId": "Bjango#Bj4",
       "base": {
-        "inicio": "2026-10-21",
-        "fecha": "2026-10-22T03:59:20.289Z",
+        "inicio": "2026-10-19",
+        "fecha": "2026-10-19T22:27:47.000Z",
         "tier": "EMERALD",
         "division": "IV",
-        "lp": 54,
-        "wins": 34,
-        "losses": 32
+        "lp": 31
       },
       "partidas": {
         "YyfXz-4rKZ7UCuWPzZnGh7hDvXPhLzXS-e0lsLl58ug=": {
@@ -120,28 +271,36 @@
           "resultado": "WIN",
           "k": 11,
           "d": 6,
-          "a": 15
+          "a": 15,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 31
+          }
         }
-      }
+      },
+      "historial": "2026-10-19"
     },
     "Porfirio": {
       "riotId": "LuqueGPJ#2208",
       "base": {
-        "inicio": "2026-10-21",
-        "fecha": "2026-10-22T03:59:20.289Z",
+        "inicio": "2026-10-19",
+        "fecha": "2026-10-22T04:28:59.468Z",
         "tier": "PLATINUM",
         "division": "II",
         "lp": 27,
         "wins": 14,
         "losses": 11
       },
-      "partidas": {}
+      "partidas": {},
+      "historial": "2026-10-19"
     },
     "Edwin": {
       "riotId": "RoyceJr11#LAN",
       "base": {
-        "inicio": "2026-10-21",
-        "fecha": "2026-10-22T03:59:20.289Z",
+        "inicio": "2026-10-19",
+        "fecha": "2026-10-22T04:28:59.468Z",
         "tier": "PLATINUM",
         "division": "II",
         "lp": 35,
@@ -155,7 +314,9 @@
           "resultado": "LOSE",
           "k": 10,
           "d": 9,
-          "a": 4
+          "a": 4,
+          "pos": "MIDDLE",
+          "rango": null
         },
         "YyfXz-4rKZ6qZ4BX7jyNXnkEFXHosWTjg3EO8ZfqzH4=": {
           "t": "2026-10-22T02:20:36.000Z",
@@ -163,7 +324,9 @@
           "resultado": "LOSE",
           "k": 11,
           "d": 11,
-          "a": 10
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": null
         },
         "YyfXz-4rKZ7jNy94ifBs349MTED6b2S-DFntWg2DFlg=": {
           "t": "2026-10-22T01:18:29.000Z",
@@ -171,7 +334,9 @@
           "resultado": "WIN",
           "k": 5,
           "d": 9,
-          "a": 22
+          "a": 22,
+          "pos": "MIDDLE",
+          "rango": null
         },
         "YyfXz-4rKZ5s57iaYd2-IXSgRaN0xESP5JPPxwYzdvA=": {
           "t": "2026-10-22T00:25:08.000Z",
@@ -179,7 +344,9 @@
           "resultado": "WIN",
           "k": 17,
           "d": 5,
-          "a": 6
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": null
         },
         "YyfXz-4rKZ4aRaQX1-r4zvhdXbqGfi56PZy-yTXLMOM=": {
           "t": "2026-10-21T21:07:27.000Z",
@@ -187,7 +354,9 @@
           "resultado": "WIN",
           "k": 14,
           "d": 7,
-          "a": 18
+          "a": 18,
+          "pos": "MIDDLE",
+          "rango": null
         },
         "YyfXz-4rKZ57dkujRimFQtV0lug-M9vnFOo4G9l6tiM=": {
           "t": "2026-10-21T20:21:30.000Z",
@@ -195,7 +364,9 @@
           "resultado": "LOSE",
           "k": 0,
           "d": 1,
-          "a": 0
+          "a": 0,
+          "pos": "MIDDLE",
+          "rango": null
         },
         "YyfXz-4rKZ4n2fL23bCuDxkcCAvgwTScuCz6n1aI8M4=": {
           "t": "2026-10-21T20:04:06.000Z",
@@ -203,7 +374,9 @@
           "resultado": "WIN",
           "k": 9,
           "d": 4,
-          "a": 10
+          "a": 10,
+          "pos": "MIDDLE",
+          "rango": null
         },
         "YyfXz-4rKZ57QuZTKIWd6TxOjf2NFBnsMaSNSoZHQ_0=": {
           "t": "2026-10-21T19:24:58.000Z",
@@ -211,7 +384,9 @@
           "resultado": "LOSE",
           "k": 1,
           "d": 5,
-          "a": 1
+          "a": 1,
+          "pos": "BOTTOM",
+          "rango": null
         },
         "YyfXz-4rKZ5Xblw-Gq0-y3LLBcoIuhs1b2wCCpw4-QM=": {
           "t": "2026-10-20T21:48:56.000Z",
@@ -219,7 +394,9 @@
           "resultado": "WIN",
           "k": 20,
           "d": 4,
-          "a": 3
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": null
         },
         "YyfXz-4rKZ4a7L-eoTSocmovhiovvuHrrDpPzXlf12s=": {
           "t": "2026-10-20T21:09:02.000Z",
@@ -227,15 +404,78 @@
           "resultado": "WIN",
           "k": 11,
           "d": 3,
-          "a": 5
+          "a": 5,
+          "pos": "BOTTOM",
+          "rango": null
+        },
+        "YyfXz-4rKZ7KQfQt12L0WNlGTP4W0yOCuSzKtXxi6rk=": {
+          "t": "2026-10-20T17:32:25.000Z",
+          "campeon": "Varus",
+          "resultado": "WIN",
+          "k": 11,
+          "d": 5,
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": null
+        },
+        "YyfXz-4rKZ67CyDNGerbGAbVST_HRR3G0cMEJZ2Hrrw=": {
+          "t": "2026-10-20T16:27:11.000Z",
+          "campeon": "Aphelios",
+          "resultado": "WIN",
+          "k": 3,
+          "d": 4,
+          "a": 2,
+          "pos": "BOTTOM",
+          "rango": null
+        },
+        "YyfXz-4rKZ5Qn4OdATmqmtnzoxfODeqXO6UNEf4INvA=": {
+          "t": "2026-10-19T16:10:10.000Z",
+          "campeon": "Twitch",
+          "resultado": "LOSE",
+          "k": 7,
+          "d": 10,
+          "a": 6,
+          "pos": "BOTTOM",
+          "rango": null
+        },
+        "YyfXz-4rKZ7x6tUwE7zZdP3CwIPBiOLGhDALqBcyXzM=": {
+          "t": "2026-10-19T15:32:47.000Z",
+          "campeon": "Miss Fortune",
+          "resultado": "WIN",
+          "k": 18,
+          "d": 9,
+          "a": 14,
+          "pos": "BOTTOM",
+          "rango": null
+        },
+        "YyfXz-4rKZ7rWYSb9lFRMrdY7o-dRNca-zuCw04QXWw=": {
+          "t": "2026-10-19T14:54:22.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "LOSE",
+          "k": 1,
+          "d": 0,
+          "a": 0,
+          "pos": "BOTTOM",
+          "rango": null
+        },
+        "YyfXz-4rKZ62MDe8uRqNz5UooV_F0pq9gGr8X2cOVOk=": {
+          "t": "2026-10-19T14:41:34.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "WIN",
+          "k": 13,
+          "d": 5,
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": null
         }
-      }
+      },
+      "historial": "2026-10-19"
     },
     "Luis": {
       "riotId": "Ñemalodón#0904",
       "base": {
-        "inicio": "2026-10-21",
-        "fecha": "2026-10-22T03:59:20.289Z",
+        "inicio": "2026-10-19",
+        "fecha": "2026-10-22T04:28:59.468Z",
         "tier": "BRONZE",
         "division": "III",
         "lp": 68,
@@ -249,7 +489,9 @@
           "resultado": "WIN",
           "k": 1,
           "d": 10,
-          "a": 21
+          "a": 21,
+          "pos": "UTILITY",
+          "rango": null
         },
         "YyfXz-4rKZ40TrtvWdgmvkKPcaXmO8QEpp877udq7g8=": {
           "t": "2026-10-20T21:42:05.000Z",
@@ -257,7 +499,9 @@
           "resultado": "WIN",
           "k": 1,
           "d": 5,
-          "a": 19
+          "a": 19,
+          "pos": "UTILITY",
+          "rango": null
         },
         "YyfXz-4rKZ43r2ROVt7AXTwAWbRzDPyxph01qehla8Y=": {
           "t": "2026-10-20T16:06:23.000Z",
@@ -265,7 +509,9 @@
           "resultado": "LOSE",
           "k": 5,
           "d": 5,
-          "a": 17
+          "a": 17,
+          "pos": "UTILITY",
+          "rango": null
         },
         "YyfXz-4rKZ65XBDv4THSVVpOiOhplkTI1FJpyavlhO4=": {
           "t": "2026-10-20T04:09:08.000Z",
@@ -273,7 +519,9 @@
           "resultado": "WIN",
           "k": 2,
           "d": 2,
-          "a": 19
+          "a": 19,
+          "pos": "UTILITY",
+          "rango": null
         },
         "YyfXz-4rKZ7XtPymP1Y4_1a5CIgaP-RGVf50dVo5bwA=": {
           "t": "2026-10-20T03:28:06.000Z",
@@ -281,7 +529,9 @@
           "resultado": "WIN",
           "k": 4,
           "d": 6,
-          "a": 18
+          "a": 18,
+          "pos": "UTILITY",
+          "rango": null
         },
         "YyfXz-4rKZ68_PUCgD6YgUBl_XRIe8gno3yWZmVO2Xc=": {
           "t": "2026-10-20T02:49:45.000Z",
@@ -289,20 +539,81 @@
           "resultado": "WIN",
           "k": 10,
           "d": 6,
-          "a": 16
+          "a": 16,
+          "pos": "UTILITY",
+          "rango": null
+        },
+        "YyfXz-4rKZ7mswuuDvnd_vpKkpxqE9vVaeHh0hOVCy8=": {
+          "t": "2026-10-20T02:10:00.000Z",
+          "campeon": "Brand",
+          "resultado": "WIN",
+          "k": 11,
+          "d": 8,
+          "a": 20,
+          "pos": "UTILITY",
+          "rango": null
+        },
+        "YyfXz-4rKZ6K_RGJQdTfQWS973eUrAtT8G7k4K_N_60=": {
+          "t": "2026-10-20T00:22:27.000Z",
+          "campeon": "Nautilus",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 2,
+          "a": 32,
+          "pos": "UTILITY",
+          "rango": null
+        },
+        "YyfXz-4rKZ6OLHKK3ufZApstsA8C8OVwRCmZfLna-Uk=": {
+          "t": "2026-10-19T23:46:30.000Z",
+          "campeon": "Darius",
+          "resultado": "LOSE",
+          "k": 1,
+          "d": 5,
+          "a": 2,
+          "pos": "TOP",
+          "rango": null
+        },
+        "YyfXz-4rKZ5tcLm9lRSq0n4cpc3G1txu7VqyWIrJdpk=": {
+          "t": "2026-10-19T23:03:49.000Z",
+          "campeon": "Nautilus",
+          "resultado": "LOSE",
+          "k": 0,
+          "d": 4,
+          "a": 16,
+          "pos": "UTILITY",
+          "rango": null
+        },
+        "YyfXz-4rKZ4MGOICp1oGMZlTyBRl7kxnQ3MNFeRibIQ=": {
+          "t": "2026-10-19T22:31:29.000Z",
+          "campeon": "Nautilus",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 3,
+          "a": 24,
+          "pos": "UTILITY",
+          "rango": null
+        },
+        "YyfXz-4rKZ5WoTvYO2b4bYky96j1G-ldnSFqlLLnWnk=": {
+          "t": "2026-10-19T21:49:33.000Z",
+          "campeon": "Leona",
+          "resultado": "LOSE",
+          "k": 0,
+          "d": 6,
+          "a": 8,
+          "pos": "UTILITY",
+          "rango": null
         }
-      }
+      },
+      "historial": "2026-10-19"
     },
     "Oscar": {
       "riotId": "Oscar1334#LAN",
       "base": {
-        "inicio": "2026-10-21",
-        "fecha": "2026-10-22T03:59:20.289Z",
+        "inicio": "2026-10-19",
+        "fecha": "2026-10-20T02:12:32.000Z",
         "tier": "SILVER",
-        "division": "I",
-        "lp": 50,
-        "wins": 8,
-        "losses": 8
+        "division": "II",
+        "lp": 90
       },
       "partidas": {
         "YyfXz-4rKZ4sqdDkVp7euRL8Z5PaCRbSUJoGozGVSN0=": {
@@ -311,7 +622,13 @@
           "resultado": "WIN",
           "k": 2,
           "d": 5,
-          "a": 4
+          "a": 4,
+          "pos": "TOP",
+          "rango": {
+            "tier": "SILVER",
+            "division": "II",
+            "lp": 90
+          }
         },
         "YyfXz-4rKZ4T1Gsqni7xGBqtiXrTJjYCjTYXmQ8M2dA=": {
           "t": "2026-10-20T08:21:58.000Z",
@@ -319,7 +636,13 @@
           "resultado": "LOSE",
           "k": 6,
           "d": 6,
-          "a": 7
+          "a": 7,
+          "pos": "TOP",
+          "rango": {
+            "tier": "SILVER",
+            "division": "II",
+            "lp": 90
+          }
         },
         "YyfXz-4rKZ6OwssKINByC3B0qoHoWeYxUS8utDiu0_A=": {
           "t": "2026-10-20T02:12:32.000Z",
@@ -327,9 +650,16 @@
           "resultado": "WIN",
           "k": 4,
           "d": 2,
-          "a": 0
+          "a": 0,
+          "pos": "TOP",
+          "rango": {
+            "tier": "SILVER",
+            "division": "II",
+            "lp": 90
+          }
         }
-      }
+      },
+      "historial": "2026-10-19"
     },
     "Diego": {
       "riotId": "akriiuwu#MOSCA",
@@ -341,7 +671,9 @@
           "resultado": "LOSE",
           "k": 4,
           "d": 5,
-          "a": 5
+          "a": 5,
+          "pos": "TOP",
+          "rango": null
         },
         "YyfXz-4rKZ61gYFXT1dOB1iZbF3PRO9vTCWUpcp-xF8=": {
           "t": "2026-10-22T02:27:56.000Z",
@@ -349,7 +681,9 @@
           "resultado": "LOSE",
           "k": 8,
           "d": 7,
-          "a": 11
+          "a": 11,
+          "pos": "JUNGLE",
+          "rango": null
         },
         "YyfXz-4rKZ6eREgrTmQKN_L0BwjY2E1OP6Fw4vGXX9Y=": {
           "t": "2026-10-22T01:47:26.000Z",
@@ -357,14 +691,18 @@
           "resultado": "WIN",
           "k": 10,
           "d": 10,
-          "a": 6
+          "a": 6,
+          "pos": "TOP",
+          "rango": null
         }
-      }
+      },
+      "historial": "2026-10-19"
     },
     "Racecore": {
       "riotId": "5tyleWars#LAN",
       "base": null,
-      "partidas": {}
+      "partidas": {},
+      "historial": "2026-10-19"
     }
   },
   "baseline": {
@@ -383,6 +721,7 @@
   "opgg": {
     "release": "production-436-1-6003fb09",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
-    "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86"
+    "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
+    "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
   }
 }

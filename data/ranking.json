@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-22T04:17:40.422Z",
+  "actualizado": "2026-10-22T04:28:59.468Z",
   "region": "LAN",
   "fuente": "opgg",
-  "inicio": "2026-10-21",
+  "inicio": "2026-10-19",
   "jugadores": [
     {
       "pos": 1,
@@ -16,8 +16,8 @@
       "losses": 32,
       "winrate": 51.52,
       "linea": "BOTTOM",
-      "progreso": 0,
-      "retoWins": 0,
+      "progreso": 23,
+      "retoWins": 1,
       "retoLosses": 0,
       "racha": {
         "tipo": "W",
@@ -48,18 +48,18 @@
       "wins": 10,
       "losses": 6,
       "winrate": 62.5,
-      "linea": "MIDDLE",
+      "linea": "BOTTOM",
       "progreso": 0,
-      "retoWins": 0,
-      "retoLosses": 0,
+      "retoWins": 10,
+      "retoLosses": 6,
       "racha": {
         "tipo": "L",
         "n": 2
       },
       "campeon": {
-        "nombre": "Diana",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Diana.png",
-        "partidas": 1
+        "nombre": "Kai'Sa",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
+        "partidas": 4
       },
       "ultimaPartida": "2026-10-22T02:57:40.000Z",
       "partidasHoy": 8,
@@ -108,9 +108,9 @@
       "losses": 5,
       "winrate": 72.22,
       "linea": "MIDDLE",
-      "progreso": 30,
-      "retoWins": 1,
-      "retoLosses": 0,
+      "progreso": 220,
+      "retoWins": 9,
+      "retoLosses": 4,
       "racha": {
         "tipo": "W",
         "n": 2
@@ -118,7 +118,7 @@
       "campeon": {
         "nombre": "Anivia",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
-        "partidas": 3
+        "partidas": 11
       },
       "ultimaPartida": "2026-10-22T04:14:50.000Z",
       "partidasHoy": 3,
@@ -141,9 +141,9 @@
       "losses": 8,
       "winrate": 50,
       "linea": "TOP",
-      "progreso": 0,
-      "retoWins": 0,
-      "retoLosses": 0,
+      "progreso": 60,
+      "retoWins": 2,
+      "retoLosses": 1,
       "racha": {
         "tipo": "W",
         "n": 1
@@ -175,8 +175,8 @@
       "winrate": 66.67,
       "linea": "UTILITY",
       "progreso": 0,
-      "retoWins": 0,
-      "retoLosses": 0,
+      "retoWins": 8,
+      "retoLosses": 4,
       "racha": {
         "tipo": "W",
         "n": 2
@@ -184,7 +184,7 @@
       "campeon": {
         "nombre": "Leona",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
-        "partidas": 4
+        "partidas": 5
       },
       "ultimaPartida": "2026-10-20T22:56:51.000Z",
       "partidasHoy": 0,
@@ -208,8 +208,8 @@
       "winrate": null,
       "linea": "TOP",
       "progreso": null,
-      "retoWins": null,
-      "retoLosses": null,
+      "retoWins": 1,
+      "retoLosses": 2,
       "racha": {
         "tipo": "L",
         "n": 2
@@ -241,8 +241,8 @@
       "winrate": null,
       "linea": "BOTTOM",
       "progreso": null,
-      "retoWins": null,
-      "retoLosses": null,
+      "retoWins": 0,
+      "retoLosses": 0,
       "racha": null,
       "campeon": null,
       "ultimaPartida": null,
