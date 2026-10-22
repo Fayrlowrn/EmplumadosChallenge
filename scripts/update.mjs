@@ -1,6 +1,6 @@
 // Actualiza data/ranking.json.
 // Fuente: API de Riot si hay RIOT_API_KEY; si no, lee los perfiles públicos de op.gg.
-// Uso: node scripts/update.mjs [--mock] [--opgg] [--force]
+// Uso: node scripts/update.mjs [--mock] [--opgg] [--sin-renovar] [--force]
 import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -14,6 +14,7 @@ const STATE_FILE = path.join(DATA, 'state.json');
 
 const MOCK = process.argv.includes('--mock');
 const FORCE_OPGG = process.argv.includes('--opgg');
+const RENEW = !process.argv.includes('--sin-renovar');
 const FORCE = process.argv.includes('--force');
 
 const TIERS = ['IRON', 'BRONZE', 'SILVER', 'GOLD', 'PLATINUM', 'EMERALD', 'DIAMOND', 'MASTER', 'GRANDMASTER', 'CHALLENGER'];
@@ -159,20 +160,84 @@ async function fetchPlayer(riot, cfg, player, saved) {
 //   "LANivia#FYRWN / Gold 2 52 LP / 10Win 2Lose Win rate 83% / ..."
 //   "Ñemalodon#negan / Master 65 LP / 227Win 232Lose ..."
 //   "akriiuwu#MOSCA / Lv. 33"  (sin clasificar)
-// Solo refleja la última vez que alguien pulsó "Actualizar" en op.gg.
+// Ese resumen solo cambia cuando se renueva el perfil (el botón "Update" de op.gg), así que
+// antes de leerlo pedimos la renovación con las mismas Server Actions de Next.js que usa ese
+// botón: "renewal" la inicia y "renewalStatus" dice cuándo terminó. No es una API oficial:
+// sus identificadores cambian con cada versión de op.gg, por eso se buscan en sus scripts y se
+// guardan en state.json junto con la versión.
 
 const OPGG_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
+const RENEW_POLLS = 20;
 let opggLast = 0;
 
-async function fetchFromOpgg(player) {
+async function opggRequest(url, init = {}) {
   const wait = opggLast + REQUEST_GAP_MS - Date.now();
   if (wait > 0) await sleep(wait);
   opggLast = Date.now();
+  return fetch(url, { ...init, headers: { 'User-Agent': OPGG_UA, 'Accept-Language': 'en', ...init.headers } });
+}
 
-  const res = await fetch(opggUrl(player.riotId), { headers: { 'User-Agent': OPGG_UA, 'Accept-Language': 'en' } });
+async function opggPage(player) {
+  const res = await opggRequest(opggUrl(player.riotId));
   if (res.status === 404) throw new Error(`op.gg no tiene la cuenta ${player.riotId}`);
   if (!res.ok) throw new Error(`op.gg respondió ${res.status}`);
-  const html = await res.text();
+  return res.text();
+}
+
+// Busca los ids de las Server Actions en los scripts que carga el perfil.
+async function discoverOpggActions(html) {
+  const release = html.match(/releases\/(production-[\w-]+)/)?.[1] ?? null;
+  const scripts = [...new Set([...html.matchAll(/https:\/\/[^"'\s\\]+?\/_next\/static\/chunks\/[^"'\s\\]+?\.js/g)].map((m) => m[0]))];
+  const found = { release };
+  await Promise.all(scripts.map(async (url) => {
+    const js = await (await fetch(url)).text();
+    for (const m of js.matchAll(/createServerReference\)\("([0-9a-f]{40,})"[^)]*?"(renewal|renewalStatus)"\)/g)) found[m[2]] = m[1];
+  }));
+  if (!found.renewal || !found.renewalStatus) throw new Error('no se encontró la renovación en los scripts de op.gg');
+  console.log(`  ids de renovación de op.gg encontrados (${release})`);
+  return found;
+}
+
+// Llama a una Server Action y devuelve su resultado (línea "1:" del stream RSC), o null.
+async function opggAction(player, id, args) {
+  const res = await opggRequest(opggUrl(player.riotId), {
+    method: 'POST',
+    headers: { 'Next-Action': id, Accept: 'text/x-component', 'Content-Type': 'text/plain;charset=UTF-8' },
+    body: JSON.stringify(args),
+  });
+  if (!res.ok) return null;
+  const line = (await res.text()).split('\n').find((l) => l.startsWith('1:'));
+  try { return line ? JSON.parse(line.slice(2)) : null; } catch { return null; }
+}
+
+// Devuelve el estado final de la renovación (RENEWAL_FINISH, TOO_MANY_RENEWALS, ...).
+async function renewOpgg(player, html, state) {
+  const puuid = html.match(/"name":"puuid","value":"([^"]+)"/)?.[1];
+  if (!puuid) throw new Error('no se encontró el puuid en op.gg');
+  const release = html.match(/releases\/(production-[\w-]+)/)?.[1] ?? null;
+  if (!state.opgg || state.opgg.release !== release) state.opgg = await discoverOpggActions(html);
+
+  let result = await opggAction(player, state.opgg.renewal, [{ region: 'lan', puuid, isPremiumPrimary: false }]);
+  if (!result) {
+    // Los ids guardados ya no sirven: buscarlos otra vez y reintentar una vez.
+    state.opgg = await discoverOpggActions(html);
+    result = await opggAction(player, state.opgg.renewal, [{ region: 'lan', puuid, isPremiumPrimary: false }]);
+  }
+  for (let i = 0; result?.status === 'RENEWING' && i < RENEW_POLLS; i++) {
+    await sleep(result.delay || 1000);
+    result = await opggAction(player, state.opgg.renewalStatus, [{ region: 'lan', puuid }]);
+  }
+  return result?.status ?? 'SIN_RESPUESTA';
+}
+
+async function fetchFromOpgg(player, state) {
+  let html = await opggPage(player);
+  if (RENEW) {
+    const status = await renewOpgg(player, html, state);
+    if (status === 'RENEWAL_FINISH') html = await opggPage(player);
+    else console.warn(`  renovación de op.gg: ${status} (se usa el último dato de op.gg)`);
+  }
+
   const desc = html.match(/<meta name="description" content="([^"]*)"/)?.[1];
   if (!desc) throw new Error('op.gg cambió el formato de la página');
 
@@ -259,7 +324,7 @@ async function main() {
       const data =
         fuente === 'mock' ? mockPlayer(player, i) :
         fuente === 'riot' ? await fetchPlayer(riot, cfg, player, saved) :
-        await fetchFromOpgg(player);
+        await fetchFromOpgg(player, state);
       rows.push({ ...base, ...data });
       console.log(`✓ ${player.nombre} (${player.riotId}): ${data.tier} ${data.division ?? ''} ${data.lp} LP`);
     } catch (err) {
