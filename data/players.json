@@ -1,0 +1,16 @@
+{
+  "region": "la1",
+  "regionLabel": "LAN",
+  "routing": "americas",
+  "timezone": "America/Mexico_City",
+  "players": [
+    { "nombre": "Farid",    "riotId": "LANivia#FYRWN",   "linea": null, "twitch": null },
+    { "nombre": "Brandon",  "riotId": "Bjango#Bj4",      "linea": null, "twitch": null },
+    { "nombre": "Porfirio", "riotId": "LuqueGPJ#2208",   "linea": null, "twitch": null },
+    { "nombre": "Edwin",    "riotId": "RoyceJr11#LAN",   "linea": null, "twitch": null },
+    { "nombre": "Luis",     "riotId": "Ñemalodón#0904",  "linea": null, "twitch": null },
+    { "nombre": "Oscar",    "riotId": "Oscar1334#LAN",   "linea": null, "twitch": null },
+    { "nombre": "Racecore", "riotId": null,              "linea": null, "twitch": null },
+    { "nombre": "Diego",    "riotId": "akriiuwu#MOSCA",  "linea": null, "twitch": null }
+  ]
+}
