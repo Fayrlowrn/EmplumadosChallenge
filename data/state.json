@@ -10,6 +10,34 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ4iKS8sKJUkGkTiAgvXcSB-CVMZKGoN5Ko=": {
+          "t": "2026-10-22T23:38:19.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 17,
+          "d": 7,
+          "a": 9,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "I",
+            "lp": 42
+          }
+        },
+        "YyfXz-4rKZ45zRn8kk4yCSdJGFZPKV_y2aeFEUZovKI=": {
+          "t": "2026-10-22T22:51:52.000Z",
+          "campeon": "Anivia",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 5,
+          "a": 11,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "GOLD",
+            "division": "I",
+            "lp": 42
+          }
+        },
         "YyfXz-4rKZ6SEhcEiHeBwsWa-Pc00_wzZtvaogae9qQ=": {
           "t": "2026-10-22T05:27:21.000Z",
           "campeon": "Anivia",
@@ -322,6 +350,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ7OLQ9cG_k8iJUjUrwZccUISRAFD66n6rw=": {
+          "t": "2026-10-22T22:00:23.000Z",
+          "campeon": "Zoe",
+          "resultado": "WIN",
+          "k": 22,
+          "d": 9,
+          "a": 12,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 5
+          }
+        },
         "YyfXz-4rKZ4vN4O20-tB1d_5NRcWdaEDPPKCvwEz1lc=": {
           "t": "2026-10-22T21:17:38.000Z",
           "campeon": "Vi",

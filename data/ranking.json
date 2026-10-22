@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T21:56:57.357Z",
+  "actualizado": "2026-10-22T23:41:07.637Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -44,16 +44,16 @@
       "riotId": "RoyceJr11#LAN",
       "tier": "PLATINUM",
       "division": "I",
-      "lp": 5,
-      "wins": 12,
+      "lp": 35,
+      "wins": 13,
       "losses": 8,
-      "winrate": 60,
+      "winrate": 61.9,
       "linea": "BOTTOM",
-      "progreso": 70,
-      "retoWins": 12,
+      "progreso": 100,
+      "retoWins": 13,
       "retoLosses": 8,
       "racha": {
-        "tipo": "L",
+        "tipo": "W",
         "n": 1
       },
       "campeon": {
@@ -61,8 +61,8 @@
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
         "partidas": 5
       },
-      "ultimaPartida": "2026-10-22T21:17:38.000Z",
-      "partidasHoy": 4,
+      "ultimaPartida": "2026-10-22T22:00:23.000Z",
+      "partidasHoy": 5,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -103,25 +103,25 @@
       "riotId": "LANivia#FYRWN",
       "tier": "GOLD",
       "division": "I",
-      "lp": 42,
-      "wins": 14,
-      "losses": 5,
-      "winrate": 73.68,
+      "lp": 62,
+      "wins": 15,
+      "losses": 6,
+      "winrate": 71.43,
       "linea": "MIDDLE",
-      "progreso": 250,
-      "retoWins": 10,
-      "retoLosses": 4,
+      "progreso": 270,
+      "retoWins": 11,
+      "retoLosses": 5,
       "racha": {
         "tipo": "W",
-        "n": 3
+        "n": 1
       },
       "campeon": {
         "nombre": "Anivia",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
-        "partidas": 12
+        "partidas": 14
       },
-      "ultimaPartida": "2026-10-22T05:27:21.000Z",
-      "partidasHoy": 0,
+      "ultimaPartida": "2026-10-22T23:38:19.000Z",
+      "partidasHoy": 2,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
