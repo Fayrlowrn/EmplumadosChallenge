@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T05:19:26.741Z",
+  "actualizado": "2026-10-23T05:29:38.360Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -101,27 +101,27 @@
       "cambio": 0,
       "nombre": "Farid",
       "riotId": "LANivia#FYRWN",
-      "tier": "GOLD",
-      "division": "I",
-      "lp": 92,
-      "wins": 16,
+      "tier": "PLATINUM",
+      "division": "IV",
+      "lp": 22,
+      "wins": 17,
       "losses": 6,
-      "winrate": 72.73,
+      "winrate": 73.91,
       "linea": "MIDDLE",
-      "progreso": 300,
-      "retoWins": 12,
+      "progreso": 330,
+      "retoWins": 13,
       "retoLosses": 5,
       "racha": {
         "tipo": "W",
-        "n": 2
+        "n": 3
       },
       "campeon": {
         "nombre": "Anivia",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
-        "partidas": 15
+        "partidas": 16
       },
-      "ultimaPartida": "2026-10-23T00:17:56.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-10-23T05:27:23.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
