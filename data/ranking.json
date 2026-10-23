@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T23:41:07.637Z",
+  "actualizado": "2026-10-23T00:21:40.308Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -103,25 +103,25 @@
       "riotId": "LANivia#FYRWN",
       "tier": "GOLD",
       "division": "I",
-      "lp": 62,
-      "wins": 15,
+      "lp": 92,
+      "wins": 16,
       "losses": 6,
-      "winrate": 71.43,
+      "winrate": 72.73,
       "linea": "MIDDLE",
-      "progreso": 270,
-      "retoWins": 11,
+      "progreso": 300,
+      "retoWins": 12,
       "retoLosses": 5,
       "racha": {
         "tipo": "W",
-        "n": 1
+        "n": 2
       },
       "campeon": {
         "nombre": "Anivia",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
-        "partidas": 14
+        "partidas": 15
       },
-      "ultimaPartida": "2026-10-22T23:38:19.000Z",
-      "partidasHoy": 2,
+      "ultimaPartida": "2026-10-23T00:17:56.000Z",
+      "partidasHoy": 3,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
