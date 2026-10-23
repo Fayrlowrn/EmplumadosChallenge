@@ -364,6 +364,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ76zelx3cDnEDX7EzxdlpkscolYIrDkOGM=": {
+          "t": "2026-10-23T00:51:39.000Z",
+          "campeon": "Zaahen",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 5,
+          "a": 5,
+          "pos": "TOP",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 35
+          }
+        },
         "YyfXz-4rKZ7OLQ9cG_k8iJUjUrwZccUISRAFD66n6rw=": {
           "t": "2026-10-22T22:00:23.000Z",
           "campeon": "Zoe",
@@ -803,8 +817,52 @@
     },
     "Diego": {
       "riotId": "akriiuwu#MOSCA",
-      "base": null,
+      "base": {
+        "inicio": "2026-10-19",
+        "fecha": "2026-10-23T02:19:35.000Z",
+        "tier": "GOLD",
+        "division": "IV",
+        "lp": 55
+      },
       "partidas": {
+        "YyfXz-4rKZ7_zj6xGygv0YqQhbgx_hObvCrN6uno41w=": {
+          "t": "2026-10-23T04:38:34.000Z",
+          "campeon": "Gnar",
+          "resultado": "LOSE",
+          "k": 9,
+          "d": 5,
+          "a": 10,
+          "pos": "TOP",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 55
+          }
+        },
+        "YyfXz-4rKZ6JBh8lp1RSHJ6P6DXh_XcpOz-buurToQQ=": {
+          "t": "2026-10-23T02:19:35.000Z",
+          "campeon": "Sylas",
+          "resultado": "WIN",
+          "k": 8,
+          "d": 0,
+          "a": 0,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 55
+          }
+        },
+        "YyfXz-4rKZ49FbJz_xqXosCpBrDeQhgdY3_khh9fLOs=": {
+          "t": "2026-10-23T01:54:31.000Z",
+          "campeon": "Sylas",
+          "resultado": "WIN",
+          "k": 11,
+          "d": 4,
+          "a": 7,
+          "pos": "MIDDLE",
+          "rango": null
+        },
         "YyfXz-4rKZ7Tb0RLnsKjAl0RPQcodXXvhIsK0GDv2RM=": {
           "t": "2026-10-22T05:27:16.000Z",
           "campeon": "Garen",

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T00:21:40.308Z",
+  "actualizado": "2026-10-23T05:19:26.741Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -44,25 +44,25 @@
       "riotId": "RoyceJr11#LAN",
       "tier": "PLATINUM",
       "division": "I",
-      "lp": 35,
-      "wins": 13,
+      "lp": 95,
+      "wins": 14,
       "losses": 8,
-      "winrate": 61.9,
+      "winrate": 63.64,
       "linea": "BOTTOM",
-      "progreso": 100,
-      "retoWins": 13,
+      "progreso": 160,
+      "retoWins": 14,
       "retoLosses": 8,
       "racha": {
         "tipo": "W",
-        "n": 1
+        "n": 2
       },
       "campeon": {
         "nombre": "Kai'Sa",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
         "partidas": 5
       },
-      "ultimaPartida": "2026-10-22T22:00:23.000Z",
-      "partidasHoy": 5,
+      "ultimaPartida": "2026-10-23T00:51:39.000Z",
+      "partidasHoy": 6,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -131,7 +131,40 @@
     },
     {
       "pos": 5,
-      "cambio": 0,
+      "cambio": 2,
+      "nombre": "Diego",
+      "riotId": "akriiuwu#MOSCA",
+      "tier": "GOLD",
+      "division": "IV",
+      "lp": 75,
+      "wins": 4,
+      "losses": 3,
+      "winrate": 57.14,
+      "linea": "TOP",
+      "progreso": 20,
+      "retoWins": 4,
+      "retoLosses": 3,
+      "racha": {
+        "tipo": "L",
+        "n": 1
+      },
+      "campeon": {
+        "nombre": "Sylas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sylas.png",
+        "partidas": 3
+      },
+      "ultimaPartida": "2026-10-23T04:38:34.000Z",
+      "partidasHoy": 3,
+      "enPartida": null,
+      "partidaDesde": null,
+      "twitch": null,
+      "opgg": "https://op.gg/lol/summoners/lan/akriiuwu-MOSCA",
+      "pendiente": false,
+      "stale": false
+    },
+    {
+      "pos": 6,
+      "cambio": -1,
       "nombre": "Oscar",
       "riotId": "Oscar1334#LAN",
       "tier": "SILVER",
@@ -163,8 +196,8 @@
       "stale": false
     },
     {
-      "pos": 6,
-      "cambio": 0,
+      "pos": 7,
+      "cambio": -1,
       "nombre": "Luis",
       "riotId": "Ñemalodón#0904",
       "tier": "BRONZE",
@@ -192,39 +225,6 @@
       "partidaDesde": null,
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/%C3%91emalod%C3%B3n-0904",
-      "pendiente": false,
-      "stale": false
-    },
-    {
-      "pos": 7,
-      "cambio": 0,
-      "nombre": "Diego",
-      "riotId": "akriiuwu#MOSCA",
-      "tier": "UNRANKED",
-      "division": null,
-      "lp": 0,
-      "wins": 0,
-      "losses": 0,
-      "winrate": null,
-      "linea": "TOP",
-      "progreso": null,
-      "retoWins": 2,
-      "retoLosses": 2,
-      "racha": {
-        "tipo": "W",
-        "n": 1
-      },
-      "campeon": {
-        "nombre": "Sylas",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sylas.png",
-        "partidas": 1
-      },
-      "ultimaPartida": "2026-10-22T05:18:47.000Z",
-      "partidasHoy": 0,
-      "enPartida": null,
-      "partidaDesde": null,
-      "twitch": null,
-      "opgg": "https://op.gg/lol/summoners/lan/akriiuwu-MOSCA",
       "pendiente": false,
       "stale": false
     },
