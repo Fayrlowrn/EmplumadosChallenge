@@ -10,6 +10,34 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ5Pkczf6VXsL5j5LeD3ca5v88r26LNjBBo=": {
+          "t": "2026-10-23T14:45:15.000Z",
+          "campeon": "Anivia",
+          "resultado": "LOSE",
+          "k": 4,
+          "d": 9,
+          "a": 8,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "IV",
+            "lp": 22
+          }
+        },
+        "YyfXz-4rKZ6ypULiVM2-DEiyKWrOFQotQaa8lyYaF_U=": {
+          "t": "2026-10-23T13:57:51.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 1,
+          "d": 3,
+          "a": 1,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "IV",
+            "lp": 22
+          }
+        },
         "YyfXz-4rKZ7e3tbZikp35L3v9-CWI9QpBSvqHzJLD9M=": {
           "t": "2026-10-23T05:27:23.000Z",
           "campeon": "Anivia",
@@ -378,6 +406,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ64r0vd0ZMoFr35v9OEllLLGG__yKSZ2Ec=": {
+          "t": "2026-10-23T14:44:39.000Z",
+          "campeon": "Syndra",
+          "resultado": "LOSE",
+          "k": 4,
+          "d": 7,
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 95
+          }
+        },
         "YyfXz-4rKZ76zelx3cDnEDX7EzxdlpkscolYIrDkOGM=": {
           "t": "2026-10-23T00:51:39.000Z",
           "campeon": "Zaahen",
