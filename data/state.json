@@ -406,6 +406,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4cdm6wq6bgulZcAp18zhzAppzVv6y41vA=": {
+          "t": "2026-10-23T15:30:35.000Z",
+          "campeon": "Jhin",
+          "resultado": "WIN",
+          "k": 14,
+          "d": 9,
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 85
+          }
+        },
         "YyfXz-4rKZ64r0vd0ZMoFr35v9OEllLLGG__yKSZ2Ec=": {
           "t": "2026-10-23T14:44:39.000Z",
           "campeon": "Syndra",
