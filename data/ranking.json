@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T05:29:38.360Z",
+  "actualizado": "2026-10-23T10:14:54.717Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -62,7 +62,7 @@
         "partidas": 5
       },
       "ultimaPartida": "2026-10-23T00:51:39.000Z",
-      "partidasHoy": 6,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -121,7 +121,7 @@
         "partidas": 16
       },
       "ultimaPartida": "2026-10-23T05:27:23.000Z",
-      "partidasHoy": 4,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -131,7 +131,7 @@
     },
     {
       "pos": 5,
-      "cambio": 2,
+      "cambio": 0,
       "nombre": "Diego",
       "riotId": "akriiuwu#MOSCA",
       "tier": "GOLD",
@@ -154,7 +154,7 @@
         "partidas": 3
       },
       "ultimaPartida": "2026-10-23T04:38:34.000Z",
-      "partidasHoy": 3,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -164,7 +164,7 @@
     },
     {
       "pos": 6,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Oscar",
       "riotId": "Oscar1334#LAN",
       "tier": "SILVER",
@@ -197,7 +197,7 @@
     },
     {
       "pos": 7,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Luis",
       "riotId": "Ñemalodón#0904",
       "tier": "BRONZE",

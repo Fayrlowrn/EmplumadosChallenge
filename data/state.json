@@ -938,20 +938,20 @@
     }
   },
   "baseline": {
-    "dia": "2026-10-22",
+    "dia": "2026-10-23",
     "posiciones": {
       "Brandon": 1,
       "Edwin": 2,
       "Porfirio": 3,
       "Farid": 4,
-      "Oscar": 5,
-      "Luis": 6,
-      "Diego": 7,
+      "Diego": 5,
+      "Oscar": 6,
+      "Luis": 7,
       "Racecore": 8
     }
   },
   "opgg": {
-    "release": "production-445-1-ed77c432",
+    "release": "production-446-1-1aea8c74",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
