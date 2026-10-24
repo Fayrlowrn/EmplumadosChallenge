@@ -1012,6 +1012,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ5vjevAhwYQzMAHiXgVAtk2f0KT8DdUIKI=": {
+          "t": "2026-10-24T09:28:49.000Z",
+          "campeon": "Ezreal",
+          "resultado": "LOSE",
+          "k": 15,
+          "d": 7,
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "BRONZE",
+            "division": "I",
+            "lp": 57
+          }
+        },
         "YyfXz-4rKZ6tljkAuF5zSlPsxLNHrG_nNNbyqnPTE7k=": {
           "t": "2026-10-24T08:45:28.000Z",
           "campeon": "Jhin",

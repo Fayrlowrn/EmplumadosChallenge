@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T09:00:15.488Z",
+  "actualizado": "2026-10-24T09:30:15.221Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -202,25 +202,25 @@
       "riotId": "5tyleWars#LAN",
       "tier": "BRONZE",
       "division": "I",
-      "lp": 57,
+      "lp": 47,
       "wins": 4,
-      "losses": 1,
-      "winrate": 80,
+      "losses": 2,
+      "winrate": 66.67,
       "linea": "BOTTOM",
-      "progreso": 0,
+      "progreso": -10,
       "retoWins": 4,
-      "retoLosses": 1,
+      "retoLosses": 2,
       "racha": {
         "tipo": "L",
-        "n": 1
+        "n": 2
       },
       "campeon": {
-        "nombre": "Jhin",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jhin.png",
+        "nombre": "Ezreal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png",
         "partidas": 2
       },
-      "ultimaPartida": "2026-10-24T08:45:28.000Z",
-      "partidasHoy": 5,
+      "ultimaPartida": "2026-10-24T09:28:49.000Z",
+      "partidasHoy": 6,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
