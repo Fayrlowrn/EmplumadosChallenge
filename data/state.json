@@ -1004,6 +1004,16 @@
       "riotId": "5tyleWars#LAN",
       "base": null,
       "partidas": {
+        "YyfXz-4rKZ5gF2fYwJbBlq51oYaZpj_eBaBRskdAkKk=": {
+          "t": "2026-10-24T07:46:56.000Z",
+          "campeon": "Ezreal",
+          "resultado": "WIN",
+          "k": 3,
+          "d": 1,
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": null
+        },
         "YyfXz-4rKZ4OEG8YWI3BEdlido8AjaPqTpzA1amGBNI=": {
           "t": "2026-10-24T07:25:58.000Z",
           "campeon": "Jhin",

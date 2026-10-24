@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T07:30:14.559Z",
+  "actualizado": "2026-10-24T08:00:16.413Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -241,19 +241,19 @@
       "winrate": null,
       "linea": "BOTTOM",
       "progreso": null,
-      "retoWins": 2,
+      "retoWins": 3,
       "retoLosses": 0,
       "racha": {
         "tipo": "W",
-        "n": 2
+        "n": 3
       },
       "campeon": {
-        "nombre": "Jhin",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jhin.png",
+        "nombre": "Ezreal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png",
         "partidas": 1
       },
-      "ultimaPartida": "2026-10-24T07:25:58.000Z",
-      "partidasHoy": 2,
+      "ultimaPartida": "2026-10-24T07:46:56.000Z",
+      "partidasHoy": 3,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
