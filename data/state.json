@@ -10,6 +10,20 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ7v-POkbTEVL_ghtbhor5DeH4epa4IOGBI=": {
+          "t": "2026-10-24T13:34:20.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 5,
+          "a": 11,
+          "pos": "TOP",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "IV",
+            "lp": 42
+          }
+        },
         "YyfXz-4rKZ5Pkczf6VXsL5j5LeD3ca5v88r26LNjBBo=": {
           "t": "2026-10-23T14:45:15.000Z",
           "campeon": "Anivia",
