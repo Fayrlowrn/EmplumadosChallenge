@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T08:00:16.413Z",
+  "actualizado": "2026-10-24T08:15:18.413Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -241,19 +241,19 @@
       "winrate": null,
       "linea": "BOTTOM",
       "progreso": null,
-      "retoWins": 3,
+      "retoWins": 4,
       "retoLosses": 0,
       "racha": {
         "tipo": "W",
-        "n": 3
+        "n": 4
       },
       "campeon": {
-        "nombre": "Ezreal",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png",
+        "nombre": "Kai'Sa",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
         "partidas": 1
       },
-      "ultimaPartida": "2026-10-24T07:46:56.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-10-24T08:07:04.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
