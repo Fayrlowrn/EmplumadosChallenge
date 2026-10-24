@@ -1012,6 +1012,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ4Vb-Hxvs2V4wu1zLkY0byzZvQMPToiZRo=": {
+          "t": "2026-10-24T10:04:52.000Z",
+          "campeon": "Aphelios",
+          "resultado": "WIN",
+          "k": 13,
+          "d": 5,
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "BRONZE",
+            "division": "I",
+            "lp": 47
+          }
+        },
         "YyfXz-4rKZ5vjevAhwYQzMAHiXgVAtk2f0KT8DdUIKI=": {
           "t": "2026-10-24T09:28:49.000Z",
           "campeon": "Ezreal",
