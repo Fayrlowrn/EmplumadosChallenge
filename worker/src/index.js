@@ -1,9 +1,12 @@
 // Intermediario del botón "Actualizar": lanza el Action del repo sin exponer el token.
 //   POST /actualizar  → lanza el workflow (si no hay uno corriendo o recién lanzado)
 //   GET  /estado      → estado de la última ejecución del workflow
+// Además, un Cron Trigger (wrangler.toml) lo lanza cada 15 min: el cron de GitHub Actions
+// se retrasa o se salta ejecuciones (llega a pasar horas sin correr).
 // Secreto requerido: GITHUB_TOKEN (fine-grained, solo este repo, permiso Actions: read & write).
 
 const COOLDOWN_MS = 2 * 60 * 1000; // op.gg no deja renovar el mismo perfil más seguido
+const SCHEDULED_GAP_MS = 10 * 60 * 1000; // el disparo programado no repite si alguien actualizó hace poco
 
 export default {
   async fetch(request, env) {
@@ -35,10 +38,7 @@ export default {
           return json({ lanzado: false, motivo: run.status !== 'completed' ? 'en-curso' : 'reciente', ejecucion: run });
         }
 
-        await github(env, `/actions/workflows/${env.WORKFLOW}/dispatches`, {
-          method: 'POST',
-          body: JSON.stringify({ ref: env.BRANCH }),
-        });
+        await dispatch(env);
         return json({ lanzado: true }, 202);
       }
 
@@ -47,7 +47,20 @@ export default {
       return json({ error: err.message }, 502);
     }
   },
+
+  async scheduled(controller, env) {
+    const run = await latestRun(env);
+    if (run && (run.status !== 'completed' || Date.now() - Date.parse(run.creada) < SCHEDULED_GAP_MS)) return;
+    await dispatch(env);
+  },
 };
+
+function dispatch(env) {
+  return github(env, `/actions/workflows/${env.WORKFLOW}/dispatches`, {
+    method: 'POST',
+    body: JSON.stringify({ ref: env.BRANCH }),
+  });
+}
 
 async function latestRun(env) {
   const data = await github(env, `/actions/workflows/${env.WORKFLOW}/runs?per_page=1`);

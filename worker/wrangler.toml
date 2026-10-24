@@ -2,6 +2,10 @@ name = "emplumados-actualizar"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
 
+# Actualización automática cada 15 min (ver scheduled() en src/index.js).
+[triggers]
+crons = ["*/15 * * * *"]
+
 [vars]
 REPO = "Fayrlowrn/EmplumadosChallenge"
 WORKFLOW = "update.yml"
