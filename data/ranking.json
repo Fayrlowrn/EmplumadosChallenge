@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T20:30:17.307Z",
+  "actualizado": "2026-10-24T21:00:19.837Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -202,16 +202,16 @@
       "riotId": "5tyleWars#LAN",
       "tier": "SILVER",
       "division": "IV",
-      "lp": 0,
-      "wins": 5,
+      "lp": 30,
+      "wins": 6,
       "losses": 3,
-      "winrate": 62.5,
+      "winrate": 66.67,
       "linea": "BOTTOM",
-      "progreso": 43,
-      "retoWins": 5,
+      "progreso": 73,
+      "retoWins": 6,
       "retoLosses": 3,
       "racha": {
-        "tipo": "L",
+        "tipo": "W",
         "n": 1
       },
       "campeon": {
@@ -219,8 +219,8 @@
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png",
         "partidas": 2
       },
-      "ultimaPartida": "2026-10-24T20:16:16.000Z",
-      "partidasHoy": 8,
+      "ultimaPartida": "2026-10-24T20:57:49.000Z",
+      "partidasHoy": 9,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,

@@ -1040,6 +1040,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ7pB4R2V0XnCIxaBruYyjLPFaw4PpLBRM0=": {
+          "t": "2026-10-24T20:57:49.000Z",
+          "campeon": "Kalista",
+          "resultado": "WIN",
+          "k": 19,
+          "d": 8,
+          "a": 7,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "SILVER",
+            "division": "IV",
+            "lp": 0
+          }
+        },
         "YyfXz-4rKZ4gSugWIEkATeoqi6ZR6PQvFnKpAqRo4qg=": {
           "t": "2026-10-24T20:16:16.000Z",
           "campeon": "Lee Sin",
