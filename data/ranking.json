@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T08:15:18.413Z",
+  "actualizado": "2026-10-24T09:00:15.488Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -197,7 +197,40 @@
     },
     {
       "pos": 7,
-      "cambio": 0,
+      "cambio": 1,
+      "nombre": "Racecore",
+      "riotId": "5tyleWars#LAN",
+      "tier": "BRONZE",
+      "division": "I",
+      "lp": 57,
+      "wins": 4,
+      "losses": 1,
+      "winrate": 80,
+      "linea": "BOTTOM",
+      "progreso": 0,
+      "retoWins": 4,
+      "retoLosses": 1,
+      "racha": {
+        "tipo": "L",
+        "n": 1
+      },
+      "campeon": {
+        "nombre": "Jhin",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jhin.png",
+        "partidas": 2
+      },
+      "ultimaPartida": "2026-10-24T08:45:28.000Z",
+      "partidasHoy": 5,
+      "enPartida": null,
+      "partidaDesde": null,
+      "twitch": null,
+      "opgg": "https://op.gg/lol/summoners/lan/5tyleWars-LAN",
+      "pendiente": false,
+      "stale": false
+    },
+    {
+      "pos": 8,
+      "cambio": -1,
       "nombre": "Luis",
       "riotId": "Ñemalodón#0904",
       "tier": "BRONZE",
@@ -225,39 +258,6 @@
       "partidaDesde": null,
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/%C3%91emalod%C3%B3n-0904",
-      "pendiente": false,
-      "stale": false
-    },
-    {
-      "pos": 8,
-      "cambio": 0,
-      "nombre": "Racecore",
-      "riotId": "5tyleWars#LAN",
-      "tier": "UNRANKED",
-      "division": null,
-      "lp": 0,
-      "wins": 0,
-      "losses": 0,
-      "winrate": null,
-      "linea": "BOTTOM",
-      "progreso": null,
-      "retoWins": 4,
-      "retoLosses": 0,
-      "racha": {
-        "tipo": "W",
-        "n": 4
-      },
-      "campeon": {
-        "nombre": "Kai'Sa",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
-        "partidas": 1
-      },
-      "ultimaPartida": "2026-10-24T08:07:04.000Z",
-      "partidasHoy": 4,
-      "enPartida": null,
-      "partidaDesde": null,
-      "twitch": null,
-      "opgg": "https://op.gg/lol/summoners/lan/5tyleWars-LAN",
       "pendiente": false,
       "stale": false
     }
