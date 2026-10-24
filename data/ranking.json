@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T06:00:16.076Z",
+  "actualizado": "2026-10-24T07:15:15.487Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -239,14 +239,21 @@
       "wins": 0,
       "losses": 0,
       "winrate": null,
-      "linea": "BOTTOM",
+      "linea": "UTILITY",
       "progreso": null,
-      "retoWins": 0,
+      "retoWins": 1,
       "retoLosses": 0,
-      "racha": null,
-      "campeon": null,
-      "ultimaPartida": null,
-      "partidasHoy": 0,
+      "racha": {
+        "tipo": "W",
+        "n": 1
+      },
+      "campeon": {
+        "nombre": "Pyke",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Pyke.png",
+        "partidas": 1
+      },
+      "ultimaPartida": "2026-10-24T07:05:42.000Z",
+      "partidasHoy": 1,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,

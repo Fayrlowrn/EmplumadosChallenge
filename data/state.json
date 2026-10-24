@@ -1003,7 +1003,18 @@
     "Racecore": {
       "riotId": "5tyleWars#LAN",
       "base": null,
-      "partidas": {},
+      "partidas": {
+        "YyfXz-4rKZ5PW5OobUdkC6nQiJ_PYaObJ41wFakoTdE=": {
+          "t": "2026-10-24T07:05:42.000Z",
+          "campeon": "Pyke",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 0,
+          "a": 12,
+          "pos": "UTILITY",
+          "rango": null
+        }
+      },
       "historial": "2026-10-19"
     }
   },
