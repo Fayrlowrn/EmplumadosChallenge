@@ -440,7 +440,13 @@
           "resultado": "WIN",
           "k": 7,
           "d": 2,
-          "a": 9
+          "a": 9,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 15
+          }
         },
         "YyfXz-4rKZ4cdm6wq6bgulZcAp18zhzAppzVv6y41vA=": {
           "t": "2026-10-23T15:30:35.000Z",
@@ -448,7 +454,13 @@
           "resultado": "WIN",
           "k": 14,
           "d": 9,
-          "a": 8
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 85
+          }
         },
         "YyfXz-4rKZ64r0vd0ZMoFr35v9OEllLLGG__yKSZ2Ec=": {
           "t": "2026-10-23T14:44:39.000Z",
@@ -456,7 +468,13 @@
           "resultado": "LOSE",
           "k": 4,
           "d": 7,
-          "a": 6
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 95
+          }
         },
         "YyfXz-4rKZ76zelx3cDnEDX7EzxdlpkscolYIrDkOGM=": {
           "t": "2026-10-23T00:51:39.000Z",
@@ -464,7 +482,13 @@
           "resultado": "WIN",
           "k": 4,
           "d": 5,
-          "a": 5
+          "a": 5,
+          "pos": "TOP",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 35
+          }
         },
         "YyfXz-4rKZ7OLQ9cG_k8iJUjUrwZccUISRAFD66n6rw=": {
           "t": "2026-10-22T22:00:23.000Z",
@@ -472,7 +496,13 @@
           "resultado": "WIN",
           "k": 22,
           "d": 9,
-          "a": 12
+          "a": 12,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 5
+          }
         },
         "YyfXz-4rKZ4vN4O20-tB1d_5NRcWdaEDPPKCvwEz1lc=": {
           "t": "2026-10-22T21:17:38.000Z",
@@ -480,7 +510,13 @@
           "resultado": "LOSE",
           "k": 7,
           "d": 6,
-          "a": 14
+          "a": 14,
+          "pos": "JUNGLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 15
+          }
         },
         "YyfXz-4rKZ4lUOfcOCP5GokA51uMIGSUsjWNv5_rInU=": {
           "t": "2026-10-22T20:37:37.000Z",
@@ -488,7 +524,13 @@
           "resultado": "REMAKE",
           "k": 1,
           "d": 0,
-          "a": 0
+          "a": 0,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "I",
+            "lp": 15
+          }
         },
         "YyfXz-4rKZ7XlJ1NAUvkT2_Y3V8QPA7yJ9dgc98qZwg=": {
           "t": "2026-10-22T16:48:30.000Z",
@@ -496,7 +538,13 @@
           "resultado": "WIN",
           "k": 0,
           "d": 5,
-          "a": 26
+          "a": 26,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "II",
+            "lp": 65
+          }
         },
         "YyfXz-4rKZ5v8eQsPgRbu3w5q2L3_KUIw62yslbLF34=": {
           "t": "2026-10-22T16:06:52.000Z",
@@ -504,7 +552,13 @@
           "resultado": "LOSE",
           "k": 1,
           "d": 6,
-          "a": 1
+          "a": 1,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "II",
+            "lp": 65
+          }
         },
         "YyfXz-4rKZ4Rq2R7hJ2f8tuSRUkRbNsfiRPxswcDtrA=": {
           "t": "2026-10-22T15:38:11.000Z",
@@ -512,7 +566,13 @@
           "resultado": "WIN",
           "k": 15,
           "d": 7,
-          "a": 19
+          "a": 19,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "II",
+            "lp": 35
+          }
         },
         "YyfXz-4rKZ4TVKNl6YXoxsbvndqS_3TjTVhkppGhNNc=": {
           "t": "2026-10-22T02:57:40.000Z",
