@@ -1040,6 +1040,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ7LLkRlV3hitQrpmnCICAp1cMIUI0RGgVU=": {
+          "t": "2026-10-25T20:42:03.000Z",
+          "campeon": "Yone",
+          "resultado": "WIN",
+          "k": 29,
+          "d": 4,
+          "a": 15,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "IV",
+            "lp": 20
+          }
+        },
         "YyfXz-4rKZ4ERQYXMIHxYI6i7W5GCBYcchYKwuy0sVw=": {
           "t": "2026-10-25T19:47:02.000Z",
           "campeon": "Ezreal",
