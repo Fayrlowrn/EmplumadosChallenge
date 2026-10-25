@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T21:00:19.837Z",
+  "actualizado": "2026-10-25T06:00:17.330Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -121,7 +121,7 @@
         "partidas": 20
       },
       "ultimaPartida": "2026-10-24T14:06:06.000Z",
-      "partidasHoy": 2,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -197,7 +197,7 @@
     },
     {
       "pos": 7,
-      "cambio": 1,
+      "cambio": 0,
       "nombre": "Racecore",
       "riotId": "5tyleWars#LAN",
       "tier": "SILVER",
@@ -220,7 +220,7 @@
         "partidas": 2
       },
       "ultimaPartida": "2026-10-24T20:57:49.000Z",
-      "partidasHoy": 9,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -230,7 +230,7 @@
     },
     {
       "pos": 8,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Luis",
       "riotId": "Ñemalodón#0904",
       "tier": "BRONZE",
