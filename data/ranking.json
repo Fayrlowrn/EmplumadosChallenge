@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-25T21:15:15.391Z",
+  "actualizado": "2026-10-25T21:30:15.366Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -68,7 +68,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/RoyceJr11-LAN",
       "pendiente": false,
-      "stale": true
+      "stale": false
     },
     {
       "pos": 3,
@@ -94,7 +94,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/LuqueGPJ-2208",
       "pendiente": false,
-      "stale": true
+      "stale": false
     },
     {
       "pos": 4,
@@ -103,25 +103,25 @@
       "riotId": "LANivia#FYRWN",
       "tier": "PLATINUM",
       "division": "IV",
-      "lp": 62,
+      "lp": 52,
       "wins": 19,
-      "losses": 8,
-      "winrate": 70.37,
+      "losses": 9,
+      "winrate": 67.86,
       "linea": "MIDDLE",
-      "progreso": 370,
+      "progreso": 360,
       "retoWins": 15,
-      "retoLosses": 7,
+      "retoLosses": 8,
       "racha": {
         "tipo": "L",
-        "n": 1
+        "n": 2
       },
       "campeon": {
         "nombre": "Anivia",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
-        "partidas": 20
+        "partidas": 21
       },
-      "ultimaPartida": "2026-10-24T14:06:06.000Z",
-      "partidasHoy": 0,
+      "ultimaPartida": "2026-10-25T21:25:18.000Z",
+      "partidasHoy": 1,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -160,7 +160,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/akriiuwu-MOSCA",
       "pendiente": false,
-      "stale": true
+      "stale": false
     },
     {
       "pos": 6,
@@ -193,7 +193,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/Oscar1334-LAN",
       "pendiente": false,
-      "stale": true
+      "stale": false
     },
     {
       "pos": 7,
@@ -202,16 +202,16 @@
       "riotId": "5tyleWars#LAN",
       "tier": "SILVER",
       "division": "IV",
-      "lp": 50,
+      "lp": 40,
       "wins": 7,
-      "losses": 4,
-      "winrate": 63.64,
+      "losses": 5,
+      "winrate": 58.33,
       "linea": "BOTTOM",
-      "progreso": 93,
+      "progreso": 83,
       "retoWins": 7,
-      "retoLosses": 4,
+      "retoLosses": 5,
       "racha": {
-        "tipo": "W",
+        "tipo": "L",
         "n": 1
       },
       "campeon": {
@@ -219,14 +219,14 @@
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png",
         "partidas": 3
       },
-      "ultimaPartida": "2026-10-25T20:42:03.000Z",
-      "partidasHoy": 2,
+      "ultimaPartida": "2026-10-25T21:25:09.000Z",
+      "partidasHoy": 3,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/5tyleWars-LAN",
       "pendiente": false,
-      "stale": true
+      "stale": false
     },
     {
       "pos": 8,
@@ -259,7 +259,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/%C3%91emalod%C3%B3n-0904",
       "pendiente": false,
-      "stale": true
+      "stale": false
     }
   ]
 }

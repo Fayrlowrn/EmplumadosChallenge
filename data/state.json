@@ -10,6 +10,20 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ5pT5BUqLbWAzXuj_JO49wh6Hdysb9gKOM=": {
+          "t": "2026-10-25T21:25:18.000Z",
+          "campeon": "Anivia",
+          "resultado": "LOSE",
+          "k": 9,
+          "d": 7,
+          "a": 11,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "IV",
+            "lp": 62
+          }
+        },
         "YyfXz-4rKZ6nqRuCKaXszvVBklKKYjsFGDr7Xw0J5Sk=": {
           "t": "2026-10-24T14:06:06.000Z",
           "campeon": "Anivia",
@@ -397,7 +411,13 @@
           "resultado": "WIN",
           "k": 11,
           "d": 6,
-          "a": 15
+          "a": 15,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 31
+          }
         }
       },
       "historial": "2026-10-19"
@@ -1034,6 +1054,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ6v1HrxvZHAjuiOVKjKX4-LLVY6oIS3qiA=": {
+          "t": "2026-10-25T21:25:09.000Z",
+          "campeon": "Yone",
+          "resultado": "LOSE",
+          "k": 12,
+          "d": 4,
+          "a": 9,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "IV",
+            "lp": 50
+          }
+        },
         "YyfXz-4rKZ7LLkRlV3hitQrpmnCICAp1cMIUI0RGgVU=": {
           "t": "2026-10-25T20:42:03.000Z",
           "campeon": "Yone",
