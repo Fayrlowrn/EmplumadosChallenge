@@ -1040,6 +1040,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ4ERQYXMIHxYI6i7W5GCBYcchYKwuy0sVw=": {
+          "t": "2026-10-25T19:47:02.000Z",
+          "campeon": "Ezreal",
+          "resultado": "LOSE",
+          "k": 6,
+          "d": 4,
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "SILVER",
+            "division": "IV",
+            "lp": 30
+          }
+        },
         "YyfXz-4rKZ7pB4R2V0XnCIxaBruYyjLPFaw4PpLBRM0=": {
           "t": "2026-10-24T20:57:49.000Z",
           "campeon": "Kalista",
