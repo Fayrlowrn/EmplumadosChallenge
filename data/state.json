@@ -397,13 +397,7 @@
           "resultado": "WIN",
           "k": 11,
           "d": 6,
-          "a": 15,
-          "pos": "BOTTOM",
-          "rango": {
-            "tier": "EMERALD",
-            "division": "IV",
-            "lp": 31
-          }
+          "a": 15
         }
       },
       "historial": "2026-10-19"

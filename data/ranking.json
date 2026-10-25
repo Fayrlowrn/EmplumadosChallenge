@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-25T20:45:16.697Z",
+  "actualizado": "2026-10-25T21:15:15.391Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -68,7 +68,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/RoyceJr11-LAN",
       "pendiente": false,
-      "stale": false
+      "stale": true
     },
     {
       "pos": 3,
@@ -94,7 +94,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/LuqueGPJ-2208",
       "pendiente": false,
-      "stale": false
+      "stale": true
     },
     {
       "pos": 4,
@@ -160,7 +160,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/akriiuwu-MOSCA",
       "pendiente": false,
-      "stale": false
+      "stale": true
     },
     {
       "pos": 6,
@@ -193,7 +193,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/Oscar1334-LAN",
       "pendiente": false,
-      "stale": false
+      "stale": true
     },
     {
       "pos": 7,
@@ -226,7 +226,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/5tyleWars-LAN",
       "pendiente": false,
-      "stale": false
+      "stale": true
     },
     {
       "pos": 8,
@@ -259,7 +259,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/%C3%91emalod%C3%B3n-0904",
       "pendiente": false,
-      "stale": false
+      "stale": true
     }
   ]
 }
