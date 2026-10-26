@@ -462,6 +462,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ48_XDLRqirU0-KFTv7q2Hwzh8UNb53jqo=": {
+          "t": "2026-10-26T00:09:04.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "WIN",
+          "k": 25,
+          "d": 4,
+          "a": 4,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 45
+          }
+        },
         "YyfXz-4rKZ7Aoqrtuu9cXX0AS79_sfTH2Yt9v-7pT2E=": {
           "t": "2026-10-23T17:31:02.000Z",
           "campeon": "Kai'Sa",

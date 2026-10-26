@@ -1,12 +1,45 @@
 {
-  "actualizado": "2026-10-25T23:15:15.379Z",
+  "actualizado": "2026-10-26T00:11:13.841Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
   "jugadores": [
     {
       "pos": 1,
-      "cambio": 0,
+      "cambio": 1,
+      "nombre": "Edwin",
+      "riotId": "RoyceJr11#LAN",
+      "tier": "EMERALD",
+      "division": "IV",
+      "lp": 75,
+      "wins": 17,
+      "losses": 9,
+      "winrate": 65.38,
+      "linea": "BOTTOM",
+      "progreso": 240,
+      "retoWins": 17,
+      "retoLosses": 9,
+      "racha": {
+        "tipo": "W",
+        "n": 3
+      },
+      "campeon": {
+        "nombre": "Kai'Sa",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
+        "partidas": 7
+      },
+      "ultimaPartida": "2026-10-26T00:09:04.000Z",
+      "partidasHoy": 1,
+      "enPartida": null,
+      "partidaDesde": null,
+      "twitch": null,
+      "opgg": "https://op.gg/lol/summoners/lan/RoyceJr11-LAN",
+      "pendiente": false,
+      "stale": false
+    },
+    {
+      "pos": 2,
+      "cambio": -1,
       "nombre": "Brandon",
       "riotId": "Bjango#Bj4",
       "tier": "EMERALD",
@@ -34,39 +67,6 @@
       "partidaDesde": null,
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/Bjango-Bj4",
-      "pendiente": false,
-      "stale": false
-    },
-    {
-      "pos": 2,
-      "cambio": 0,
-      "nombre": "Edwin",
-      "riotId": "RoyceJr11#LAN",
-      "tier": "EMERALD",
-      "division": "IV",
-      "lp": 45,
-      "wins": 16,
-      "losses": 9,
-      "winrate": 64,
-      "linea": "BOTTOM",
-      "progreso": 210,
-      "retoWins": 16,
-      "retoLosses": 9,
-      "racha": {
-        "tipo": "W",
-        "n": 2
-      },
-      "campeon": {
-        "nombre": "Kai'Sa",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
-        "partidas": 6
-      },
-      "ultimaPartida": "2026-10-23T17:31:02.000Z",
-      "partidasHoy": 0,
-      "enPartida": null,
-      "partidaDesde": null,
-      "twitch": null,
-      "opgg": "https://op.gg/lol/summoners/lan/RoyceJr11-LAN",
       "pendiente": false,
       "stale": false
     },
