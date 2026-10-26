@@ -476,6 +476,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ5j2cMjGdGwaoZp9uKzs70V_lrjjy93P00=": {
+          "t": "2026-10-26T04:42:35.000Z",
+          "campeon": "Varus",
+          "resultado": "WIN",
+          "k": 11,
+          "d": 7,
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 5
+          }
+        },
         "YyfXz-4rKZ7qQRRneg7TkL96w71tosCj8G6v-IZBb_o=": {
           "t": "2026-10-26T01:11:04.000Z",
           "campeon": "Yone",
