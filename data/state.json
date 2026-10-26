@@ -476,6 +476,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ7qQRRneg7TkL96w71tosCj8G6v-IZBb_o=": {
+          "t": "2026-10-26T01:11:04.000Z",
+          "campeon": "Yone",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 12,
+          "a": 11,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 75
+          }
+        },
         "YyfXz-4rKZ48_XDLRqirU0-KFTv7q2Hwzh8UNb53jqo=": {
           "t": "2026-10-26T00:09:04.000Z",
           "campeon": "Kai'Sa",
