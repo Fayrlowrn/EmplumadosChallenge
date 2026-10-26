@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-26T04:45:14.639Z",
+  "actualizado": "2026-10-26T06:00:15.736Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
   "jugadores": [
     {
       "pos": 1,
-      "cambio": 1,
+      "cambio": 0,
       "nombre": "Edwin",
       "riotId": "RoyceJr11#LAN",
       "tier": "EMERALD",
@@ -29,7 +29,7 @@
         "partidas": 7
       },
       "ultimaPartida": "2026-10-26T04:42:35.000Z",
-      "partidasHoy": 3,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -39,7 +39,7 @@
     },
     {
       "pos": 2,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Brandon",
       "riotId": "Bjango#Bj4",
       "tier": "EMERALD",
@@ -121,7 +121,7 @@
         "partidas": 23
       },
       "ultimaPartida": "2026-10-26T00:13:30.000Z",
-      "partidasHoy": 3,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -220,7 +220,7 @@
         "partidas": 3
       },
       "ultimaPartida": "2026-10-25T21:25:09.000Z",
-      "partidasHoy": 3,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -253,7 +253,7 @@
         "partidas": 5
       },
       "ultimaPartida": "2026-10-25T23:02:07.000Z",
-      "partidasHoy": 1,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
