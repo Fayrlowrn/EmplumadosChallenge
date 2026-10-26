@@ -476,6 +476,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ5Aa2zH-7-sSmJ7GcnvEHffALhWKZBBDNQ=": {
+          "t": "2026-10-26T21:39:38.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "WIN",
+          "k": 13,
+          "d": 5,
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 34
+          }
+        },
         "YyfXz-4rKZ5j2cMjGdGwaoZp9uKzs70V_lrjjy93P00=": {
           "t": "2026-10-26T04:42:35.000Z",
           "campeon": "Varus",
