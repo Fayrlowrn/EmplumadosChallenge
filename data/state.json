@@ -1063,6 +1063,20 @@
         "lp": 55
       },
       "partidas": {
+        "YyfXz-4rKZ54cBO70sb7BhzNevU8ZVy8sIml4mgwfDM=": {
+          "t": "2026-10-27T02:31:04.000Z",
+          "campeon": "Sylas",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 4,
+          "a": 11,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 95
+          }
+        },
         "YyfXz-4rKZ7tra0nx4WJvXKtIkNfWhGbIobKy2uvKlc=": {
           "t": "2026-10-27T01:48:12.000Z",
           "campeon": "Sylas",
