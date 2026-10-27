@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-26T21:40:38.396Z",
+  "actualizado": "2026-10-27T00:45:16.153Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -136,25 +136,25 @@
       "riotId": "akriiuwu#MOSCA",
       "tier": "GOLD",
       "division": "IV",
-      "lp": 75,
+      "lp": 65,
       "wins": 4,
-      "losses": 3,
-      "winrate": 57.14,
-      "linea": "TOP",
-      "progreso": 20,
+      "losses": 4,
+      "winrate": 50,
+      "linea": "MIDDLE",
+      "progreso": 10,
       "retoWins": 4,
-      "retoLosses": 3,
+      "retoLosses": 4,
       "racha": {
         "tipo": "L",
-        "n": 1
+        "n": 2
       },
       "campeon": {
         "nombre": "Sylas",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sylas.png",
-        "partidas": 3
+        "partidas": 4
       },
-      "ultimaPartida": "2026-10-23T04:38:34.000Z",
-      "partidasHoy": 0,
+      "ultimaPartida": "2026-10-27T00:42:51.000Z",
+      "partidasHoy": 1,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
