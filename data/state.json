@@ -490,6 +490,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ60Xc5lceyZTCgm5kwIftmqT9OsBviPUUI=": {
+          "t": "2026-10-27T15:59:00.000Z",
+          "campeon": "Syndra",
+          "resultado": "LOSE",
+          "k": 10,
+          "d": 7,
+          "a": 8,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 80
+          }
+        },
         "YyfXz-4rKZ6IfX28zb1gO3ZBekFLQF4KQepXiENST1k=": {
           "t": "2026-10-27T15:18:37.000Z",
           "campeon": "Varus",
