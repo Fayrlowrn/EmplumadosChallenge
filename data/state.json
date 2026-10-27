@@ -1063,6 +1063,20 @@
         "lp": 55
       },
       "partidas": {
+        "YyfXz-4rKZ7FOZ8CR7BI0uWNyR953N3fXP3zEqW0WBU=": {
+          "t": "2026-10-27T05:16:40.000Z",
+          "campeon": "Malzahar",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 7,
+          "a": 11,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "III",
+            "lp": 55
+          }
+        },
         "YyfXz-4rKZ6XL2Ds5s4KMSN0G-Sqlv2guYjurwq9nXs=": {
           "t": "2026-10-27T03:20:58.000Z",
           "campeon": "Garen",
