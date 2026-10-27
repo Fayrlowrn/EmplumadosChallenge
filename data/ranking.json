@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-27T05:30:16.969Z",
+  "actualizado": "2026-10-27T06:00:16.887Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -29,7 +29,7 @@
         "partidas": 8
       },
       "ultimaPartida": "2026-10-26T21:39:38.000Z",
-      "partidasHoy": 1,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -121,7 +121,7 @@
         "partidas": 24
       },
       "ultimaPartida": "2026-10-27T00:52:45.000Z",
-      "partidasHoy": 1,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -154,7 +154,7 @@
         "partidas": 6
       },
       "ultimaPartida": "2026-10-27T05:16:40.000Z",
-      "partidasHoy": 5,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
