@@ -903,6 +903,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ7eILduTGV8-wCNuCB8pSAtmxkSU5cc_qI=": {
+          "t": "2026-10-28T04:44:36.000Z",
+          "campeon": "Leona",
+          "resultado": "WIN",
+          "k": 3,
+          "d": 2,
+          "a": 16,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "BRONZE",
+            "division": "III",
+            "lp": 88
+          }
+        },
         "YyfXz-4rKZ79qWL7KQEu-Ma5xp5Prl1cAHy-8eFytJE=": {
           "t": "2026-10-28T04:05:50.000Z",
           "campeon": "Nautilus",
