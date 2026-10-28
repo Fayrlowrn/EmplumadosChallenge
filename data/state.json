@@ -490,6 +490,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ5xOKaGdFXcfdZym1SvXBJ8r3I7xReKGyI=": {
+          "t": "2026-10-28T23:18:22.000Z",
+          "campeon": "Zoe",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 10,
+          "a": 14,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 96
+          }
+        },
         "YyfXz-4rKZ58rJGndenFAp5d15i6mkiKzWHP7PzXodU=": {
           "t": "2026-10-28T20:40:39.000Z",
           "campeon": "Locke",
