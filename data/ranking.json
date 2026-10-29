@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-29T17:45:19.004Z",
+  "actualizado": "2026-10-29T18:15:15.982Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -235,12 +235,12 @@
       "riotId": "Ñemalodón#0904",
       "tier": "SILVER",
       "division": "IV",
-      "lp": 18,
+      "lp": 13,
       "wins": 17,
       "losses": 6,
       "winrate": 73.91,
       "linea": "UTILITY",
-      "progreso": 250,
+      "progreso": 245,
       "retoWins": 17,
       "retoLosses": 5,
       "racha": {
