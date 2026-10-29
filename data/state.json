@@ -490,6 +490,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6oPvb4vBxEEdQxxFeD5oGJozZOli4Gxfc=": {
+          "t": "2026-10-29T02:31:10.000Z",
+          "campeon": "Locke",
+          "resultado": "WIN",
+          "k": 7,
+          "d": 6,
+          "a": 4,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 91
+          }
+        },
         "YyfXz-4rKZ6V5ryUhUlCo57XiSg3TJsiE_LT4694gWU=": {
           "t": "2026-10-29T01:48:52.000Z",
           "campeon": "Viego",
