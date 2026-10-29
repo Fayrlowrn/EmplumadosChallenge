@@ -490,6 +490,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ5lL6fFs1lC6YPgUMg7OXvhc216hu8P72Y=": {
+          "t": "2026-10-29T23:12:31.000Z",
+          "campeon": "Hwei",
+          "resultado": "LOSE",
+          "k": 5,
+          "d": 10,
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 1
+          }
+        },
         "YyfXz-4rKZ45ak7Hta-t3P21mnggE3BL3pZfF393kLA=": {
           "t": "2026-10-29T22:17:10.000Z",
           "campeon": "Ahri",
