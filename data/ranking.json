@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-29T01:00:17.465Z",
+  "actualizado": "2026-10-29T01:30:15.968Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -11,25 +11,25 @@
       "riotId": "RoyceJr11#LAN",
       "tier": "EMERALD",
       "division": "II",
-      "lp": 50,
+      "lp": 37,
       "wins": 24,
-      "losses": 11,
-      "winrate": 68.57,
+      "losses": 12,
+      "winrate": 66.67,
       "linea": "BOTTOM",
-      "progreso": 415,
+      "progreso": 402,
       "retoWins": 24,
-      "retoLosses": 11,
+      "retoLosses": 12,
       "racha": {
-        "tipo": "W",
-        "n": 3
+        "tipo": "L",
+        "n": 1
       },
       "campeon": {
         "nombre": "Kai'Sa",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
         "partidas": 8
       },
-      "ultimaPartida": "2026-10-29T00:46:23.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-10-29T01:18:29.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
