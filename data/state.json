@@ -490,6 +490,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ45ak7Hta-t3P21mnggE3BL3pZfF393kLA=": {
+          "t": "2026-10-29T22:17:10.000Z",
+          "campeon": "Ahri",
+          "resultado": "LOSE",
+          "k": 6,
+          "d": 8,
+          "a": 16,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 16
+          }
+        },
         "YyfXz-4rKZ6oPvb4vBxEEdQxxFeD5oGJozZOli4Gxfc=": {
           "t": "2026-10-29T02:31:10.000Z",
           "campeon": "Locke",
