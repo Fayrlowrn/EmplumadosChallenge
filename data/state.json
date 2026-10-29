@@ -987,6 +987,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ413fhJ0zeKkUn8s3OW4xDGdAs7ORET1zc=": {
+          "t": "2026-10-29T20:30:14.000Z",
+          "campeon": "Galio",
+          "resultado": "WIN",
+          "k": 7,
+          "d": 7,
+          "a": 20,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "IV",
+            "lp": 13
+          }
+        },
         "YyfXz-4rKZ7sLMZxp5HpMyz3yLDnA3g_u4mtxA0p6Nw=": {
           "t": "2026-10-29T17:31:45.000Z",
           "campeon": "Nautilus",
