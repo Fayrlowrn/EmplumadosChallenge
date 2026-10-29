@@ -490,6 +490,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6SSFo5R4o-N1pI2cIvEdscpmZRw1ZZ9w0=": {
+          "t": "2026-10-29T00:46:23.000Z",
+          "campeon": "Aurora",
+          "resultado": "WIN",
+          "k": 0,
+          "d": 2,
+          "a": 3,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 23
+          }
+        },
         "YyfXz-4rKZ5xOKaGdFXcfdZym1SvXBJ8r3I7xReKGyI=": {
           "t": "2026-10-28T23:18:22.000Z",
           "campeon": "Zoe",
