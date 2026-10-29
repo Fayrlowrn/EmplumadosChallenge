@@ -490,6 +490,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6V5ryUhUlCo57XiSg3TJsiE_LT4694gWU=": {
+          "t": "2026-10-29T01:48:52.000Z",
+          "campeon": "Viego",
+          "resultado": "WIN",
+          "k": 8,
+          "d": 1,
+          "a": 10,
+          "pos": "JUNGLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 37
+          }
+        },
         "YyfXz-4rKZ4hwXZxYGR9HuhXyl_IeG4hfy56oQRlHqI=": {
           "t": "2026-10-29T01:18:29.000Z",
           "campeon": "Zoe",
