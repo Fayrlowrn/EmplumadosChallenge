@@ -1015,6 +1015,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ5xjwe4xbuviS84wdeXYpMJOIBSp2TS4_8=": {
+          "t": "2026-10-30T00:22:28.000Z",
+          "campeon": "Rakan",
+          "resultado": "WIN",
+          "k": 1,
+          "d": 5,
+          "a": 17,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "IV",
+            "lp": 43
+          }
+        },
         "YyfXz-4rKZ413fhJ0zeKkUn8s3OW4xDGdAs7ORET1zc=": {
           "t": "2026-10-29T20:30:14.000Z",
           "campeon": "Galio",
