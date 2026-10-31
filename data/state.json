@@ -1586,6 +1586,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ5kIH7OZW58XRGKAFLJ4hceK1fx781oquM=": {
+          "t": "2026-10-31T19:47:55.000Z",
+          "campeon": "Yone",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 1,
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "III",
+            "lp": 31
+          }
+        },
         "YyfXz-4rKZ6t6p9EN0-kHpEz-ujqLrk2NmmOChyEvV4=": {
           "t": "2026-10-31T08:22:20.000Z",
           "campeon": "Orianna",
