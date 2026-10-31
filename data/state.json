@@ -1586,6 +1586,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ68yL00YOa3X9uAik37vinCTvs6gcYTXPM=": {
+          "t": "2026-10-31T22:09:16.000Z",
+          "campeon": "Yone",
+          "resultado": "WIN",
+          "k": 24,
+          "d": 2,
+          "a": 3,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "II",
+            "lp": 81
+          }
+        },
         "YyfXz-4rKZ6WnxgfpqyPdKrvzqIzBTKwBJdhbe6EQe8=": {
           "t": "2026-10-31T21:34:49.000Z",
           "campeon": "Yone",
