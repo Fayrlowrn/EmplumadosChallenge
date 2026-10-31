@@ -1586,6 +1586,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ6t6p9EN0-kHpEz-ujqLrk2NmmOChyEvV4=": {
+          "t": "2026-10-31T08:22:20.000Z",
+          "campeon": "Orianna",
+          "resultado": "WIN",
+          "k": 14,
+          "d": 2,
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "III",
+            "lp": 1
+          }
+        },
         "YyfXz-4rKZ7SObiHxcD0t17Q7iNkJKwZv18aDeYQdlQ=": {
           "t": "2026-10-31T07:52:57.000Z",
           "campeon": "Nautilus",
