@@ -1586,6 +1586,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ6r-L4NqNzfBAuWY5tGRtHyukYpHw3vBKA=": {
+          "t": "2026-10-31T21:01:33.000Z",
+          "campeon": "Pyke",
+          "resultado": "WIN",
+          "k": 13,
+          "d": 5,
+          "a": 16,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "III",
+            "lp": 91
+          }
+        },
         "YyfXz-4rKZ6WuUn_Vaz66iPvCuzeLoykxnSyR-DUBqo=": {
           "t": "2026-10-31T20:28:05.000Z",
           "campeon": "Yone",
