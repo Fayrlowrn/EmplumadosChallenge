@@ -1586,6 +1586,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ7SObiHxcD0t17Q7iNkJKwZv18aDeYQdlQ=": {
+          "t": "2026-10-31T07:52:57.000Z",
+          "campeon": "Nautilus",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 13,
+          "a": 40,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "IV",
+            "lp": 40
+          }
+        },
         "YyfXz-4rKZ6v1HrxvZHAjuiOVKjKX4-LLVY6oIS3qiA=": {
           "t": "2026-10-25T21:25:09.000Z",
           "campeon": "Yone",
