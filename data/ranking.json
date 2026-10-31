@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T21:15:15.668Z",
+  "actualizado": "2026-10-31T21:45:16.205Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -202,25 +202,25 @@
       "riotId": "5tyleWars#LAN",
       "tier": "SILVER",
       "division": "II",
-      "lp": 51,
-      "wins": 12,
+      "lp": 81,
+      "wins": 13,
       "losses": 5,
-      "winrate": 70.59,
+      "winrate": 72.22,
       "linea": "BOTTOM",
-      "progreso": 294,
-      "retoWins": 12,
+      "progreso": 324,
+      "retoWins": 13,
       "retoLosses": 5,
       "racha": {
         "tipo": "W",
-        "n": 5
+        "n": 6
       },
       "campeon": {
         "nombre": "Yone",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yone.png",
-        "partidas": 4
+        "partidas": 5
       },
-      "ultimaPartida": "2026-10-31T21:01:33.000Z",
-      "partidasHoy": 5,
+      "ultimaPartida": "2026-10-31T21:34:49.000Z",
+      "partidasHoy": 6,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
