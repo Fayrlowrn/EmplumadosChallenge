@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ4ps_egGSE_jGC6Ce4RCz_vuw4RrzRIj1o=": {
+          "t": "2026-11-01T23:39:38.000Z",
+          "campeon": "Leona",
+          "resultado": "LOSE",
+          "k": 0,
+          "d": 7,
+          "a": 8,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 13
+          }
+        },
         "YyfXz-4rKZ7tuq8AVgL9JwMrwS9HgKckF18JYpxJATw=": {
           "t": "2026-11-01T23:02:10.000Z",
           "campeon": "Leona",
