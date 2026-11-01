@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ4FRy9at8ukjJr1KGvEm7BEDRCTLKPcU7k=": {
+          "t": "2026-11-01T21:54:07.000Z",
+          "campeon": "Taric",
+          "resultado": "WIN",
+          "k": 2,
+          "d": 1,
+          "a": 16,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "II",
+            "lp": 63
+          }
+        },
         "YyfXz-4rKZ6SW_Y1AUrdp2kRJOkNCryWc8RpFyx-4oA=": {
           "t": "2026-11-01T20:04:51.000Z",
           "campeon": "Rell",
