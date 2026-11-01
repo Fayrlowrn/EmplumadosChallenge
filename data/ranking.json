@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-01T22:00:14.950Z",
+  "actualizado": "2026-11-01T22:45:16.521Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -202,25 +202,25 @@
       "riotId": "5tyleWars#LAN",
       "tier": "SILVER",
       "division": "I",
-      "lp": 11,
-      "wins": 14,
+      "lp": 41,
+      "wins": 15,
       "losses": 5,
-      "winrate": 73.68,
-      "linea": "BOTTOM",
-      "progreso": 354,
-      "retoWins": 14,
+      "winrate": 75,
+      "linea": "MIDDLE",
+      "progreso": 384,
+      "retoWins": 15,
       "retoLosses": 5,
       "racha": {
         "tipo": "W",
-        "n": 7
+        "n": 8
       },
       "campeon": {
         "nombre": "Yone",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yone.png",
-        "partidas": 6
+        "partidas": 7
       },
-      "ultimaPartida": "2026-10-31T22:09:16.000Z",
-      "partidasHoy": 0,
+      "ultimaPartida": "2026-11-01T22:41:11.000Z",
+      "partidasHoy": 1,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -234,26 +234,26 @@
       "nombre": "Luis",
       "riotId": "Ñemalodón#0904",
       "tier": "SILVER",
-      "division": "II",
-      "lp": 93,
-      "wins": 27,
+      "division": "I",
+      "lp": 23,
+      "wins": 28,
       "losses": 8,
-      "winrate": 77.14,
+      "winrate": 77.78,
       "linea": "UTILITY",
-      "progreso": 525,
-      "retoWins": 27,
+      "progreso": 555,
+      "retoWins": 28,
       "retoLosses": 7,
       "racha": {
         "tipo": "W",
-        "n": 6
+        "n": 7
       },
       "campeon": {
         "nombre": "Leona",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
         "partidas": 19
       },
-      "ultimaPartida": "2026-11-01T21:54:07.000Z",
-      "partidasHoy": 7,
+      "ultimaPartida": "2026-11-01T22:31:58.000Z",
+      "partidasHoy": 8,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,

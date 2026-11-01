@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ4AYoTHh986lQ4Ouszc4Z5Kebjw0tIfzZE=": {
+          "t": "2026-11-01T22:31:58.000Z",
+          "campeon": "Seraphine",
+          "resultado": "WIN",
+          "k": 3,
+          "d": 6,
+          "a": 23,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "II",
+            "lp": 93
+          }
+        },
         "YyfXz-4rKZ4FRy9at8ukjJr1KGvEm7BEDRCTLKPcU7k=": {
           "t": "2026-11-01T21:54:07.000Z",
           "campeon": "Taric",
@@ -1754,6 +1768,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ7Z4k53P5Urpin3iKSUzCXyyah0eA5tK7k=": {
+          "t": "2026-11-01T22:41:11.000Z",
+          "campeon": "Yone",
+          "resultado": "WIN",
+          "k": 17,
+          "d": 7,
+          "a": 9,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 11
+          }
+        },
         "YyfXz-4rKZ68yL00YOa3X9uAik37vinCTvs6gcYTXPM=": {
           "t": "2026-10-31T22:09:16.000Z",
           "campeon": "Yone",
