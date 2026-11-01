@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-01T18:00:15.949Z",
+  "actualizado": "2026-11-01T19:30:16.848Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -43,26 +43,26 @@
       "nombre": "Brandon",
       "riotId": "Bjango#Bj4",
       "tier": "EMERALD",
-      "division": "III",
-      "lp": 1,
+      "division": "IV",
+      "lp": 84,
       "wins": 36,
-      "losses": 32,
-      "winrate": 52.94,
+      "losses": 33,
+      "winrate": 52.17,
       "linea": "BOTTOM",
-      "progreso": 70,
+      "progreso": 53,
       "retoWins": 3,
-      "retoLosses": 0,
+      "retoLosses": 1,
       "racha": {
-        "tipo": "W",
-        "n": 3
+        "tipo": "L",
+        "n": 1
       },
       "campeon": {
-        "nombre": "Aphelios",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Aphelios.png",
-        "partidas": 1
+        "nombre": "Kai'Sa",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
+        "partidas": 2
       },
-      "ultimaPartida": "2026-11-01T17:56:41.000Z",
-      "partidasHoy": 1,
+      "ultimaPartida": "2026-11-01T19:21:42.000Z",
+      "partidasHoy": 2,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,

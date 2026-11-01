@@ -447,6 +447,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ7M0SdmvTr2Oi8d9XUgtsBS6n1fElSFCh4=": {
+          "t": "2026-11-01T19:21:42.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "LOSE",
+          "k": 12,
+          "d": 6,
+          "a": 11,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 1
+          }
+        },
         "YyfXz-4rKZ4uuNyS-IGNHLMCToHP2EJWSK3XysnoSRw=": {
           "t": "2026-11-01T17:56:41.000Z",
           "campeon": "Aphelios",
