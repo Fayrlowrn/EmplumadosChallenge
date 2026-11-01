@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-01T16:15:15.062Z",
+  "actualizado": "2026-11-01T17:00:16.380Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -234,26 +234,26 @@
       "nombre": "Luis",
       "riotId": "Ñemalodón#0904",
       "tier": "SILVER",
-      "division": "III",
-      "lp": 73,
-      "wins": 23,
+      "division": "II",
+      "lp": 3,
+      "wins": 24,
       "losses": 8,
-      "winrate": 74.19,
+      "winrate": 75,
       "linea": "UTILITY",
-      "progreso": 405,
-      "retoWins": 23,
+      "progreso": 435,
+      "retoWins": 24,
       "retoLosses": 7,
       "racha": {
         "tipo": "W",
-        "n": 2
+        "n": 3
       },
       "campeon": {
         "nombre": "Leona",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
-        "partidas": 17
+        "partidas": 18
       },
-      "ultimaPartida": "2026-11-01T16:06:31.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-11-01T16:46:56.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
