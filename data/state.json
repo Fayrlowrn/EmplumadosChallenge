@@ -447,6 +447,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ4uuNyS-IGNHLMCToHP2EJWSK3XysnoSRw=": {
+          "t": "2026-11-01T17:56:41.000Z",
+          "campeon": "Aphelios",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 3,
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 77
+          }
+        },
         "YyfXz-4rKZ458QEgipYSBlAISh9eRoG4mlOtaTWEMEc=": {
           "t": "2026-10-31T06:47:39.000Z",
           "campeon": "Kai'Sa",
@@ -1029,6 +1043,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ6XUoVF_n10cEOngmNXgNMap3PrJML0cGw=": {
+          "t": "2026-11-01T17:54:32.000Z",
+          "campeon": "Leona",
+          "resultado": "WIN",
+          "k": 1,
+          "d": 7,
+          "a": 14,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "II",
+            "lp": 3
+          }
+        },
         "YyfXz-4rKZ5IOhzNEOVwBY8Yqmi6W7NrHKjHTrztz8E=": {
           "t": "2026-11-01T16:46:56.000Z",
           "campeon": "Leona",
