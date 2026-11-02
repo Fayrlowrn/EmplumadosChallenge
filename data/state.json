@@ -1796,6 +1796,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ4o-pOJCoY2u6GNmCvlB_JymAl_iCPduOQ=": {
+          "t": "2026-11-01T23:55:47.000Z",
+          "campeon": "Yone",
+          "resultado": "WIN",
+          "k": 11,
+          "d": 3,
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 1
+          }
+        },
         "YyfXz-4rKZ6TTIpflxWk9bhP9iS1iRiwR3rq_D8K_sw=": {
           "t": "2026-11-01T23:21:35.000Z",
           "campeon": "Pyke",
