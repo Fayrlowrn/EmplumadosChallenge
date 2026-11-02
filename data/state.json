@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ5_lgMSpQcDhQEY9GciWBnQMFxuXpe9ZHQ=": {
+          "t": "2026-11-02T22:52:56.000Z",
+          "campeon": "Tristana",
+          "resultado": "WIN",
+          "k": 20,
+          "d": 7,
+          "a": 18,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 86
+          }
+        },
         "YyfXz-4rKZ5lL6fFs1lC6YPgUMg7OXvhc216hu8P72Y=": {
           "t": "2026-10-29T23:12:31.000Z",
           "campeon": "Hwei",
