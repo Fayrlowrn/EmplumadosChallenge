@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-02T05:30:17.172Z",
+  "actualizado": "2026-11-02T06:00:16.082Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -62,7 +62,7 @@
         "partidas": 2
       },
       "ultimaPartida": "2026-11-01T20:02:29.000Z",
-      "partidasHoy": 3,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -164,7 +164,7 @@
     },
     {
       "pos": 6,
-      "cambio": 1,
+      "cambio": 0,
       "nombre": "Racecore",
       "riotId": "5tyleWars#LAN",
       "tier": "GOLD",
@@ -187,7 +187,7 @@
         "partidas": 10
       },
       "ultimaPartida": "2026-11-02T00:56:54.000Z",
-      "partidasHoy": 5,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
@@ -197,7 +197,7 @@
     },
     {
       "pos": 7,
-      "cambio": -1,
+      "cambio": 0,
       "nombre": "Oscar",
       "riotId": "Oscar1334#LAN",
       "tier": "SILVER",
@@ -253,7 +253,7 @@
         "partidas": 22
       },
       "ultimaPartida": "2026-11-02T05:25:27.000Z",
-      "partidasHoy": 13,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
