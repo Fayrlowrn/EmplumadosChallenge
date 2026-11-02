@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ74w1pO2oqqKtzYm-FDOr55byohfHnvwv8=": {
+          "t": "2026-11-02T06:06:34.000Z",
+          "campeon": "Maokai",
+          "resultado": "LOSE",
+          "k": 2,
+          "d": 9,
+          "a": 7,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 13
+          }
+        },
         "YyfXz-4rKZ4eMRmEhwA3-ALi4cFXLS9QoC4hWaRQZzs=": {
           "t": "2026-11-02T05:25:27.000Z",
           "campeon": "Leona",
