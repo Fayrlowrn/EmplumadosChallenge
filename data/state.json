@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ5X_eHHYj5879J7YePJ42HzYs3zVYCpulI=": {
+          "t": "2026-11-02T00:32:03.000Z",
+          "campeon": "Rakan",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 7,
+          "a": 23,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 3
+          }
+        },
         "YyfXz-4rKZ4ps_egGSE_jGC6Ce4RCz_vuw4RrzRIj1o=": {
           "t": "2026-11-01T23:39:38.000Z",
           "campeon": "Leona",
