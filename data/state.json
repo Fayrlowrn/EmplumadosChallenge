@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ7LAbW0ahYRp0cuiYAV_RdO7VYdZCNDIOY=": {
+          "t": "2026-11-02T17:00:53.000Z",
+          "campeon": "Seraphine",
+          "resultado": "LOSE",
+          "k": 2,
+          "d": 6,
+          "a": 11,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 3
+          }
+        },
         "YyfXz-4rKZ74w1pO2oqqKtzYm-FDOr55byohfHnvwv8=": {
           "t": "2026-11-02T06:06:34.000Z",
           "campeon": "Maokai",

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-02T06:15:17.075Z",
+  "actualizado": "2026-11-02T17:15:25.917Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -237,23 +237,23 @@
       "division": "I",
       "lp": 3,
       "wins": 29,
-      "losses": 13,
-      "winrate": 69.05,
+      "losses": 14,
+      "winrate": 67.44,
       "linea": "UTILITY",
       "progreso": 535,
       "retoWins": 29,
-      "retoLosses": 12,
+      "retoLosses": 13,
       "racha": {
         "tipo": "L",
-        "n": 3
+        "n": 4
       },
       "campeon": {
         "nombre": "Leona",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
         "partidas": 22
       },
-      "ultimaPartida": "2026-11-02T06:06:34.000Z",
-      "partidasHoy": 1,
+      "ultimaPartida": "2026-11-02T17:00:53.000Z",
+      "partidasHoy": 2,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
