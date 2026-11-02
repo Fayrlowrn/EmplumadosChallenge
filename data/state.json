@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ5Bac6E8H7gS9Z5girxVgAqbcEoEyf-Rrg=": {
+          "t": "2026-11-02T17:45:49.000Z",
+          "campeon": "Sona",
+          "resultado": "WIN",
+          "k": 2,
+          "d": 4,
+          "a": 11,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 3
+          }
+        },
         "YyfXz-4rKZ7LAbW0ahYRp0cuiYAV_RdO7VYdZCNDIOY=": {
           "t": "2026-11-02T17:00:53.000Z",
           "campeon": "Seraphine",
