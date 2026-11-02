@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ4wa5gnoYDUUGNYtl7pxNwIsZ3isVCBrZM=": {
+          "t": "2026-11-02T01:42:33.000Z",
+          "campeon": "Milio",
+          "resultado": "LOSE",
+          "k": 0,
+          "d": 9,
+          "a": 20,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 33
+          }
+        },
         "YyfXz-4rKZ5X_eHHYj5879J7YePJ42HzYs3zVYCpulI=": {
           "t": "2026-11-02T00:32:03.000Z",
           "campeon": "Rakan",
