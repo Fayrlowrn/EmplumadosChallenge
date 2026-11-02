@@ -1071,6 +1071,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ5kiL9oakCtnPWsTA9ayx2k-k_cEr1dR94=": {
+          "t": "2026-11-02T18:49:19.000Z",
+          "campeon": "Lux",
+          "resultado": "LOSE",
+          "k": 10,
+          "d": 10,
+          "a": 15,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 33
+          }
+        },
         "YyfXz-4rKZ5Bac6E8H7gS9Z5girxVgAqbcEoEyf-Rrg=": {
           "t": "2026-11-02T17:45:49.000Z",
           "campeon": "Sona",
