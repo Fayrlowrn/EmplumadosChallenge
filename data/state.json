@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4UGM553--TuCWazjAEO0XK_PWxLphIuhQ=": {
+          "t": "2026-11-03T19:05:03.000Z",
+          "campeon": "Miss Fortune",
+          "resultado": "LOSE",
+          "k": 7,
+          "d": 17,
+          "a": 16,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 18
+          }
+        },
         "YyfXz-4rKZ4HXaoq_ifCsUZ9aGyf4Yz-Bdj6iS-pJao=": {
           "t": "2026-11-03T01:39:41.000Z",
           "campeon": "Tristana",
