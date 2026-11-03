@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4HXaoq_ifCsUZ9aGyf4Yz-Bdj6iS-pJao=": {
+          "t": "2026-11-03T01:39:41.000Z",
+          "campeon": "Tristana",
+          "resultado": "LOSE",
+          "k": 6,
+          "d": 7,
+          "a": 6,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 18
+          }
+        },
         "YyfXz-4rKZ6SHZwCAUZ3XIqH69_0urwG0-MZL3qhtLc=": {
           "t": "2026-11-03T00:24:42.000Z",
           "campeon": "Kalista",

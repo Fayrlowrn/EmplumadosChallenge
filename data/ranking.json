@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-03T00:30:15.205Z",
+  "actualizado": "2026-11-03T01:45:15.444Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -13,23 +13,23 @@
       "division": "I",
       "lp": 18,
       "wins": 28,
-      "losses": 15,
-      "winrate": 65.12,
+      "losses": 16,
+      "winrate": 63.64,
       "linea": "BOTTOM",
       "progreso": 483,
       "retoWins": 28,
-      "retoLosses": 15,
+      "retoLosses": 16,
       "racha": {
         "tipo": "L",
-        "n": 1
+        "n": 2
       },
       "campeon": {
         "nombre": "Kai'Sa",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
         "partidas": 8
       },
-      "ultimaPartida": "2026-11-03T00:24:42.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-11-03T01:39:41.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
