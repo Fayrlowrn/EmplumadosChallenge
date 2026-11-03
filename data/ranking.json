@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-03T17:45:18.639Z",
+  "actualizado": "2026-11-03T18:30:16.463Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -197,7 +197,40 @@
     },
     {
       "pos": 7,
-      "cambio": 0,
+      "cambio": 1,
+      "nombre": "Luis",
+      "riotId": "Ñemalodón#0904",
+      "tier": "SILVER",
+      "division": "I",
+      "lp": 73,
+      "wins": 32,
+      "losses": 16,
+      "winrate": 66.67,
+      "linea": "UTILITY",
+      "progreso": 605,
+      "retoWins": 32,
+      "retoLosses": 15,
+      "racha": {
+        "tipo": "W",
+        "n": 1
+      },
+      "campeon": {
+        "nombre": "Leona",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
+        "partidas": 24
+      },
+      "ultimaPartida": "2026-11-03T18:23:16.000Z",
+      "partidasHoy": 3,
+      "enPartida": null,
+      "partidaDesde": null,
+      "twitch": null,
+      "opgg": "https://op.gg/lol/summoners/lan/%C3%91emalod%C3%B3n-0904",
+      "pendiente": false,
+      "stale": false
+    },
+    {
+      "pos": 8,
+      "cambio": -1,
       "nombre": "Oscar",
       "riotId": "Oscar1334#LAN",
       "tier": "SILVER",
@@ -225,39 +258,6 @@
       "partidaDesde": null,
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/Oscar1334-LAN",
-      "pendiente": false,
-      "stale": false
-    },
-    {
-      "pos": 8,
-      "cambio": 0,
-      "nombre": "Luis",
-      "riotId": "Ñemalodón#0904",
-      "tier": "SILVER",
-      "division": "I",
-      "lp": 43,
-      "wins": 31,
-      "losses": 16,
-      "winrate": 65.96,
-      "linea": "UTILITY",
-      "progreso": 575,
-      "retoWins": 31,
-      "retoLosses": 15,
-      "racha": {
-        "tipo": "L",
-        "n": 1
-      },
-      "campeon": {
-        "nombre": "Leona",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
-        "partidas": 24
-      },
-      "ultimaPartida": "2026-11-03T17:34:14.000Z",
-      "partidasHoy": 2,
-      "enPartida": null,
-      "partidaDesde": null,
-      "twitch": null,
-      "opgg": "https://op.gg/lol/summoners/lan/%C3%91emalod%C3%B3n-0904",
       "pendiente": false,
       "stale": false
     }
