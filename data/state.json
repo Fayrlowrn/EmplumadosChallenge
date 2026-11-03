@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4o0MtnUb04kMKt-MHa5NeWIRBAq1pRVIs=": {
+          "t": "2026-11-03T20:02:13.000Z",
+          "campeon": "Jhin",
+          "resultado": "WIN",
+          "k": 9,
+          "d": 5,
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 1
+          }
+        },
         "YyfXz-4rKZ4UGM553--TuCWazjAEO0XK_PWxLphIuhQ=": {
           "t": "2026-11-03T19:05:03.000Z",
           "campeon": "Miss Fortune",
