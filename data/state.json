@@ -1950,6 +1950,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ5HPDEeWbIRAyxl5ktnhwDFzo-BIRY9hv4=": {
+          "t": "2026-11-03T04:34:01.000Z",
+          "campeon": "Caitlyn",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 4,
+          "a": 11,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "GOLD",
+            "division": "IV",
+            "lp": 91
+          }
+        },
         "YyfXz-4rKZ78KdqRJ5vBCUJ-SYqsDEHueZTCj38iizs=": {
           "t": "2026-11-02T00:56:54.000Z",
           "campeon": "Yone",
