@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6eVdZz7A7O1KBk1w7VxXD4a4CYzsTiGDY=": {
+          "t": "2026-11-04T06:29:23.000Z",
+          "campeon": "Syndra",
+          "resultado": "LOSE",
+          "k": 6,
+          "d": 9,
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 24
+          }
+        },
         "YyfXz-4rKZ4o0MtnUb04kMKt-MHa5NeWIRBAq1pRVIs=": {
           "t": "2026-11-03T20:02:13.000Z",
           "campeon": "Jhin",
