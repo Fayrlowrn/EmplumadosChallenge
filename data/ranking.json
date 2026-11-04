@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-04T07:09:54.951Z",
+  "actualizado": "2026-11-04T10:30:18.213Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -25,7 +25,7 @@
       },
       "campeon": {
         "nombre": "Kai'Sa",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Kaisa.png",
+        "icono": null,
         "partidas": 8
       },
       "ultimaPartida": "2026-11-04T07:06:10.000Z",
@@ -58,7 +58,7 @@
       },
       "campeon": {
         "nombre": "Jhin",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Jhin.png",
+        "icono": null,
         "partidas": 2
       },
       "ultimaPartida": "2026-11-01T20:02:29.000Z",
@@ -117,7 +117,7 @@
       },
       "campeon": {
         "nombre": "Anivia",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Anivia.png",
+        "icono": null,
         "partidas": 24
       },
       "ultimaPartida": "2026-10-27T00:52:45.000Z",
@@ -150,7 +150,7 @@
       },
       "campeon": {
         "nombre": "Sylas",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Sylas.png",
+        "icono": null,
         "partidas": 6
       },
       "ultimaPartida": "2026-10-27T05:16:40.000Z",
@@ -183,7 +183,7 @@
       },
       "campeon": {
         "nombre": "Yone",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Yone.png",
+        "icono": null,
         "partidas": 11
       },
       "ultimaPartida": "2026-11-03T05:05:33.000Z",
@@ -216,7 +216,7 @@
       },
       "campeon": {
         "nombre": "Leona",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Leona.png",
+        "icono": null,
         "partidas": 24
       },
       "ultimaPartida": "2026-11-03T18:23:16.000Z",
@@ -249,7 +249,7 @@
       },
       "campeon": {
         "nombre": "Nasus",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Nasus.png",
+        "icono": null,
         "partidas": 3
       },
       "ultimaPartida": "2026-10-20T09:06:08.000Z",
