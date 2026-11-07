@@ -2480,7 +2480,7 @@
     }
   },
   "opgg": {
-    "release": "production-549-1-95b959ca",
+    "release": "production-550-1-6307cf54",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
