@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6WzK0cg01mwMdpUt6T8txPStaOaHLk04o=": {
+          "t": "2026-11-07T01:51:31.000Z",
+          "campeon": "Ezreal",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 5,
+          "a": 7,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 31
+          }
+        },
         "YyfXz-4rKZ5h4h932a7lSnYSJGgbcNzcOGMisi6R6r0=": {
           "t": "2026-11-07T00:20:14.000Z",
           "campeon": "Tristana",
