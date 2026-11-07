@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ7gQEW5PxkpXkgby2AaPsb1DRH9Tb4XChg=": {
+          "t": "2026-11-07T21:47:58.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 7,
+          "a": 18,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 32
+          }
+        },
         "YyfXz-4rKZ7_jfa1VyeFX3WodDF1YqruAznh0PxjbUs=": {
           "t": "2026-11-07T20:59:38.000Z",
           "campeon": "Tristana",
