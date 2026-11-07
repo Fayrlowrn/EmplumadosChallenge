@@ -2118,6 +2118,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ4kVO5dhZV4wZBHSh3PgIGHfr5omzOnwLA=": {
+          "t": "2026-11-07T09:59:09.000Z",
+          "campeon": "Akali",
+          "resultado": "WIN",
+          "k": 6,
+          "d": 1,
+          "a": 2,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "III",
+            "lp": 41
+          }
+        },
         "YyfXz-4rKZ7lc6dnlqDpAZhAwMoLqiri4lvDYNgdPLg=": {
           "t": "2026-11-07T09:31:46.000Z",
           "campeon": "Yone",
