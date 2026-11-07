@@ -2118,6 +2118,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ6yD7kz6OkXHIqKbJ0R4FzRtAsTV36vCoQ=": {
+          "t": "2026-11-07T10:28:25.000Z",
+          "campeon": "Yone",
+          "resultado": "WIN",
+          "k": 16,
+          "d": 0,
+          "a": 4,
+          "pos": "TOP",
+          "rango": {
+            "tier": "GOLD",
+            "division": "III",
+            "lp": 71
+          }
+        },
         "YyfXz-4rKZ4kVO5dhZV4wZBHSh3PgIGHfr5omzOnwLA=": {
           "t": "2026-11-07T09:59:09.000Z",
           "campeon": "Akali",
@@ -2508,7 +2522,7 @@
     }
   },
   "opgg": {
-    "release": "production-551-1-3d9573da",
+    "release": "production-552-1-d846e5d8",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
