@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-08T19:30:14.779Z",
+  "actualizado": "2026-11-08T19:45:17.012Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -226,7 +226,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/%C3%91emalod%C3%B3n-0904",
       "pendiente": false,
-      "stale": true
+      "stale": false
     },
     {
       "pos": 8,

@@ -552,7 +552,13 @@
           "resultado": "WIN",
           "k": 10,
           "d": 7,
-          "a": 18
+          "a": 18,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 32
+          }
         },
         "YyfXz-4rKZ7_jfa1VyeFX3WodDF1YqruAznh0PxjbUs=": {
           "t": "2026-11-07T20:59:38.000Z",
@@ -560,7 +566,13 @@
           "resultado": "LOSE",
           "k": 7,
           "d": 10,
-          "a": 8
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 52
+          }
         },
         "YyfXz-4rKZ6WzK0cg01mwMdpUt6T8txPStaOaHLk04o=": {
           "t": "2026-11-07T01:51:31.000Z",
@@ -568,7 +580,13 @@
           "resultado": "WIN",
           "k": 4,
           "d": 5,
-          "a": 7
+          "a": 7,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 31
+          }
         },
         "YyfXz-4rKZ5h4h932a7lSnYSJGgbcNzcOGMisi6R6r0=": {
           "t": "2026-11-07T00:20:14.000Z",
@@ -576,7 +594,13 @@
           "resultado": "WIN",
           "k": 14,
           "d": 9,
-          "a": 11
+          "a": 11,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 10
+          }
         },
         "YyfXz-4rKZ46YsHYx45iaLs9W2Pd3oH3iRGnPk9u1aI=": {
           "t": "2026-11-05T03:17:16.000Z",
@@ -584,7 +608,13 @@
           "resultado": "LOSE",
           "k": 4,
           "d": 7,
-          "a": 0
+          "a": 0,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 29
+          }
         },
         "YyfXz-4rKZ78EKFk7-jFB43U8ZKBYQ8-Y3R05pOsh4M=": {
           "t": "2026-11-04T20:44:01.000Z",
@@ -592,7 +622,13 @@
           "resultado": "WIN",
           "k": 0,
           "d": 2,
-          "a": 20
+          "a": 20,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 87
+          }
         },
         "YyfXz-4rKZ6agTl_GvJQoZDmMyTSwpXPHnCPSznkImw=": {
           "t": "2026-11-04T20:13:08.000Z",
@@ -600,7 +636,13 @@
           "resultado": "LOSE",
           "k": 3,
           "d": 3,
-          "a": 8
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 6
+          }
         },
         "YyfXz-4rKZ56RN7-KimYM6vz6VCEENJgqlFL1GSkeQ4=": {
           "t": "2026-11-04T07:06:10.000Z",
@@ -608,7 +650,13 @@
           "resultado": "LOSE",
           "k": 4,
           "d": 8,
-          "a": 8
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 24
+          }
         },
         "YyfXz-4rKZ6eVdZz7A7O1KBk1w7VxXD4a4CYzsTiGDY=": {
           "t": "2026-11-04T06:29:23.000Z",
@@ -616,7 +664,13 @@
           "resultado": "LOSE",
           "k": 6,
           "d": 9,
-          "a": 3
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 24
+          }
         },
         "YyfXz-4rKZ4o0MtnUb04kMKt-MHa5NeWIRBAq1pRVIs=": {
           "t": "2026-11-03T20:02:13.000Z",
@@ -624,7 +678,13 @@
           "resultado": "WIN",
           "k": 9,
           "d": 5,
-          "a": 10
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 1
+          }
         },
         "YyfXz-4rKZ4UGM553--TuCWazjAEO0XK_PWxLphIuhQ=": {
           "t": "2026-11-03T19:05:03.000Z",
