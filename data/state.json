@@ -447,6 +447,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ6vBAy2Lpn1YDZvQRf-b7Wi6fKw7TWPlwU=": {
+          "t": "2026-11-09T08:31:25.000Z",
+          "campeon": "Sion",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 7,
+          "a": 8,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 7
+          }
+        },
         "YyfXz-4rKZ5bl8clx00z1XBaWzkgjYhf59qbcc6JS-s=": {
           "t": "2026-11-01T20:02:29.000Z",
           "campeon": "Jhin",
