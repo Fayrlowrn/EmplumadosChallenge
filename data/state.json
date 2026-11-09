@@ -447,6 +447,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ4uEQDLrMkh8IAh4ZIUcQ7jTsNzh10tIWo=": {
+          "t": "2026-11-09T22:24:18.000Z",
+          "campeon": "Miss Fortune",
+          "resultado": "WIN",
+          "k": 8,
+          "d": 5,
+          "a": 9,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 95
+          }
+        },
         "YyfXz-4rKZ6fZPA8bf0MKEM_ObnpNnUb5CIdo_RTam8=": {
           "t": "2026-11-09T10:08:27.000Z",
           "campeon": "Smolder",
@@ -588,6 +602,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4EhAuhybsmDb2nJKpAoVHxBa4EepEMyQ0=": {
+          "t": "2026-11-09T22:28:06.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "WIN",
+          "k": 9,
+          "d": 4,
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 94
+          }
+        },
         "YyfXz-4rKZ5b0pOD7RiP67MD0B2bCec6uEddgdurRDM=": {
           "t": "2026-11-09T21:58:56.000Z",
           "campeon": "Shyvana",
