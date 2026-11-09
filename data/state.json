@@ -1407,6 +1407,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ5G0GmMJMs3TIdKPKFkOHbQUEY3Bv7jkd8=": {
+          "t": "2026-11-09T14:19:51.000Z",
+          "campeon": "Lulu",
+          "resultado": "LOSE",
+          "k": 2,
+          "d": 12,
+          "a": 28,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 73
+          }
+        },
         "YyfXz-4rKZ4bgJO-KN8S3WMaNvjCIqaxkfLvRzTf5L0=": {
           "t": "2026-11-03T18:23:16.000Z",
           "campeon": "Nautilus",
