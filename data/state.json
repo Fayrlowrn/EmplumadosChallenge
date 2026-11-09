@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4-LRJvm8G7udEaLt6v_fbDHUGWlrdaTL8=": {
+          "t": "2026-11-09T04:55:25.000Z",
+          "campeon": "Aphelios",
+          "resultado": "LOSE",
+          "k": 1,
+          "d": 8,
+          "a": 6,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 34
+          }
+        },
         "YyfXz-4rKZ6ichsbFvdmCzntnZ6RlVtlWBZInbC5E6M=": {
           "t": "2026-11-09T04:19:52.000Z",
           "campeon": "Corki",
@@ -2592,7 +2606,7 @@
     }
   },
   "opgg": {
-    "release": "production-574-1-07600e81",
+    "release": "production-575-1-8a5e8abe",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
