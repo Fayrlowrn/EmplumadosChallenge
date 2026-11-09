@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6ichsbFvdmCzntnZ6RlVtlWBZInbC5E6M=": {
+          "t": "2026-11-09T04:19:52.000Z",
+          "campeon": "Corki",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 3,
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 13
+          }
+        },
         "YyfXz-4rKZ6tc799I2Dkr1o4lI_BMe_AygF-rHIpXA4=": {
           "t": "2026-11-09T03:57:35.000Z",
           "campeon": "Sylas",
