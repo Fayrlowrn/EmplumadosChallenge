@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6KaSH-tJ301xs3AuoXjIMYB9dxD-r6q9s=": {
+          "t": "2026-11-09T05:33:10.000Z",
+          "campeon": "Tristana",
+          "resultado": "LOSE",
+          "k": 7,
+          "d": 12,
+          "a": 6,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 14
+          }
+        },
         "YyfXz-4rKZ4-LRJvm8G7udEaLt6v_fbDHUGWlrdaTL8=": {
           "t": "2026-11-09T04:55:25.000Z",
           "campeon": "Aphelios",
