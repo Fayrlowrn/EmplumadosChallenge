@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6tc799I2Dkr1o4lI_BMe_AygF-rHIpXA4=": {
+          "t": "2026-11-09T03:57:35.000Z",
+          "campeon": "Sylas",
+          "resultado": "LOSE",
+          "k": 2,
+          "d": 8,
+          "a": 2,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 33
+          }
+        },
         "YyfXz-4rKZ6jnZGnB5FaJYxgjtAg-1tp2UeVCp5resM=": {
           "t": "2026-11-09T00:50:13.000Z",
           "campeon": "Kai'Sa",
