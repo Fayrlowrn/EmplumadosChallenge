@@ -447,6 +447,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ6fZPA8bf0MKEM_ObnpNnUb5CIdo_RTam8=": {
+          "t": "2026-11-09T10:08:27.000Z",
+          "campeon": "Smolder",
+          "resultado": "LOSE",
+          "k": 6,
+          "d": 10,
+          "a": 6,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 13
+          }
+        },
         "YyfXz-4rKZ4OeG6xLbFQPaTvfOtz6VvFpysjcj9Pgc0=": {
           "t": "2026-11-09T09:18:31.000Z",
           "campeon": "Olaf",
