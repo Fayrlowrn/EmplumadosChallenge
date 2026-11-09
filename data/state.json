@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6jnZGnB5FaJYxgjtAg-1tp2UeVCp5resM=": {
+          "t": "2026-11-09T00:50:13.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 7,
+          "a": 8,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 53
+          }
+        },
         "YyfXz-4rKZ7gQEW5PxkpXkgby2AaPsb1DRH9Tb4XChg=": {
           "t": "2026-11-07T21:47:58.000Z",
           "campeon": "Kai'Sa",
