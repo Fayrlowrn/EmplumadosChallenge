@@ -447,6 +447,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ4OeG6xLbFQPaTvfOtz6VvFpysjcj9Pgc0=": {
+          "t": "2026-11-09T09:18:31.000Z",
+          "campeon": "Olaf",
+          "resultado": "WIN",
+          "k": 13,
+          "d": 9,
+          "a": 11,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "IV",
+            "lp": 90
+          }
+        },
         "YyfXz-4rKZ6vBAy2Lpn1YDZvQRf-b7Wi6fKw7TWPlwU=": {
           "t": "2026-11-09T08:31:25.000Z",
           "campeon": "Sion",
