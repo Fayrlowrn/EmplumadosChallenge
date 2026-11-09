@@ -447,6 +447,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ5GfEO0W1T6zSds4_pabd64RxHBWgM4p5A=": {
+          "t": "2026-11-09T23:03:51.000Z",
+          "campeon": "Olaf",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 5,
+          "a": 9,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 17
+          }
+        },
         "YyfXz-4rKZ4uEQDLrMkh8IAh4ZIUcQ7jTsNzh10tIWo=": {
           "t": "2026-11-09T22:24:18.000Z",
           "campeon": "Miss Fortune",
@@ -602,6 +616,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6dj6pvj343qmmC1LvpP4pJR6BVb7m8k7U=": {
+          "t": "2026-11-09T23:05:05.000Z",
+          "campeon": "Jhin",
+          "resultado": "LOSE",
+          "k": 7,
+          "d": 5,
+          "a": 6,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 15
+          }
+        },
         "YyfXz-4rKZ4EhAuhybsmDb2nJKpAoVHxBa4EepEMyQ0=": {
           "t": "2026-11-09T22:28:06.000Z",
           "campeon": "Kai'Sa",
