@@ -546,6 +546,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6S3fvn8zr-60QmrGPFqZIyTflJ0YjUBiU=": {
+          "t": "2026-11-09T06:07:13.000Z",
+          "campeon": "Shyvana",
+          "resultado": "WIN",
+          "k": 5,
+          "d": 5,
+          "a": 16,
+          "pos": "JUNGLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 94
+          }
+        },
         "YyfXz-4rKZ6KaSH-tJ301xs3AuoXjIMYB9dxD-r6q9s=": {
           "t": "2026-11-09T05:33:10.000Z",
           "campeon": "Tristana",
