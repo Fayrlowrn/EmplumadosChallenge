@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6slmjZSYa_qQy_UtGofNTp9rRGd5xTgIY=": {
+          "t": "2026-11-10T22:36:15.000Z",
+          "campeon": "Rumble",
+          "resultado": "LOSE",
+          "k": 0,
+          "d": 7,
+          "a": 3,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 97
+          }
+        },
         "YyfXz-4rKZ7DW-XnYturLwIw9jF2ZhjWKTgbWmpgTCQ=": {
           "t": "2026-11-10T22:01:23.000Z",
           "campeon": "Twitch",
