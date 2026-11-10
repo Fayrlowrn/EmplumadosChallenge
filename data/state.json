@@ -616,6 +616,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6F9UklJfnxg1Yh7aP7va_ZU_pj_04ojtA=": {
+          "t": "2026-11-10T08:19:38.000Z",
+          "campeon": "Pantheon",
+          "resultado": "WIN",
+          "k": 15,
+          "d": 12,
+          "a": 10,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 75
+          }
+        },
         "YyfXz-4rKZ7FsuNXGMvYdVOfxytr-KfDT0RXsZPOEhA=": {
           "t": "2026-11-10T07:40:13.000Z",
           "campeon": "Zoe",
