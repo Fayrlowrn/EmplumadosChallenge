@@ -616,6 +616,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ7FsuNXGMvYdVOfxytr-KfDT0RXsZPOEhA=": {
+          "t": "2026-11-10T07:40:13.000Z",
+          "campeon": "Zoe",
+          "resultado": "LOSE",
+          "k": 0,
+          "d": 3,
+          "a": 3,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 95
+          }
+        },
         "YyfXz-4rKZ6dj6pvj343qmmC1LvpP4pJR6BVb7m8k7U=": {
           "t": "2026-11-09T23:05:05.000Z",
           "campeon": "Jhin",
