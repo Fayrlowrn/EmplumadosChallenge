@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6jis9A4urw1NDe-KT7g7tKF9F_gJ7_M9g=": {
+          "t": "2026-11-10T21:26:24.000Z",
+          "campeon": "Illaoi",
+          "resultado": "LOSE",
+          "k": 5,
+          "d": 9,
+          "a": 3,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 17
+          }
+        },
         "YyfXz-4rKZ6F9UklJfnxg1Yh7aP7va_ZU_pj_04ojtA=": {
           "t": "2026-11-10T08:19:38.000Z",
           "campeon": "Pantheon",
