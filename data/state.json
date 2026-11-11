@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ7ScM5BDodONpoFTrcbX8-HSUF9RXdgpx0=": {
+          "t": "2026-11-11T22:22:29.000Z",
+          "campeon": "Lissandra",
+          "resultado": "WIN",
+          "k": 2,
+          "d": 13,
+          "a": 19,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 28
+          }
+        },
         "YyfXz-4rKZ4CcOlHyIOMvw90obMC3kptF3PPhQDJFdM=": {
           "t": "2026-11-11T21:41:11.000Z",
           "campeon": "Soraka",
