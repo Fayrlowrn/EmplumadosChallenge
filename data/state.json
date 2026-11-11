@@ -1617,6 +1617,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ6hWTE5M-KKBy55kbv6RCx5CZauwUH0ocw=": {
+          "t": "2026-11-11T21:22:48.000Z",
+          "campeon": "Nautilus",
+          "resultado": "WIN",
+          "k": 1,
+          "d": 1,
+          "a": 6,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 93
+          }
+        },
         "YyfXz-4rKZ4wye8ucE8I0IrmIDHmx91n-kCWuGpaGXI=": {
           "t": "2026-11-11T20:50:23.000Z",
           "campeon": "Rakan",
