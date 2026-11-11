@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4eQx8vpS6sYuEDqBCRjeB62W1_jg9oJqc=": {
+          "t": "2026-11-11T21:09:00.000Z",
+          "campeon": "Zoe",
+          "resultado": "WIN",
+          "k": 8,
+          "d": 3,
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 73
+          }
+        },
         "YyfXz-4rKZ4UCgY0xrRwT7RTtlisBN-mESvDUbOr6ZQ=": {
           "t": "2026-11-11T02:45:28.000Z",
           "campeon": "Aphelios",
