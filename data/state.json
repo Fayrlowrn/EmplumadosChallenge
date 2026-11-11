@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4UCgY0xrRwT7RTtlisBN-mESvDUbOr6ZQ=": {
+          "t": "2026-11-11T02:45:28.000Z",
+          "campeon": "Aphelios",
+          "resultado": "LOSE",
+          "k": 8,
+          "d": 11,
+          "a": 7,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 94
+          }
+        },
         "YyfXz-4rKZ7p1eGHiE3EuiZCEjeHGbHFS97c9j2ixLM=": {
           "t": "2026-11-11T02:02:23.000Z",
           "campeon": "Smolder",
