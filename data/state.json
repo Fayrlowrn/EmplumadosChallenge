@@ -1603,6 +1603,20 @@
         "losses": 4
       },
       "partidas": {
+        "YyfXz-4rKZ4wye8ucE8I0IrmIDHmx91n-kCWuGpaGXI=": {
+          "t": "2026-11-11T20:50:23.000Z",
+          "campeon": "Rakan",
+          "resultado": "WIN",
+          "k": 1,
+          "d": 7,
+          "a": 22,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "SILVER",
+            "division": "I",
+            "lp": 63
+          }
+        },
         "YyfXz-4rKZ5G0GmMJMs3TIdKPKFkOHbQUEY3Bv7jkd8=": {
           "t": "2026-11-09T14:19:51.000Z",
           "campeon": "Lulu",
