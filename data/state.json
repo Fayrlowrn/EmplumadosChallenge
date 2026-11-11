@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ7p1eGHiE3EuiZCEjeHGbHFS97c9j2ixLM=": {
+          "t": "2026-11-11T02:02:23.000Z",
+          "campeon": "Smolder",
+          "resultado": "WIN",
+          "k": 7,
+          "d": 4,
+          "a": 10,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 75
+          }
+        },
         "YyfXz-4rKZ6slmjZSYa_qQy_UtGofNTp9rRGd5xTgIY=": {
           "t": "2026-11-10T22:36:15.000Z",
           "campeon": "Rumble",
