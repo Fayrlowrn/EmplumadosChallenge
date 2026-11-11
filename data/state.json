@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4CcOlHyIOMvw90obMC3kptF3PPhQDJFdM=": {
+          "t": "2026-11-11T21:41:11.000Z",
+          "campeon": "Soraka",
+          "resultado": "WIN",
+          "k": 1,
+          "d": 1,
+          "a": 17,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 92
+          }
+        },
         "YyfXz-4rKZ4eQx8vpS6sYuEDqBCRjeB62W1_jg9oJqc=": {
           "t": "2026-11-11T21:09:00.000Z",
           "campeon": "Zoe",
