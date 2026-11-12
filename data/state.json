@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6Zv8XoD5aRz-Q51cz841LVKeAtRoSeeeQ=": {
+          "t": "2026-11-12T04:48:02.000Z",
+          "campeon": "Jhin",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 10,
+          "a": 12,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 15
+          }
+        },
         "YyfXz-4rKZ5sd7NzfRmxTX30Gp8ALk82jkeBBRbCPtw=": {
           "t": "2026-11-12T04:08:24.000Z",
           "campeon": "Zed",
