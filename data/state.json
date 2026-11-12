@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4Yca66ztjNLShw6MXjH0QbL8wQvgq9txs=": {
+          "t": "2026-11-12T10:02:14.000Z",
+          "campeon": "Nocturne",
+          "resultado": "REMAKE",
+          "k": 0,
+          "d": 0,
+          "a": 0,
+          "pos": "JUNGLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 71
+          }
+        },
         "YyfXz-4rKZ6EvZQ_3CN50yqkvlRMqytvrS8M97UdVe8=": {
           "t": "2026-11-12T09:51:51.000Z",
           "campeon": "Varus",
