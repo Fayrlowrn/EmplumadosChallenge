@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6EvZQ_3CN50yqkvlRMqytvrS8M97UdVe8=": {
+          "t": "2026-11-12T09:51:51.000Z",
+          "campeon": "Varus",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 9,
+          "a": 4,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 93
+          }
+        },
         "YyfXz-4rKZ6Zv8XoD5aRz-Q51cz841LVKeAtRoSeeeQ=": {
           "t": "2026-11-12T04:48:02.000Z",
           "campeon": "Jhin",
