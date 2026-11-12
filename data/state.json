@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4DKuURNudPuUasLo5mxjreWBjH_OMJssE=": {
+          "t": "2026-11-12T03:33:07.000Z",
+          "campeon": "Zoe",
+          "resultado": "LOSE",
+          "k": 5,
+          "d": 6,
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 59
+          }
+        },
         "YyfXz-4rKZ6H9iOyvmU94ADP1KXOgmfbTNchUK4LriE=": {
           "t": "2026-11-12T02:56:12.000Z",
           "campeon": "Syndra",
