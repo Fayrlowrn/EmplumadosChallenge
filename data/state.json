@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ5UNNpEedFR2dYuI_-Va5UDRX_Bf7AghKE=": {
+          "t": "2026-11-12T22:32:51.000Z",
+          "campeon": "Maokai",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 4,
+          "a": 7,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 89
+          }
+        },
         "YyfXz-4rKZ438gXp9qy74ny_AvC4MZ4lqi4I3rJxVzI=": {
           "t": "2026-11-12T22:09:18.000Z",
           "campeon": "Soraka",
