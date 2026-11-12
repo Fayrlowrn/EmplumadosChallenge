@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ4yteQEUCOJP64W8ugnJrcxb_7-Sy9dz3g=": {
+          "t": "2026-11-12T01:38:58.000Z",
+          "campeon": "Kai'Sa",
+          "resultado": "WIN",
+          "k": 17,
+          "d": 4,
+          "a": 3,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 45
+          }
+        },
         "YyfXz-4rKZ7ScM5BDodONpoFTrcbX8-HSUF9RXdgpx0=": {
           "t": "2026-11-11T22:22:29.000Z",
           "campeon": "Lissandra",
