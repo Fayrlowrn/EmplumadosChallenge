@@ -644,6 +644,20 @@
         "losses": 6
       },
       "partidas": {
+        "YyfXz-4rKZ6yY8qPSg-FSu5WoYfmC6l5MwZ2lhSaywI=": {
+          "t": "2026-11-13T05:30:01.000Z",
+          "campeon": "Soraka",
+          "resultado": "WIN",
+          "k": 0,
+          "d": 6,
+          "a": 13,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "I",
+            "lp": 25
+          }
+        },
         "YyfXz-4rKZ7q8KT4AMBOelaJygVPqoFEd1TgGAJ04LY=": {
           "t": "2026-11-12T23:12:11.000Z",
           "campeon": "Leona",
