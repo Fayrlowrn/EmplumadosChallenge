@@ -475,6 +475,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ45JgfXoDQoytWbvnpQUf-7_G7-8dODRMg=": {
+          "t": "2026-11-15T17:22:49.000Z",
+          "campeon": "Gwen",
+          "resultado": "WIN",
+          "k": 3,
+          "d": 1,
+          "a": 13,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 39
+          }
+        },
         "YyfXz-4rKZ7eHwPnLW_6L0CtVNGXSeAPaTxbarsI4-E=": {
           "t": "2026-11-15T16:42:12.000Z",
           "campeon": "Poppy",
