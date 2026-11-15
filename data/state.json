@@ -475,6 +475,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ7eHwPnLW_6L0CtVNGXSeAPaTxbarsI4-E=": {
+          "t": "2026-11-15T16:42:12.000Z",
+          "campeon": "Poppy",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 9,
+          "a": 10,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 39
+          }
+        },
         "YyfXz-4rKZ5GfEO0W1T6zSds4_pabd64RxHBWgM4p5A=": {
           "t": "2026-11-09T23:03:51.000Z",
           "campeon": "Olaf",
