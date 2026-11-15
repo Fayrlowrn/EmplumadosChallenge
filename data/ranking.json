@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-15T15:36:17.800Z",
+  "actualizado": "2026-11-15T16:00:14.186Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -127,7 +127,7 @@
       "twitch": null,
       "opgg": "https://op.gg/lol/summoners/lan/LANivia-FYRWN",
       "pendiente": false,
-      "stale": true
+      "stale": false
     },
     {
       "pos": 5,
