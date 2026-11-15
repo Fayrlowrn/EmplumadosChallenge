@@ -475,6 +475,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ7IHOSMxCoewvwnvVrHtml2qYZlBUEcCcA=": {
+          "t": "2026-11-15T17:55:12.000Z",
+          "campeon": "Ezreal",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 2,
+          "a": 11,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 60
+          }
+        },
         "YyfXz-4rKZ45JgfXoDQoytWbvnpQUf-7_G7-8dODRMg=": {
           "t": "2026-11-15T17:22:49.000Z",
           "campeon": "Gwen",
