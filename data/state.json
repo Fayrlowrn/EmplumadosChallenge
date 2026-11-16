@@ -475,6 +475,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ4AZCdpZekQdskg9DKwn8kaXbioVexbUfE=": {
+          "t": "2026-11-16T00:52:01.000Z",
+          "campeon": "Jhin",
+          "resultado": "WIN",
+          "k": 3,
+          "d": 5,
+          "a": 14,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 62
+          }
+        },
         "YyfXz-4rKZ4KIkWq20IVB6hUWC9eosBhArItwnCikBA=": {
           "t": "2026-11-16T00:09:08.000Z",
           "campeon": "Jax",
