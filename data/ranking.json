@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T20:15:15.735Z",
+  "actualizado": "2026-11-16T20:30:25.279Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -44,25 +44,25 @@
       "riotId": "Bjango#Bj4",
       "tier": "EMERALD",
       "division": "II",
-      "lp": 5,
-      "wins": 44,
+      "lp": 27,
+      "wins": 45,
       "losses": 37,
-      "winrate": 54.32,
+      "winrate": 54.88,
       "linea": "BOTTOM",
-      "progreso": 174,
-      "retoWins": 11,
+      "progreso": 196,
+      "retoWins": 12,
       "retoLosses": 5,
       "racha": {
         "tipo": "W",
-        "n": 2
+        "n": 3
       },
       "campeon": {
         "nombre": "Jhin",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Jhin.png",
         "partidas": 3
       },
-      "ultimaPartida": "2026-11-16T01:26:07.000Z",
-      "partidasHoy": 0,
+      "ultimaPartida": "2026-11-16T20:19:00.000Z",
+      "partidasHoy": 1,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
