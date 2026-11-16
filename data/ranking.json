@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-15T18:00:15.785Z",
+  "actualizado": "2026-11-16T00:15:18.064Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -44,25 +44,25 @@
       "riotId": "Bjango#Bj4",
       "tier": "EMERALD",
       "division": "III",
-      "lp": 81,
+      "lp": 62,
       "wins": 42,
-      "losses": 36,
-      "winrate": 53.85,
+      "losses": 37,
+      "winrate": 53.16,
       "linea": "BOTTOM",
-      "progreso": 150,
+      "progreso": 131,
       "retoWins": 9,
-      "retoLosses": 4,
+      "retoLosses": 5,
       "racha": {
-        "tipo": "W",
-        "n": 2
+        "tipo": "L",
+        "n": 1
       },
       "campeon": {
         "nombre": "Olaf",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Olaf.png",
         "partidas": 2
       },
-      "ultimaPartida": "2026-11-15T17:55:12.000Z",
-      "partidasHoy": 3,
+      "ultimaPartida": "2026-11-16T00:09:08.000Z",
+      "partidasHoy": 4,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
