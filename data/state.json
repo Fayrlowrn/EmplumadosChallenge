@@ -475,6 +475,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ5O_BxePQ1TGVjFMqscfbRrzYSVbiPWAQY=": {
+          "t": "2026-11-16T01:26:07.000Z",
+          "campeon": "Xayah",
+          "resultado": "WIN",
+          "k": 3,
+          "d": 7,
+          "a": 9,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "III",
+            "lp": 83
+          }
+        },
         "YyfXz-4rKZ4AZCdpZekQdskg9DKwn8kaXbioVexbUfE=": {
           "t": "2026-11-16T00:52:01.000Z",
           "campeon": "Jhin",
