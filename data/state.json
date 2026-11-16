@@ -10,6 +10,20 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ7i-KP2DsLjisR_npop0m7nhfn3IKg4MBY=": {
+          "t": "2026-11-16T20:07:40.000Z",
+          "campeon": "Nami",
+          "resultado": "LOSE",
+          "k": 1,
+          "d": 3,
+          "a": 6,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "III",
+            "lp": 22
+          }
+        },
         "YyfXz-4rKZ60voMt3aD1OgE_RmfHYp6FDjcCQJsiPK8=": {
           "t": "2026-11-10T13:37:12.000Z",
           "campeon": "Anivia",
