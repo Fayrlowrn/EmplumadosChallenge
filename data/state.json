@@ -489,6 +489,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ7PNiFW-CNFYmxIXWta38y9Y77yxObdRQw=": {
+          "t": "2026-11-17T20:52:42.000Z",
+          "campeon": "Aphelios",
+          "resultado": "WIN",
+          "k": 7,
+          "d": 9,
+          "a": 9,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 12
+          }
+        },
         "YyfXz-4rKZ6vQhe2gvzVgV7w3088PO2_ecKrIdJ0IfQ=": {
           "t": "2026-11-17T20:15:14.000Z",
           "campeon": "Zaahen",
