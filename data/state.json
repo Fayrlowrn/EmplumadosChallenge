@@ -489,6 +489,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ6PgDQFTsBmMhdOSyVeRkp1hr3HqGwhGrw=": {
+          "t": "2026-11-17T08:59:26.000Z",
+          "campeon": "Jhin",
+          "resultado": "LOSE",
+          "k": 4,
+          "d": 8,
+          "a": 12,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 49
+          }
+        },
         "YyfXz-4rKZ52K6XVEDn4L5aL0jWpulh25pDD7FXRKYk=": {
           "t": "2026-11-17T08:16:54.000Z",
           "campeon": "Ezreal",
