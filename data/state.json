@@ -489,6 +489,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ6vQhe2gvzVgV7w3088PO2_ecKrIdJ0IfQ=": {
+          "t": "2026-11-17T20:15:14.000Z",
+          "campeon": "Zaahen",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 6,
+          "a": 0,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 31
+          }
+        },
         "YyfXz-4rKZ6PgDQFTsBmMhdOSyVeRkp1hr3HqGwhGrw=": {
           "t": "2026-11-17T08:59:26.000Z",
           "campeon": "Jhin",
