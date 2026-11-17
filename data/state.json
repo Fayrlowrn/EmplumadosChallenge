@@ -489,6 +489,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ52K6XVEDn4L5aL0jWpulh25pDD7FXRKYk=": {
+          "t": "2026-11-17T08:16:54.000Z",
+          "campeon": "Ezreal",
+          "resultado": "WIN",
+          "k": 4,
+          "d": 3,
+          "a": 5,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 27
+          }
+        },
         "YyfXz-4rKZ4kSRDsyR-40tlCBCqmGiWPYglSKkOYl1A=": {
           "t": "2026-11-16T20:19:00.000Z",
           "campeon": "Viktor",
