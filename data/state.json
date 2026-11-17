@@ -489,6 +489,20 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ7ahyUmc9S6YEFfFvrGJUVofSx_c7S1eyA=": {
+          "t": "2026-11-17T23:41:12.000Z",
+          "campeon": "Twisted Fate",
+          "resultado": "WIN",
+          "k": 6,
+          "d": 5,
+          "a": 11,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 33
+          }
+        },
         "YyfXz-4rKZ7PNiFW-CNFYmxIXWta38y9Y77yxObdRQw=": {
           "t": "2026-11-17T20:52:42.000Z",
           "campeon": "Aphelios",
@@ -3334,7 +3348,7 @@
     }
   },
   "opgg": {
-    "release": "production-695-1-3f4e1b6d",
+    "release": "production-697-1-53285031",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
