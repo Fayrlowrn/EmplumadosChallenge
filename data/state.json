@@ -489,6 +489,62 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ7QfXjqtHnHbznFlsPP2njaSsroA5sZKS0=": {
+          "t": "2026-11-23T00:42:11.000Z",
+          "campeon": "Jhin",
+          "resultado": "LOSE",
+          "k": 6,
+          "d": 7,
+          "a": 12,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 79
+          }
+        },
+        "YyfXz-4rKZ7Emoyyo3qxhmEf71HKA2HAy-_-90yFesc=": {
+          "t": "2026-11-22T23:54:51.000Z",
+          "campeon": "Twisted Fate",
+          "resultado": "LOSE",
+          "k": 4,
+          "d": 8,
+          "a": 12,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 76
+          }
+        },
+        "YyfXz-4rKZ6f85yLSlZJFb77W-1cplvOrJHZcc1YMV0=": {
+          "t": "2026-11-22T23:06:46.000Z",
+          "campeon": "Jhin",
+          "resultado": "WIN",
+          "k": 10,
+          "d": 2,
+          "a": 9,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 76
+          }
+        },
+        "YyfXz-4rKZ4ygp-4zHKpJ_SN-VL3hruL98ZOwH89IEQ=": {
+          "t": "2026-11-22T22:33:56.000Z",
+          "campeon": "Dr. Mundo",
+          "resultado": "WIN",
+          "k": 11,
+          "d": 6,
+          "a": 8,
+          "pos": "TOP",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 54
+          }
+        },
         "YyfXz-4rKZ7ahyUmc9S6YEFfFvrGJUVofSx_c7S1eyA=": {
           "t": "2026-11-17T23:41:12.000Z",
           "campeon": "Twisted Fate",
@@ -2944,6 +3000,20 @@
         "losses": 1
       },
       "partidas": {
+        "YyfXz-4rKZ5cpjU3i0swMPJQJXQCPXMt4vUNj-e2qgQ=": {
+          "t": "2026-11-22T23:36:40.000Z",
+          "campeon": "Yone",
+          "resultado": "LOSE",
+          "k": 9,
+          "d": 8,
+          "a": 5,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "GOLD",
+            "division": "II",
+            "lp": 31
+          }
+        },
         "YyfXz-4rKZ6yD7kz6OkXHIqKbJ0R4FzRtAsTV36vCoQ=": {
           "t": "2026-11-07T10:28:25.000Z",
           "campeon": "Yone",
@@ -3348,7 +3418,7 @@
     }
   },
   "opgg": {
-    "release": "production-741-1-71909d77",
+    "release": "production-743-1-c96bb4a2",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
