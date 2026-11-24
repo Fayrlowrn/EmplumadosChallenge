@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T11:13:56.950Z",
+  "actualizado": "2026-11-24T06:30:42.278Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -44,24 +44,24 @@
       "riotId": "Bjango#Bj4",
       "tier": "EMERALD",
       "division": "II",
-      "lp": 60,
+      "lp": 3,
       "wins": 50,
-      "losses": 41,
-      "winrate": 54.95,
+      "losses": 44,
+      "winrate": 53.19,
       "linea": "BOTTOM",
-      "progreso": 229,
+      "progreso": 172,
       "retoWins": 17,
-      "retoLosses": 9,
+      "retoLosses": 12,
       "racha": {
         "tipo": "L",
-        "n": 2
+        "n": 5
       },
       "campeon": {
         "nombre": "Jhin",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Jhin.png",
-        "partidas": 6
+        "partidas": 7
       },
-      "ultimaPartida": "2026-11-23T00:42:11.000Z",
+      "ultimaPartida": "2026-11-24T00:09:50.000Z",
       "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
@@ -105,22 +105,22 @@
       "division": "III",
       "lp": 12,
       "wins": 22,
-      "losses": 12,
-      "winrate": 64.71,
+      "losses": 14,
+      "winrate": 61.11,
       "linea": "MIDDLE",
       "progreso": 420,
       "retoWins": 18,
-      "retoLosses": 11,
+      "retoLosses": 13,
       "racha": {
         "tipo": "L",
-        "n": 2
+        "n": 4
       },
       "campeon": {
         "nombre": "Anivia",
         "icono": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Anivia.png",
-        "partidas": 26
+        "partidas": 28
       },
-      "ultimaPartida": "2026-11-16T20:07:40.000Z",
+      "ultimaPartida": "2026-11-24T00:40:07.000Z",
       "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,

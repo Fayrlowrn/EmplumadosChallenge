@@ -10,6 +10,34 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ4Zubj516n24DmQ-zTbE-EgyiupgkMmJ0s=": {
+          "t": "2026-11-24T00:40:07.000Z",
+          "campeon": "Anivia",
+          "resultado": "LOSE",
+          "k": 2,
+          "d": 2,
+          "a": 2,
+          "pos": "TOP",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "III",
+            "lp": 12
+          }
+        },
+        "YyfXz-4rKZ6YADwxE-obtO_rS-wxeAQs__8BtYQG8ts=": {
+          "t": "2026-11-24T00:22:37.000Z",
+          "campeon": "Anivia",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 2,
+          "a": 1,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "III",
+            "lp": 12
+          }
+        },
         "YyfXz-4rKZ7i-KP2DsLjisR_npop0m7nhfn3IKg4MBY=": {
           "t": "2026-11-16T20:07:40.000Z",
           "campeon": "Nami",
@@ -489,6 +517,48 @@
         "lp": 31
       },
       "partidas": {
+        "YyfXz-4rKZ6ljNguhDnRMjbbipjz27FNzq2Su5cp_70=": {
+          "t": "2026-11-24T00:09:50.000Z",
+          "campeon": "Yunara",
+          "resultado": "LOSE",
+          "k": 5,
+          "d": 7,
+          "a": 6,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 60
+          }
+        },
+        "YyfXz-4rKZ7dz2cZm1wvmxZO1PaS3wajuMEsVSS6o2k=": {
+          "t": "2026-11-23T23:30:04.000Z",
+          "campeon": "Jhin",
+          "resultado": "LOSE",
+          "k": 3,
+          "d": 4,
+          "a": 5,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 60
+          }
+        },
+        "YyfXz-4rKZ6d4gAgUpv2QQ8-mqmDgVb11wptugtYm1k=": {
+          "t": "2026-11-23T22:56:46.000Z",
+          "campeon": "Jinx",
+          "resultado": "LOSE",
+          "k": 7,
+          "d": 11,
+          "a": 7,
+          "pos": "BOTTOM",
+          "rango": {
+            "tier": "EMERALD",
+            "division": "II",
+            "lp": 60
+          }
+        },
         "YyfXz-4rKZ7QfXjqtHnHbznFlsPP2njaSsroA5sZKS0=": {
           "t": "2026-11-23T00:42:11.000Z",
           "campeon": "Jhin",
@@ -3405,7 +3475,7 @@
     }
   },
   "baseline": {
-    "dia": "2026-11-23",
+    "dia": "2026-11-24",
     "posiciones": {
       "Edwin": 1,
       "Brandon": 2,
@@ -3418,7 +3488,7 @@
     }
   },
   "opgg": {
-    "release": "production-758-1-225decb3",
+    "release": "production-760-1-12f802f6",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
