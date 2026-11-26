@@ -10,6 +10,20 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ6-5FwKeSEt5cAzZFB2ESeAEl9h7VDenFI=": {
+          "t": "2026-11-26T12:41:33.000Z",
+          "campeon": "Anivia",
+          "resultado": "REMAKE",
+          "k": 0,
+          "d": 0,
+          "a": 0,
+          "pos": "UTILITY",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "III",
+            "lp": 42
+          }
+        },
         "YyfXz-4rKZ475DvdrQg_EQayxwQmMf4I5Xk0YuJpuNI=": {
           "t": "2026-11-26T01:49:44.000Z",
           "campeon": "Anivia",
@@ -3489,7 +3503,7 @@
     }
   },
   "baseline": {
-    "dia": "2026-11-25",
+    "dia": "2026-11-26",
     "posiciones": {
       "Edwin": 1,
       "Brandon": 2,
@@ -3502,7 +3516,7 @@
     }
   },
   "opgg": {
-    "release": "production-782-1-eaf5a700",
+    "release": "production-783-1-7ffdb358",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"

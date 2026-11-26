@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T03:14:01.995Z",
+  "actualizado": "2026-11-26T12:52:03.959Z",
   "region": "LAN",
   "fuente": "opgg",
   "inicio": "2026-10-19",
@@ -103,12 +103,12 @@
       "riotId": "LANivia#FYRWN",
       "tier": "PLATINUM",
       "division": "III",
-      "lp": 42,
+      "lp": 32,
       "wins": 23,
-      "losses": 14,
-      "winrate": 62.16,
+      "losses": 15,
+      "winrate": 60.53,
       "linea": "MIDDLE",
-      "progreso": 450,
+      "progreso": 440,
       "retoWins": 19,
       "retoLosses": 13,
       "racha": {
@@ -121,7 +121,7 @@
         "partidas": 29
       },
       "ultimaPartida": "2026-11-26T01:49:44.000Z",
-      "partidasHoy": 1,
+      "partidasHoy": 0,
       "enPartida": null,
       "partidaDesde": null,
       "twitch": null,
