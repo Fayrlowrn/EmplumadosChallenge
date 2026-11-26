@@ -10,6 +10,20 @@
         "lp": 92
       },
       "partidas": {
+        "YyfXz-4rKZ7RfTm26uytU0rz6Tj6uOrWn6CteJUaIBw=": {
+          "t": "2026-11-26T13:54:09.000Z",
+          "campeon": "Anivia",
+          "resultado": "WIN",
+          "k": 12,
+          "d": 7,
+          "a": 6,
+          "pos": "MIDDLE",
+          "rango": {
+            "tier": "PLATINUM",
+            "division": "III",
+            "lp": 32
+          }
+        },
         "YyfXz-4rKZ6-5FwKeSEt5cAzZFB2ESeAEl9h7VDenFI=": {
           "t": "2026-11-26T12:41:33.000Z",
           "campeon": "Anivia",
@@ -3516,7 +3530,7 @@
     }
   },
   "opgg": {
-    "release": "production-783-1-7ffdb358",
+    "release": "production-785-1-3bc5af82",
     "renewalStatus": "400c02bdfd8c90756a329b312a7455e73880ad43ec",
     "renewal": "405a04669583947dc03eb8c7f367adf28c8f714e86",
     "getGames": "409a2b9ca50d15e50a4dace93552e3a40113dc2753"
